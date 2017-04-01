@@ -197,9 +197,9 @@ class Tink {
       },
       set visible(value) {
         if (value === true) {
-          this.cursor = "auto";
+          this.cursor = 'auto';
         } else {
-          this.cursor = "none";
+          this.cursor = 'none';
         }
         this._visible = value;
       },
@@ -365,34 +365,34 @@ class Tink {
     //Bind the events to the handlers
     //Mouse events
     element.addEventListener(
-      "mousemove", pointer.moveHandler.bind(pointer), false
+      'mousemove', pointer.moveHandler.bind(pointer), false
     );
     element.addEventListener(
-      "mousedown", pointer.downHandler.bind(pointer), false
+      'mousedown', pointer.downHandler.bind(pointer), false
     );
 
     //Add the `mouseup` event to the `window` to
     //catch a mouse button release outside of the canvas area
     window.addEventListener(
-      "mouseup", pointer.upHandler.bind(pointer), false
+      'mouseup', pointer.upHandler.bind(pointer), false
     );
 
     //Touch events
     element.addEventListener(
-      "touchmove", pointer.touchmoveHandler.bind(pointer), false
+      'touchmove', pointer.touchmoveHandler.bind(pointer), false
     );
     element.addEventListener(
-      "touchstart", pointer.touchstartHandler.bind(pointer), false
+      'touchstart', pointer.touchstartHandler.bind(pointer), false
     );
 
     //Add the `touchend` event to the `window` object to
     //catch a mouse button release outside of the canvas area
     window.addEventListener(
-      "touchend", pointer.touchendHandler.bind(pointer), false
+      'touchend', pointer.touchendHandler.bind(pointer), false
     );
 
     //Disable the default pan and zoom actions on the `canvas`
-    element.style.touchAction = "none";
+    element.style.touchAction = 'none';
 
     //Add the pointer to Tink's global `pointers` array
     this.pointers.push(pointer);
@@ -409,7 +409,7 @@ class Tink {
     if (sprite.gx === undefined) {
       Object.defineProperty(
         sprite,
-        "gx", {
+        'gx', {
           get() {
             return sprite.getGlobalPosition().x;
           }
@@ -420,7 +420,7 @@ class Tink {
     if (sprite.gy === undefined) {
       Object.defineProperty(
         sprite,
-        "gy", {
+        'gy', {
           get() {
             return sprite.getGlobalPosition().y;
           }
@@ -507,10 +507,10 @@ class Tink {
       //draggable sprite
       draggableSprites.some(sprite => {
         if (pointer.hitTestSprite(sprite) && sprite.draggable) {
-          if (pointer.visible) pointer.cursor = "pointer";
+          if (pointer.visible) pointer.cursor = 'pointer';
           return true;
         } else {
-          if (pointer.visible) pointer.cursor = "auto";
+          if (pointer.visible) pointer.cursor = 'auto';
           return false;
         }
       });
@@ -529,11 +529,11 @@ class Tink {
 
     //The `state` property tells you the button's
     //current state. Set its initial state to "up"
-    o.state = "up";
+    o.state = 'up';
 
     //The `action` property tells you whether its being pressed or
     //released
-    o.action = "";
+    o.action = '';
 
     //The `pressed` and `hoverOver` Booleans are mainly for internal
     //use in this code to help figure out the correct state.
@@ -547,7 +547,7 @@ class Tink {
 
     //tinkType is a string that will be set to "button" if the 
     //user creates an object using the `button` function
-    o.tinkType = "";
+    o.tinkType = '';
 
     //Set `enabled` to true to allow for interactivity
     //Set `enabled` to false to disable interactivity
@@ -585,10 +585,10 @@ class Tink {
           if (pointer.isUp) {
 
             //Up state
-            o.state = "up";
+            o.state = 'up';
 
             //Show the first image state frame, if this is a `Button` sprite
-            if (o.tinkType === "button") o.gotoAndStop(0);
+            if (o.tinkType === 'button') o.gotoAndStop(0);
           }
 
           //If the pointer is touching the sprite, figure out
@@ -596,22 +596,22 @@ class Tink {
           if (hit) {
 
             //Over state
-            o.state = "over";
+            o.state = 'over';
 
             //Show the second image state frame if this sprite has
             //3 frames and it's a `Button` sprite
-            if (o.totalFrames && o.totalFrames === 3 && o.tinkType === "button") {
+            if (o.totalFrames && o.totalFrames === 3 && o.tinkType === 'button') {
               o.gotoAndStop(1);
             }
 
             //Down state
             if (pointer.isDown) {
-              o.state = "down";
+              o.state = 'down';
 
               //Show the third frame if this sprite is a `Button` sprite and it
               //has only three frames, or show the second frame if it
               //only has two frames
-              if (o.tinkType === "button") {
+              if (o.tinkType === 'button') {
                 if (o.totalFrames === 3) {
                   o.gotoAndStop(2);
                 } else {
@@ -622,32 +622,32 @@ class Tink {
 
 
             //Change the pointer icon to a hand
-            if (pointer.visible) pointer.cursor = "pointer";
+            if (pointer.visible) pointer.cursor = 'pointer';
           } else {
             //Turn the pointer to an ordinary arrow icon if the
             //pointer isn't touching a sprite
-            if (pointer.visible) pointer.cursor = "auto";
+            if (pointer.visible) pointer.cursor = 'auto';
           }
 
           //Perform the correct interactive action
 
           //a. Run the `press` method if the sprite state is "down" and
           //the sprite hasn't already been pressed
-          if (o.state === "down") {
+          if (o.state === 'down') {
             if (!o.pressed) {
               if (o.press) o.press();
               o.pressed = true;
-              o.action = "pressed";
+              o.action = 'pressed';
             }
           }
 
           //b. Run the `release` method if the sprite state is "over" and
           //the sprite has been pressed
-          if (o.state === "over") {
+          if (o.state === 'over') {
             if (o.pressed) {
               if (o.release) o.release();
               o.pressed = false;
-              o.action = "released";
+              o.action = 'released';
               //If the pointer was tapped and the user assigned a `tap`
               //method, call the `tap` method
               if (pointer.tapped && o.tap) o.tap();
@@ -663,11 +663,11 @@ class Tink {
           //c. Check whether the pointer has been released outside
           //the sprite's area. If the button state is "up" and it's
           //already been pressed, then run the `release` method.
-          if (o.state === "up") {
+          if (o.state === 'up') {
             if (o.pressed) {
               if (o.release) o.release();
               o.pressed = false;
-              o.action = "released";
+              o.action = 'released';
             }
 
             //Run the `out` method if it has been assigned
@@ -689,7 +689,7 @@ class Tink {
     let o;
 
     //Is it an array of frame ids or textures?
-    if (typeof source[0] === "string") {
+    if (typeof source[0] === 'string') {
 
       //They're strings, but are they pre-existing texture or
       //paths to image files?
@@ -719,7 +719,7 @@ class Tink {
     this.makeInteractive(o);
 
     //Set the `tinkType` to "button"
-    o.tinkType = "button";
+    o.tinkType = 'button';
 
     //Position the button
     o.x = x;
@@ -792,10 +792,10 @@ class Tink {
 
     //Attach event listeners
     window.addEventListener(
-      "keydown", key.downHandler.bind(key), false
+      'keydown', key.downHandler.bind(key), false
     );
     window.addEventListener(
-      "keyup", key.upHandler.bind(key), false
+      'keyup', key.upHandler.bind(key), false
     );
 
     //Return the key object
@@ -809,7 +809,7 @@ class Tink {
   arrowControl(sprite, speed) {
 
     if (speed === undefined) {
-      throw new Error("Please supply the arrowControl method with the speed at which you want the sprite to move");
+      throw new Error('Please supply the arrowControl method with the speed at which you want the sprite to move');
     }
 
     let upArrow = this.keyboard(38),
