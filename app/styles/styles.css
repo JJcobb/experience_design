@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#navbarNav .navbar-nav:last-of-type .dropdown-menu {
+
+	left: auto;
+	right: 0;
+}
+
+
+
+@media screen and (min-width: 992px){
+
+	.navbar-brand {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+
+	    background-color: #f7f7f7;
+	    border-radius: 100px;
+	    padding: 0.5em;
+	}
+
+	.navbar-brand img {
+	    margin-top: 1.5em;
+	}
+
+}

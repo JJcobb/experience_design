@@ -14,9 +14,9 @@ $(document).ready(function() {
 
 	document.body.appendChild(renderer.view);
 
-	renderer.view.style.position = "absolute";
-	renderer.view.style.top = "0px";
-	renderer.view.style.left = "0px";
+	renderer.view.style.position = 'absolute';
+	renderer.view.style.top = '0px';
+	renderer.view.style.left = '0px';
 
 	renderer.autoResize = true;
 
@@ -24,9 +24,18 @@ $(document).ready(function() {
 	resize();
 
 		
-
 	stage.interactive = true;
 	stage.containsPoint = () => true;
+
+	stage.buttonMode = true;
+
+
+	// Use Tink to track the cursor
+	let t = new Tink(PIXI, renderer.view);
+
+	let pointer = t.makePointer();
+
+	//pointer.cursor = "pointer";
 
 
 
@@ -58,6 +67,8 @@ $(document).ready(function() {
 	function animate() {
 
 		requestAnimationFrame(animate);
+
+		t.update();
 
 		renderer.render(stage);
 	}
@@ -96,7 +107,7 @@ $(document).ready(function() {
 
 			//Display errors if they exist
 			if(resource.error){
-				console.log("An error occured loading the resource: " + resource.error);
+				console.log('An error occured loading the resource: ' + resource.error);
 			}
 
 		}
@@ -113,7 +124,7 @@ $(document).ready(function() {
 
 				//Make Sprite
 				card = new PIXI.Sprite(
-				  PIXI.loader.resources["images/" + result.image].texture
+				  PIXI.loader.resources['images/' + result.image].texture
 				);
 
 
@@ -154,8 +165,24 @@ $(document).ready(function() {
 
 
 				//Show card info when clicked
+
+				var clicked_on = false;
+
 				card.on('pointerdown', function() {
-			 		alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year);
+
+					clicked_on = true;			 		
+			 	});
+
+			 	card.on('pointermove', function() {
+
+			 		clicked_on = false;
+			 	});
+
+			 	card.on('pointerup', function() {
+
+			 		if(clicked_on){
+				 		alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year);
+				 	}
 			 	});
 
 
@@ -170,7 +197,7 @@ $(document).ready(function() {
 
 			 	card.on('mouseout', function() {
 
-			 		this.scale.set(0.5,0.5);
+			 		this.scale.set(card_scale_x, card_scale_y);
 
 			 	});
 				
@@ -253,22 +280,34 @@ $(document).ready(function() {
 	var left_limit, right_limit;
 
 
+	// stage.on('mousemove', function(){
+
+	// 	pointer.cursor = 'move';
+
+	// });
+
+
 	stage.on('pointerdown', function(event){
 
 		if (!this.dragging) {
+
+			// && event.target.pluginName != 'sprite'
+
 
 	  		this.dragging = true;
 
 	  		// console.log( renderer.plugins.interaction.mouse.global.x );
 
-	  		first_x = renderer.plugins.interaction.mouse.global.x;
-	  		first_y = renderer.plugins.interaction.mouse.global.y;
+	  		// first_x = renderer.plugins.interaction.mouse.global.x;
+	  		// first_y = renderer.plugins.interaction.mouse.global.y;
+	  		first_x = pointer.x;
+	  		first_y = pointer.y;
 
 
 	  		left_limit = stage.getBounds(rect).left;
 			right_limit = stage.getBounds(rect).right;
 
-			console.log(left_limit + " " + right_limit);
+			console.log(left_limit + ' ' + right_limit);
 	  		
     	}
 
@@ -279,7 +318,8 @@ $(document).ready(function() {
 		if (this.dragging) {
 
 			//Change x position
-	        next_x = renderer.plugins.interaction.mouse.global.x;
+	        //next_x = renderer.plugins.interaction.mouse.global.x;
+	        next_x = pointer.x;
 
 	        x_difference = first_x - next_x;
 
@@ -299,7 +339,8 @@ $(document).ready(function() {
 
 
 	        //Change y position
-	        next_y = renderer.plugins.interaction.mouse.global.y;
+	        //next_y = renderer.plugins.interaction.mouse.global.y;
+	        next_y = pointer.y;
 
 	        y_difference = first_y - next_y;
 
