@@ -1,0 +1,46 @@
+{
+  "cards": [
+
+    {
+    
+      "card": {
+          "name": "Adrian Burk",
+          "year": "1950",
+          "image": "Adrian_Burk-1950.jpg"
+      },
+
+      "card": {
+          "name": "Al Baldwin",
+          "year": "1950",
+          "image": "Al_Baldwin-1950.jpg"
+      },
+
+      "card": {
+          "name": "Al Demao",
+          "year": "1950",
+          "image": "Al_Demao-1950.jpg"
+      },
+
+      "card": {
+          "name": "Barry French",
+          "year": "1950",
+          "image": "Barry_French-1950.jpg"
+      },
+
+      "card": {
+          "name": "Bill Blackburn",
+          "year": "1950",
+          "image": "Bill_Blackburn-1950.jpg"
+      },
+
+      "card": {
+          "name": "Bill Johnson",
+          "year": "1950",
+          "image": "Bill_Johnson-1950.jpg"
+      }
+
+    }
+    
+  ]
+
+}
