@@ -3,86 +3,211 @@
   
     {
       "name": "Adrian Burk",
+      "position": "Quarterback \nPunter",
       "year": "1950",
-      "image": "Adrian_Burk-1950.jpg"
+      "image": "Adrian_Burk-1950.jpg",
+      "stats": {
+              "pass_cmp": "43",
+              "pass_att": "119",
+              "pass_cmp%": "36.1",
+              "pass_yds": "798",
+              "pass_td": "6",
+              "int": "12",
+              "punts": "81",
+              "punt_yds": "3243",
+              "punt_lng": "68",
+              "punt_y/p": "40.0"
+      }
     },
 
     {
       "name": "Al Baldwin",
+      "position": "Tight End \nDefensive Back",
       "year": "1950",
       "image": "Al_Baldwin-1950.jpg"
     },
 
     {
       "name": "Al Demao",
+      "position": "Center \nLinebacker",
       "year": "1950",
       "image": "Al_Demao-1950.jpg"
     },
 
     {
       "name": "Barry French",
+      "position": "Guard \nTackle",
       "year": "1950",
       "image": "Barry_French-1950.jpg"
     },
 
     {
       "name": "Bill Blackburn",
+      "position": "Center",
       "year": "1950",
       "image": "Bill_Blackburn-1950.jpg"
     },
 
     {
       "name": "Bill Johnson",
+      "position": "Center \nLinebacker",
       "year": "1950",
       "image": "Bill_Johnson-1950.jpg"
     },
 
     {
       "name": "Bill Leonard",
+      "position": "Defensive End",
       "year": "1950",
       "image": "Bill_Leonard-1950.jpg"
     },
 
     {
       "name": "Bob Gage",
+      "position": "Defensive Back \nTailback",
       "year": "1950",
       "image": "Bob_Gage-1950.jpg"
     },
 
     {
       "name": "Bob Goode",
+      "position": "Running Back",
       "year": "1950",
       "image": "Bob_Goode-1950.jpg"
     },
 
     {
       "name": "Bob Kelly",
+      "position": "Halfback \nDefensive Back",
       "year": "1950",
       "image": "Bob_Kelly-1950.jpg"
     },
 
     {
       "name": "Bob Nowaskey",
+      "position": "Tight End \nDefensive End",
       "year": "1950",
       "image": "Bob_Nowaskey-1950.jpg"
     },
 
     {
       "name": "Bob Perina",
+      "position": "Defensive Back \nRunning Back",
       "year": "1950",
       "image": "Bob_Perina-1950.jpg"
     },
 
     {
       "name": "Bob Reinhard",
+      "position": "Defensive Tackle \nFullback",
       "year": "1950",
       "image": "Bob_Reinhard-1950.jpg"
     },
 
     {
       "name": "Buddy Tinsley",
+      "position": "Tackle",
       "year": "1950",
       "image": "Buddy_Tinsley-1950.jpg"
+    },
+
+    {
+      "name": "Buster Ramsey",
+      "position": "Guard \nLinebacker",
+      "year": "1950",
+      "image": "Buster_Ramsey-1950.jpg"
+    },
+
+    {
+      "name": "Chet Mutryn",
+      "position": "Halfback \nDefensive Back \nReturn Specialist",
+      "year": "1950",
+      "image": "Chet_Mutryn-1950.jpg"
+    },
+
+    {
+      "name": "Cliff Patton",
+      "position": "Guard \nLinebacker",
+      "year": "1950",
+      "image": "Cliff_Patton-1950.jpg"
+    },
+
+    {
+      "name": "Cloyce Box",
+      "position": "Tight End",
+      "year": "1950",
+      "image": "Cloyce_Box-1950.jpg"
+    },
+
+    {
+      "name": "Clyde Scott",
+      "position": "Halfback \nDefensive Back",
+      "year": "1950",
+      "image": "Clyde_Scott-1950.jpg"
+    },
+
+    {
+      "name": "Dante Lavelli",
+      "position": "Tight End",
+      "year": "1950",
+      "awards": "Hall of Fame",
+      "image": "Dante_Lavelli-1950.jpg"
+    },
+
+    {
+      "name": "Dick Hensley",
+      "position": "Tight End \nDefensive End",
+      "year": "1950",
+      "image": "Dick_Hensley-1950.jpg"
+    },
+
+    {
+      "name": "Dick Hoerner",
+      "position": "Fullback",
+      "year": "1950",
+      "image": "Dick_Hoerner-1950.jpg"
+    },
+
+    {
+      "name": "Dick Huffman",
+      "position": "Tackle",
+      "year": "1950",
+      "image": "Dick_Huffman-1950.jpg"
+    },
+
+    {
+      "name": "Dick Wildung",
+      "position": "Tackle \nDefensive Tackle",
+      "year": "1950",
+      "image": "Dick_Wildung-1950.jpg"
+    },
+
+    {
+      "name": "Earl Murray",
+      "position": "Guard",
+      "year": "1950",
+      "image": "Earl_Murray-1950.jpg"
+    },
+
+    {
+      "name": "Emil Sitko",
+      "position": "Halfback",
+      "year": "1950",
+      "image": "Emil_Sitko-1950.jpg"
+    },
+
+    {
+      "name": "Frank Sinkovitz",
+      "position": "Linebacker \nCenter",
+      "year": "1950",
+      "image": "Frank_Sinkovitz-1950.jpg"
+    },
+
+    {
+      "name": "Frank Spaniel",
+      "position": "Halfback",
+      "year": "1950",
+      "image": "Frank_Spaniel-1950.jpg"
     }
     
   ]
