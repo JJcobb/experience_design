@@ -265,9 +265,12 @@ $(document).ready(function() {
 						    console.log(key, value);
 
 						    stats_string += key + ' - ' + value + '\n';
-						});		
+						});	
 
-						alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year + '\n' + stats_string);	 		
+
+						
+
+						//alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year + '\n' + stats_string);	 		
 
 				 	}
 			 	});
@@ -301,6 +304,9 @@ $(document).ready(function() {
 				});
 
 				var player_position = new PIXI.Text(result.position, player_position_style);
+
+
+				var team_logo = PIXI.Sprite.fromImage('images/' + result.team_logo);
 
 
 			 	card.on('mouseover', function() {
@@ -340,6 +346,31 @@ $(document).ready(function() {
 					//player_name.anchor.set(0.5, 0);
 
 
+					//position team logo
+					team_logo.anchor.set(1, 0.5);
+
+					team_logo.x = this.width*0.5 - 15;
+					team_logo.y = this.height*0.5;
+
+					//resize logo
+					var original_logo_width = team_logo.width;
+
+					console.log("W: " + team_logo.width + " | H: " + team_logo.height);
+
+					team_logo.width = card.width*0.4;
+
+					var size_adjustment = team_logo.width / original_logo_width;
+
+					team_logo.height = team_logo.height * size_adjustment;
+
+
+					console.log("W: " + team_logo.width + " | H: " + team_logo.height);
+
+
+					//add team logo
+					player_container.addChild(team_logo);
+
+
 					//add text
 					player_container.addChild(player_name);
 					player_container.addChild(player_position);
@@ -355,6 +386,8 @@ $(document).ready(function() {
 
 			 		player_container.removeChild(player_name);
 			 		player_container.removeChild(player_position);
+
+			 		player_container.removeChild(team_logo);
 
 			 	});
 				
