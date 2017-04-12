@@ -89,7 +89,7 @@ $(document).ready(function() {
 	var card;
 
 	//padding around the cards
-  	var card_padding = 35;
+  	var card_padding = 55;
 
 
 	var loader = PIXI.loader;
@@ -319,22 +319,7 @@ $(document).ready(function() {
 
 
 			 		/************* stage container bug fix **********************/
-			 		if(!left_limit && !right_limit && !top_limit && !bottom_limit){
-
-				  		left_limit = stage.getBounds(rect).left - card_padding;
-						right_limit = stage.getBounds(rect).right + card_padding;
-
-						top_limit = stage.getBounds(rect).top - card_padding - nav_height;
-						bottom_limit = stage.getBounds(rect).bottom + card_padding;
-
-						//if the rows of cards do not go all the way to the bottom, set the bottom limit as the bottom of the window
-						if(bottom_limit < window.innerHeight){
-							bottom_limit = window.innerHeight;
-						}
-
-						console.log('left limit: ' + left_limit + '\n right limit: ' + right_limit);
-						console.log('top limit: ' + top_limit + '\n bottom limit: ' + bottom_limit);
-					}
+			 		setLimits();
 					/************ END container bug fix *****************/
 
 
@@ -459,7 +444,7 @@ $(document).ready(function() {
 
 			 		player_container.removeChild(team_logo);
 
-			 		player_container.removeChildren(1, player_container.children.length);
+			 		//player_container.removeChildren(1, player_container.children.length);
 
 
 			 	});
@@ -550,6 +535,28 @@ $(document).ready(function() {
 	// });
 
 
+	function setLimits(){
+
+		if(!left_limit && !right_limit && !top_limit && !bottom_limit){
+
+	  		left_limit = stage.getBounds(rect).left - card_padding;
+			right_limit = stage.getBounds(rect).right + card_padding;
+
+			top_limit = stage.getBounds(rect).top - card_padding - nav_height;
+			bottom_limit = stage.getBounds(rect).bottom + card_padding + 100;
+
+			//if the rows of cards do not go all the way to the bottom, set the bottom limit as the bottom of the window
+			if(bottom_limit < window.innerHeight){
+				bottom_limit = window.innerHeight;
+			}
+
+			console.log('left limit: ' + left_limit + '\n right limit: ' + right_limit);
+			console.log('top limit: ' + top_limit + '\n bottom limit: ' + bottom_limit);
+		}
+	}
+
+
+
 	stage.on('pointerdown', function(event){
 
 		if (!this.dragging) {
@@ -567,22 +574,7 @@ $(document).ready(function() {
 	  		first_y = pointer.y;
 
 
-	  		if(!left_limit && !right_limit && !top_limit && !bottom_limit){
-
-		  		left_limit = stage.getBounds(rect).left - card_padding;
-				right_limit = stage.getBounds(rect).right + card_padding;
-
-				top_limit = stage.getBounds(rect).top - card_padding - nav_height;
-				bottom_limit = stage.getBounds(rect).bottom + card_padding;
-
-				//if the rows of cards do not go all the way to the bottom, set the bottom limit as the bottom of the window
-				if(bottom_limit < window.innerHeight){
-					bottom_limit = window.innerHeight;
-				}
-
-				console.log('left limit: ' + left_limit + '\n right limit: ' + right_limit);
-				console.log('top limit: ' + top_limit + '\n bottom limit: ' + bottom_limit);
-			}
+	  		setLimits();
 
     	}
 
