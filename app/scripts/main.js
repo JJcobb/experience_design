@@ -80,6 +80,8 @@ $(document).ready(function() {
 
 		t.update();
 
+		Tween.runTweens();
+
 		renderer.render(stage);
 	}
 
@@ -156,7 +158,6 @@ $(document).ready(function() {
 			  	var player_container = new PIXI.Container();
 		 		
 	
-
 
 
 			  	//Values to scale size of card
@@ -277,7 +278,8 @@ $(document).ready(function() {
 
 
 			 	//white rect beneath card
-			 	var card_info = new PIXI.Graphics();
+			 	var card_info;
+			 	//var card_info = new PIXI.Graphics();
 
 
 			 	//text in the rect
@@ -309,9 +311,122 @@ $(document).ready(function() {
 				var team_logo = PIXI.Sprite.fromImage('images/' + result.team_logo);
 
 
+				var card_hovered = false;
+
+
+			/****** Mouseover *******/
 			 	card.on('mouseover', function() {
 
-			 		this.scale.set(0.75,0.75);
+
+			 		/************* stage container bug fix **********************/
+			 		if(!left_limit && !right_limit && !top_limit && !bottom_limit){
+
+				  		left_limit = stage.getBounds(rect).left - card_padding;
+						right_limit = stage.getBounds(rect).right + card_padding;
+
+						top_limit = stage.getBounds(rect).top - card_padding - nav_height;
+						bottom_limit = stage.getBounds(rect).bottom + card_padding;
+
+						//if the rows of cards do not go all the way to the bottom, set the bottom limit as the bottom of the window
+						if(bottom_limit < window.innerHeight){
+							bottom_limit = window.innerHeight;
+						}
+
+						console.log('left limit: ' + left_limit + '\n right limit: ' + right_limit);
+						console.log('top limit: ' + top_limit + '\n bottom limit: ' + bottom_limit);
+					}
+					/************ END container bug fix *****************/
+
+
+					player_container.removeChild(card_info);
+
+			 		player_container.removeChild(player_name);
+			 		player_container.removeChild(player_position);
+
+			 		player_container.removeChild(team_logo);
+
+
+
+					card_hovered = true;
+
+
+					var tween_scale_x = new Tween(this, "scale.x", 0.75, 20, true);
+					var tween_scale_y = new Tween(this, "scale.y", 0.75, 20, true);
+
+					tween_scale_x.easing = Tween.outCubic;
+					tween_scale_y.easing = Tween.outCubic;
+
+
+					var this_card = this;
+
+
+					card_info = new PIXI.Graphics();
+
+					tween_scale_x.setOnComplete(function(){
+
+
+						if(card_hovered){
+
+							card_info.beginFill(0xFFFFFF);
+
+							// draw a rectangle
+							//                     x              |    y           |   width   | height
+							card_info.drawRect(0 - this_card.width * 0.5, this_card.height*0.5, this_card.width, player_name.height + player_position.height + 12 + 10); //70
+
+
+							//add rectangle
+					 		player_container.addChild(card_info);
+
+
+					 		player_name.x = 0 - this_card.width*0.5 + 15;
+							player_name.y = this_card.height*0.5 + 10;
+
+							player_position.x = 0 - this_card.width*0.5 + 15;
+							player_position.y = this_card.height*0.5 + player_name.height + 12;
+
+
+							//anchor the x in the middle, leave y at top
+							//player_name.anchor.set(0.5, 0);
+
+
+							//position team logo
+							team_logo.anchor.set(1, 0.5);
+
+							team_logo.x = this_card.width*0.5 - 15;
+							team_logo.y = this_card.height*0.5;
+
+							//resize logo
+							var original_logo_width = team_logo.width;
+
+
+							team_logo.width = this_card.width*0.3;
+
+							if(team_logo.width > 90){
+								team_logo.width = 90;
+							}
+
+							var size_adjustment = team_logo.width / original_logo_width;
+
+							team_logo.height = team_logo.height * size_adjustment;
+
+
+							console.log("W: " + team_logo.width + " | H: " + team_logo.height);
+
+
+							//add team logo
+							player_container.addChild(team_logo);
+
+							//add text
+							player_container.addChild(player_name);
+							player_container.addChild(player_position);
+
+						}
+
+
+					});
+
+
+			 		//this.scale.set(0.75,0.75);
 
 			 		//Have card show up on top of the other cards (top of the depth index)
 			 		//stage.removeChild(this);
@@ -323,64 +438,19 @@ $(document).ready(function() {
 			 		stage.addChildAt(this.parent, stage.children.length);
 
 
-
-					card_info.beginFill(0xFFFFFF);
-
-					// draw a rectangle
-					//                     x              |    y           |   width   | height
-					card_info.drawRect(0 - this.width * 0.5, this.height*0.5, this.width, player_name.height + player_position.height + 12 + 10); //70
-
-
-					//add rectangle
-			 		player_container.addChild(card_info);
-
-
-			 		player_name.x = 0 - this.width*0.5 + 15;
-					player_name.y = this.height*0.5 + 10;
-
-					player_position.x = 0 - this.width*0.5 + 15;
-					player_position.y = this.height*0.5 + player_name.height + 12;
-
-
-					//anchor the x in the middle, leave y at top
-					//player_name.anchor.set(0.5, 0);
-
-
-					//position team logo
-					team_logo.anchor.set(1, 0.5);
-
-					team_logo.x = this.width*0.5 - 15;
-					team_logo.y = this.height*0.5;
-
-					//resize logo
-					var original_logo_width = team_logo.width;
-
-					console.log("W: " + team_logo.width + " | H: " + team_logo.height);
-
-					team_logo.width = card.width*0.4;
-
-					var size_adjustment = team_logo.width / original_logo_width;
-
-					team_logo.height = team_logo.height * size_adjustment;
-
-
-					console.log("W: " + team_logo.width + " | H: " + team_logo.height);
-
-
-					//add team logo
-					player_container.addChild(team_logo);
-
-
-					//add text
-					player_container.addChild(player_name);
-					player_container.addChild(player_position);
+			
 
 
 			 	});
 
 			 	card.on('mouseout', function() {
 
-			 		this.scale.set(card_scale_x, card_scale_y);
+			 		card_hovered = false;
+
+			 		new Tween(this, "scale.x", card_scale_x, 20, true);
+					new Tween(this, "scale.y", card_scale_y, 20, true);
+
+			 		//this.scale.set(card_scale_x, card_scale_y);
 
 			 		player_container.removeChild(card_info);
 
@@ -388,6 +458,9 @@ $(document).ready(function() {
 			 		player_container.removeChild(player_position);
 
 			 		player_container.removeChild(team_logo);
+
+			 		player_container.removeChildren(1, player_container.children.length);
+
 
 			 	});
 				
@@ -510,12 +583,13 @@ $(document).ready(function() {
 				console.log('left limit: ' + left_limit + '\n right limit: ' + right_limit);
 				console.log('top limit: ' + top_limit + '\n bottom limit: ' + bottom_limit);
 			}
-	  		
+
     	}
 
 	});
 
 	stage.on('pointermove', function(){
+
 
 		if (this.dragging) {
 
@@ -618,6 +692,7 @@ $(document).ready(function() {
 	render();
 
 	function render(){
+
 		renderer.render(stage);
 	}
 
