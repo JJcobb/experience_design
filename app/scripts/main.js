@@ -130,7 +130,7 @@ $(document).ready(function() {
 		$.each(data.cards, function(i, result){
 
 			//Filter the cards loaded by the user's criteria, like the year of the card
-			if(result.year == "1951"){
+			if(result.year == "1950"){
 
 				//Add all images from JSON into loader
 				loader.add('images/' + result.image);
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		$.each(data.cards, function(i,result){
 
 			//Filter the cards loaded by the user's criteria, like the year of the card
-			if(result.year == "1951"){
+			if(result.year == "1950"){
 			
 				loader.load(function(){
 
@@ -404,6 +404,13 @@ $(document).ready(function() {
 
 
 
+							//Store bounds of the card
+							var player_bounds = new PIXI.Rectangle;
+
+							var player_bounds_right, player_bounds_top, player_bounds_bottom;
+
+
+
 							var position_adjustment_x, position_adjustment_y;
 
 							//function to run after card scales up
@@ -422,6 +429,24 @@ $(document).ready(function() {
 
 								large_card_position_x.easing = Tween.outCubic;
 								large_card_position_y.easing = Tween.outCubic;
+
+
+								large_card_position_y.setOnComplete(function(){
+
+									//Get bounds of the card
+									player_bounds_right = player_container.getBounds(player_bounds).right;
+									player_bounds_top = player_container.getBounds(player_bounds).top;
+									player_bounds_bottom = player_container.getBounds(player_bounds).bottom;
+
+									//reposition card if it goes below bottom of screen
+									if( player_bounds_bottom > $(window).height() ){
+										new_y_position -= ( player_bounds_bottom - $(window).height() );
+
+										large_card_position_y = new Tween(this_card.parent, 'position.y', new_y_position, 30, true);
+										large_card_position_y.easing = Tween.outCubic;
+										
+									}
+								})
 
 
 
@@ -520,16 +545,16 @@ $(document).ready(function() {
 
 
 
-								//Get bounds of the card
-								var player_bounds = new PIXI.Rectangle;
-
-								var player_bounds_right = player_container.getBounds(player_bounds).right;
-								var player_bounds_top = player_container.getBounds(player_bounds).top;
+								//Get player card bounds
+								player_bounds_right = player_container.getBounds(player_bounds).right;
+								player_bounds_top = player_container.getBounds(player_bounds).top;
+								player_bounds_bottom = player_container.getBounds(player_bounds).bottom;
 
 
 								//Container for the player stats
 								var player_stats_container = new PIXI.Container;
 
+								//Position it to the right of the player card
 								player_stats_container.x = player_bounds_right;
 								player_stats_container.y = player_bounds_top;
 
