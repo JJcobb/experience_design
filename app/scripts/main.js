@@ -86,10 +86,15 @@ $(document).ready(function() {
 	}
 
 
+	//Use this to determine if all cards have been spread onto the stage and the stage has zoomed in
+	var cards_displayed = false;
+
+
 	var card;
 
 	//padding around the cards
   	var card_padding = 55;
+
 
 
 	var loader = PIXI.loader;
@@ -99,6 +104,9 @@ $(document).ready(function() {
 
 		//Track the total number of requested cards
 		var number_of_cards = 0;
+
+		//Store each of the cards as they are looped through
+		var card_sprites = []
 
 		//Track x positioning for cards
 		var last_position = 0 + card_padding;
@@ -170,6 +178,7 @@ $(document).ready(function() {
 					  PIXI.loader.resources['images/' + result.image].texture
 					);
 
+					card_sprites.push(card);
 
 
 				  	var player_container = new PIXI.Container();
@@ -244,7 +253,7 @@ $(document).ready(function() {
 				  		row_number++;
 
 				  		//re-position the current card at the appropriate spot in the new row
-				  		player_container.x = last_position + (card.width * card_scale_x / 2);;
+				  		player_container.x = last_position + (card.width * card_scale_x / 2);
 				 		player_container.y = (row_number * avg_card_height) + (row_number * card_padding) + (card.height * card_scale_y / 2) + nav_height + card_padding;
 				  		
 				  	}
@@ -260,8 +269,8 @@ $(document).ready(function() {
 
 
 					//Make card clickable and show the finger on hover
-					card.interactive = true;
-					card.buttonMode = true;
+					// card.interactive = true;
+					// card.buttonMode = true;
 
 
 					//Adjust the x of where next card will be positioned, plus padding
@@ -315,6 +324,18 @@ $(document).ready(function() {
 								stage_zoom_scale_y.easing = Tween.outCubic;
 								stage_zoom_position_y.easing = Tween.outCubic;
 
+								stage_zoom_scale_x.setOnComplete( function(){
+
+									//Make the cards interactive now
+									for(var i=0; i<card_sprites.length; i++){
+
+										card_sprites[i].interactive = true;
+										card_sprites[i].buttonMode = true;
+									}
+
+									cards_displayed = true;
+								});
+
 							}, 1000);
 
 						}
@@ -326,6 +347,7 @@ $(document).ready(function() {
 
 					
 
+					var card_selected = false;
 
 
 					//Show card info when clicked
@@ -346,6 +368,8 @@ $(document).ready(function() {
 
 				 		if(clicked_on){
 
+				 			card_selected = true;
+
 					 		var stats_string = '';
 
 					 		//Get each of player's stat names and values
@@ -355,13 +379,91 @@ $(document).ready(function() {
 							    stats_string += key + ' - ' + value + '\n';
 							});	
 
+							//alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year + '\n' + stats_string);	 		
+
+
+							// this.parent.scale.x = 1.5;
+							// this.parent.scale.y = 1.5;
+
+							var this_card = this;
+
+							//Make card larger
+							var large_card_scale_x = new Tween(this.parent, 'scale.x', 1.5, 30, true);
+							var large_card_scale_y = new Tween(this.parent, 'scale.y', 1.5, 30, true);
+
+							large_card_scale_x.easing = Tween.outCubic;
+							large_card_scale_y.easing = Tween.outCubic;
+
+
+							var original_position_x = this.parent.position.x;
+							var original_position_y = this.parent.position.y;
+							console.log("position x " + original_position_x );
+
+
+							var position_adjustment_x, position_adjustment_y;
+
+							large_card_scale_x.setOnComplete(function(){
+
+								//Place the card at the upper left of the viewport, so take into account how much the stage has moved from the original x=0 point
+								position_adjustment_x = Math.abs( stage.x );
+								position_adjustment_y = Math.abs( stage.y );
+
+
+								var new_x_position = this_card.parent.width / 2 + position_adjustment_x + card_padding/2;
+								var new_y_position = $(window).height() / 2 + position_adjustment_y - card_padding/2;
+
+								var large_card_position_x = new Tween(this_card.parent, 'position.x', new_x_position, 60, true);
+								var large_card_position_y = new Tween(this_card.parent, 'position.y', new_y_position, 60, true);
+
+								large_card_position_x.easing = Tween.outCubic;
+								large_card_position_y.easing = Tween.outCubic;
+
+/************************** */
+								// this_card.parent.interactive = true;
+
+								// this_card.parent.on('click', function(){
+
+								// 	this_card.parent.position.x = 775;
+								// 	this_card.parent.position.x = original_position_y;
+								// 	console.log("position x " + original_position_x );
+
+								// 	this_card.parent.scale.x = 1;
+								// 	this_card.parent.scale.y = 1;
+
+								// });
+
+
+							});
+
+							
+							// this.parent.position.x = this.parent.width / 2 + position_adjustment_x + card_padding/2;
+							// this.parent.position.y = $(window).height() / 2 + position_adjustment_y - card_padding/2;
 
 							
 
-							//alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year + '\n' + stats_string);	 		
+							// make stage not interactive
+							stage.interactive = false;
+
+							// make cards not interactive and transparent
+							for(var i=0; i<card_sprites.length; i++){
+
+								card_sprites[i].interactive = false;
+
+								if(this != card_sprites[i]){
+
+									//card_sprites[i].alpha = 0.25;
+									new Tween(card_sprites[i], 'alpha', 0.25, 60, true);
+								}
+							};
+
+
+
+			
+
 
 					 	}
 				 	});
+
 
 
 				 	//white rect beneath card
@@ -375,7 +477,7 @@ $(document).ready(function() {
 					    fontSize: 18,
 					    fontWeight: 'bold',
 					    fontVariant: 'small-caps',
-					    fill: '#000',
+					    fill: '#333',
 					    wordWrap: true,
 					    wordWrapWidth: card.width*1.25
 					});
@@ -387,7 +489,7 @@ $(document).ready(function() {
 					    fontFamily: 'Arial',
 					    fontSize: 16,
 					    fontVariant: 'small-caps',
-					    fill: '#000',
+					    fill: '#333',
 					    wordWrap: true,
 					    wordWrapWidth: card.width*1.25
 					});
@@ -404,110 +506,118 @@ $(document).ready(function() {
 				  /****** Mouseover *******/
 				 	card.on('mouseover', function() {
 
-
-				 		/************* stage container bug fix **********************/
-				 		setLimits();
-						/************ END container bug fix *****************/
+				 		//if this card has not been selected by user to see more information
+				 		if(!card_selected){
 
 
-						player_container.removeChild(card_info);
-
-				 		player_container.removeChild(player_name);
-				 		player_container.removeChild(player_position);
-
-				 		player_container.removeChild(team_logo);
+					 		/************* stage container bug fix **********************/
+					 		setLimits();
+							/************ END container bug fix *****************/
 
 
+							player_container.removeChild(card_info);
 
-						card_hovered = true;
+					 		player_container.removeChild(player_name);
+					 		player_container.removeChild(player_position);
 
-
-						var tween_scale_x = new Tween(this, "scale.x", 0.75, 20, true);
-						var tween_scale_y = new Tween(this, "scale.y", 0.75, 20, true);
-
-						tween_scale_x.easing = Tween.outCubic;
-						tween_scale_y.easing = Tween.outCubic;
+					 		player_container.removeChild(team_logo);
 
 
-						var this_card = this;
+
+							card_hovered = true;
 
 
-						card_info = new PIXI.Graphics();
+							var tween_scale_x = new Tween(this, "scale.x", 0.75, 20, true);
+							var tween_scale_y = new Tween(this, "scale.y", 0.75, 20, true);
 
-						tween_scale_x.setOnComplete(function(){
-
-
-							if(card_hovered){
-
-								card_info.beginFill(0xFFFFFF);
-
-								// draw a rectangle
-								//                     x              |    y           |   width   | height
-								card_info.drawRect(0 - this_card.width * 0.5, this_card.height*0.5, this_card.width, player_name.height + player_position.height + 12 + 10); //70
+							tween_scale_x.easing = Tween.outCubic;
+							tween_scale_y.easing = Tween.outCubic;
 
 
-								//add rectangle
-						 		player_container.addChild(card_info);
+							var this_card = this;
 
 
-						 		player_name.x = 0 - this_card.width*0.5 + 15;
-								player_name.y = this_card.height*0.5 + 10;
+							card_info = new PIXI.Graphics();
 
-								player_position.x = 0 - this_card.width*0.5 + 15;
-								player_position.y = this_card.height*0.5 + player_name.height + 12;
+							tween_scale_x.setOnComplete(function(){
 
 
-								//anchor the x in the middle, leave y at top
-								//player_name.anchor.set(0.5, 0);
+								if(card_hovered){
+
+									//card_info.beginFill(0xFFFFFF);
+									card_info.beginFill(0xf7f7f7);
 
 
-								//position team logo
-								team_logo.anchor.set(1, 0.5);
-
-								team_logo.x = this_card.width*0.5 - 15;
-								team_logo.y = this_card.height*0.5;
-
-								//resize logo
-								var original_logo_width = team_logo.width;
+									// draw a rectangle
+									//                     x              |    y           |   width   | height
+									card_info.drawRect(0 - this_card.width * 0.5, this_card.height*0.5, this_card.width, player_name.height + player_position.height + 12 + 10); //70
 
 
-								team_logo.width = this_card.width*0.3;
+									//add rectangle
+							 		player_container.addChild(card_info);
 
-								if(team_logo.width > 90){
-									team_logo.width = 90;
+
+							 		player_name.x = 0 - this_card.width*0.5 + 15;
+									player_name.y = this_card.height*0.5 + 10;
+
+									player_position.x = 0 - this_card.width*0.5 + 15;
+									player_position.y = this_card.height*0.5 + player_name.height + 12;
+
+
+									//anchor the x in the middle, leave y at top
+									//player_name.anchor.set(0.5, 0);
+
+
+									//position team logo
+									team_logo.anchor.set(1, 0.5);
+
+									team_logo.x = this_card.width*0.5 - 15;
+									team_logo.y = this_card.height*0.5;
+
+									//resize logo
+									var original_logo_width = team_logo.width;
+
+
+									team_logo.width = this_card.width*0.3;
+
+									if(team_logo.width > 90){
+										team_logo.width = 90;
+									}
+
+									var size_adjustment = team_logo.width / original_logo_width;
+
+									team_logo.height = team_logo.height * size_adjustment;
+
+
+									console.log("W: " + team_logo.width + " | H: " + team_logo.height);
+
+
+									//add team logo
+									player_container.addChild(team_logo);
+
+									//add text
+									player_container.addChild(player_name);
+									player_container.addChild(player_position);
+
 								}
 
-								var size_adjustment = team_logo.width / original_logo_width;
 
-								team_logo.height = team_logo.height * size_adjustment;
-
-
-								console.log("W: " + team_logo.width + " | H: " + team_logo.height);
+							});
 
 
-								//add team logo
-								player_container.addChild(team_logo);
+					 		//this.scale.set(0.75,0.75);
 
-								//add text
-								player_container.addChild(player_name);
-								player_container.addChild(player_position);
+					 		//Have card show up on top of the other cards (top of the depth index)
+					 		//stage.removeChild(this);
+					 		//stage.addChildAt(this, stage.children.length);
 
-							}
+					 		/* ************************** */
+
+					 		stage.removeChild(this.parent);
+					 		stage.addChildAt(this.parent, stage.children.length);
 
 
-						});
-
-
-				 		//this.scale.set(0.75,0.75);
-
-				 		//Have card show up on top of the other cards (top of the depth index)
-				 		//stage.removeChild(this);
-				 		//stage.addChildAt(this, stage.children.length);
-
-				 		/* ************************** */
-
-				 		stage.removeChild(this.parent);
-				 		stage.addChildAt(this.parent, stage.children.length);		
+				 		}//End if		
 
 
 				 	}); // END mouse over
@@ -515,21 +625,26 @@ $(document).ready(function() {
 
 				 	card.on('mouseout', function() {
 
-				 		card_hovered = false;
+				 		//if this card has not been clicked by the user to see more information
+				 		if(!card_selected){
 
-				 		new Tween(this, "scale.x", card_scale_x, 20, true);
-						new Tween(this, "scale.y", card_scale_y, 20, true);
+					 		card_hovered = false;
 
-				 		//this.scale.set(card_scale_x, card_scale_y);
+					 		new Tween(this, "scale.x", card_scale_x, 20, true);
+							new Tween(this, "scale.y", card_scale_y, 20, true);
 
-				 		player_container.removeChild(card_info);
+					 		//this.scale.set(card_scale_x, card_scale_y);
 
-				 		player_container.removeChild(player_name);
-				 		player_container.removeChild(player_position);
+					 		player_container.removeChild(card_info);
 
-				 		player_container.removeChild(team_logo);
+					 		player_container.removeChild(player_name);
+					 		player_container.removeChild(player_position);
 
-				 		//player_container.removeChildren(1, player_container.children.length);
+					 		player_container.removeChild(team_logo);
+
+					 		//player_container.removeChildren(1, player_container.children.length);
+
+					 	}
 
 
 				 	});
@@ -664,7 +779,9 @@ $(document).ready(function() {
 	  		first_y = pointer.y;
 
 
-	  		setLimits();
+	  		if(cards_displayed){
+		  		setLimits();
+		  	}
 
     	}
 
