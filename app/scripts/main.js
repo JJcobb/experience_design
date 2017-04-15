@@ -130,7 +130,7 @@ $(document).ready(function() {
 		$.each(data.cards, function(i, result){
 
 			//Filter the cards loaded by the user's criteria, like the year of the card
-			if(result.year == "1950"){
+			if(result.year == '1950'){
 
 				//Add all images from JSON into loader
 				loader.add('images/' + result.image);
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		$.each(data.cards, function(i,result){
 
 			//Filter the cards loaded by the user's criteria, like the year of the card
-			if(result.year == "1950"){
+			if(result.year == '1950'){
 			
 				loader.load(function(){
 
@@ -308,8 +308,8 @@ $(document).ready(function() {
 					setTimeout(function() {
 
 						//Animations for cards, starting from top of screen and going back to where theu should be positioned
-				    	var placement_animation_x = new Tween(player_container, "position.x", original_x, 60, true);
-						var placement_animation_y = new Tween(player_container, "position.y", original_y, 60, true);
+				    	var placement_animation_x = new Tween(player_container, 'position.x', original_x, 60, true);
+						var placement_animation_y = new Tween(player_container, 'position.y', original_y, 60, true);
 
 						placement_animation_x.easing = Tween.outCubic;
 						placement_animation_y.easing = Tween.outCubic;
@@ -320,9 +320,9 @@ $(document).ready(function() {
 
 							setTimeout(function() {
 
-								var stage_zoom_scale_x = new Tween(stage, "scale.x", 1, 120, true);
-								var stage_zoom_scale_y = new Tween(stage, "scale.y", 1, 120, true);
-								var stage_zoom_position_y = new Tween(stage, "position.y", 0, 120, true);
+								var stage_zoom_scale_x = new Tween(stage, 'scale.x', 1, 120, true);
+								var stage_zoom_scale_y = new Tween(stage, 'scale.y', 1, 120, true);
+								var stage_zoom_position_y = new Tween(stage, 'position.y', 0, 120, true);
 
 								stage_zoom_scale_x.easing = Tween.outCubic;
 								stage_zoom_scale_y.easing = Tween.outCubic;
@@ -570,7 +570,7 @@ $(document).ready(function() {
 								    fill: '#f7f7f7'
 								});
 
-								var player_team = new PIXI.Text(result.year + "\n" + result.team, player_team_style);
+								var player_team = new PIXI.Text(result.year + '\n' + result.team, player_team_style);
 
 								player_stats_container.addChild(player_team);
 
@@ -598,7 +598,7 @@ $(document).ready(function() {
 
 
 								    //If stat name contains "TD"
-								    if( key.includes("Touchdown") ){
+								    if( key.includes('Touchdown') ){
 
 								    	//Name of the stat
 							    		var stat_name = new PIXI.Text(key, stat_name_style);
@@ -630,7 +630,7 @@ $(document).ready(function() {
 								    		football.alpha = 0;
 
 								    		//tweens for displaying the footballs
-								    		var football_fade = new Tween(football, "alpha", 1, 30, false);
+								    		var football_fade = new Tween(football, 'alpha', 1, 30, false);
 											football_fade.easing = Tween.outCubic;
 
 											football_tween_array.push(football_fade);
@@ -768,8 +768,8 @@ $(document).ready(function() {
 							card_hovered = true;
 
 
-							var tween_scale_x = new Tween(this, "scale.x", 0.75, 20, true);
-							var tween_scale_y = new Tween(this, "scale.y", 0.75, 20, true);
+							var tween_scale_x = new Tween(this, 'scale.x', 0.75, 20, true);
+							var tween_scale_y = new Tween(this, 'scale.y', 0.75, 20, true);
 
 							tween_scale_x.easing = Tween.outCubic;
 							tween_scale_y.easing = Tween.outCubic;
@@ -830,7 +830,7 @@ $(document).ready(function() {
 									team_logo.height = team_logo.height * size_adjustment;
 
 
-									console.log("W: " + team_logo.width + " | H: " + team_logo.height);
+									console.log('W: ' + team_logo.width + ' | H: ' + team_logo.height);
 
 
 									//add team logo
@@ -873,8 +873,8 @@ $(document).ready(function() {
 
 					 		card_hovered = false;
 
-					 		new Tween(this, "scale.x", card_scale_x, 20, true);
-							new Tween(this, "scale.y", card_scale_y, 20, true);
+					 		new Tween(this, 'scale.x', card_scale_x, 20, true);
+							new Tween(this, 'scale.y', card_scale_y, 20, true);
 
 					 		//this.scale.set(card_scale_x, card_scale_y);
 
