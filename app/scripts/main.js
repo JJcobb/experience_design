@@ -11,7 +11,8 @@ $(document).ready(function() {
 		transparent: false,
 		backgroundColor: 0x061639,
 		resolution: window.devicePixelRatio,
-		autoResize: true
+		autoResize: true,
+		resolution: 2
 	}
 
 
@@ -387,6 +388,10 @@ $(document).ready(function() {
 
 							var this_card = this;
 
+							var original_position_x = this.parent.x;
+							var original_position_y = this.parent.y;
+
+
 							//Make card larger
 							var large_card_scale_x = new Tween(this.parent, 'scale.x', 1.5, 30, true);
 							var large_card_scale_y = new Tween(this.parent, 'scale.y', 1.5, 30, true);
@@ -395,13 +400,10 @@ $(document).ready(function() {
 							large_card_scale_y.easing = Tween.outCubic;
 
 
-							var original_position_x = this.parent.position.x;
-							var original_position_y = this.parent.position.y;
-							console.log("position x " + original_position_x );
-
 
 							var position_adjustment_x, position_adjustment_y;
 
+							//function to run after card scales up
 							large_card_scale_x.setOnComplete(function(){
 
 								//Place the card at the upper left of the viewport, so take into account how much the stage has moved from the original x=0 point
@@ -418,31 +420,118 @@ $(document).ready(function() {
 								large_card_position_x.easing = Tween.outCubic;
 								large_card_position_y.easing = Tween.outCubic;
 
-/************************** */
-								// this_card.parent.interactive = true;
-
-								// this_card.parent.on('click', function(){
-
-								// 	this_card.parent.position.x = 775;
-								// 	this_card.parent.position.x = original_position_y;
-								// 	console.log("position x " + original_position_x );
-
-								// 	this_card.parent.scale.x = 1;
-								// 	this_card.parent.scale.y = 1;
-
-								// });
 
 
-							});
+								//Card exit button
+								var exit_icon = PIXI.Sprite.fromImage('images/exit-circle-white.png');
+
+								exit_icon.scale.set(0.5, 0.5);
+
+								exit_icon.anchor.set(0.5, 0.5);
+
+								exit_icon.x = position_adjustment_x + $(window).width() - card_padding;
+								exit_icon.y = position_adjustment_y + nav_height + card_padding;
+
+								stage.addChild(exit_icon);
+
+
+								exit_icon.interactive = true;
+								exit_icon.buttonMode = true;
+
+								//Exit button click
+								exit_icon.on('click', function(){
+
+
+									//Return the card to its position
+									var card_return_to_position_x = new Tween(this_card.parent, 'position.x', original_position_x, 60, true);
+									var card_return_to_position_y = new Tween(this_card.parent, 'position.y', original_position_y, 60, true);
+
+									card_return_to_position_x.easing = Tween.outCubic;
+									card_return_to_position_y.easing = Tween.outCubic;
+
+
+									//Return the card to its original size
+									var card_return_to_scale_x = new Tween(this_card.parent, 'scale.x', 1, 30, true);
+									var card_return_to_scale_y = new Tween(this_card.parent, 'scale.y', 1, 30, true);
+
+									card_return_to_scale_x.easing = Tween.outCubic;
+									card_return_to_scale_y.easing = Tween.outCubic;
+
+
+
+									// make stage interactive
+									stage.interactive = true;
+
+									stage.dragging = false;
+
+									// make cards interactive and opaque
+									for(var i=0; i<card_sprites.length; i++){
+
+										card_sprites[i].interactive = true;
+
+										new Tween(card_sprites[i], 'alpha', 1, 60, true);
+									};
+
+									card_selected = false;
+
+									clicked_on = false;
+
+									//remove exit icon
+									stage.removeChild(exit_icon);
+
+									//remove stats
+									player_container.removeChild(player_stats_container);
+
+
+								});//END click function to return card to its position
+
+
+
+
+								//Get bounds of the card
+								var player_bounds = new PIXI.Rectangle;
+
+								var player_bounds_right = player_container.getBounds(player_bounds).right;
+								var player_bounds_top = player_container.getBounds(player_bounds).top;
+
+
+								//Container for the player stats
+								var player_stats_container = new PIXI.Container;
+
+								player_stats_container.x = player_bounds_right;
+								player_stats_container.y = player_bounds_top;
+
+								player_container.addChild(player_stats_container);
+
+
+								//Player team name
+								var player_team_style = new PIXI.TextStyle({
+								    fontFamily: 'Arial',
+								    fontSize: 18,
+								    fontWeight: 'bold',
+								    fontVariant: 'small-caps',
+								    fill: '#f7f7f7'
+								});
+
+								var player_team = new PIXI.Text(result.year + "\n" + result.team, player_team_style);
+
+								player_stats_container.addChild(player_team);
+
+								player_team.x = 20;
+								player_team.y = 0;
+
+								
+
+
+
+							});//END function to run after card scales up
 
 							
 							// this.parent.position.x = this.parent.width / 2 + position_adjustment_x + card_padding/2;
 							// this.parent.position.y = $(window).height() / 2 + position_adjustment_y - card_padding/2;
 
+					
 							
-
-							// make stage not interactive
-							stage.interactive = false;
 
 							// make cards not interactive and transparent
 							for(var i=0; i<card_sprites.length; i++){
@@ -455,14 +544,13 @@ $(document).ready(function() {
 									new Tween(card_sprites[i], 'alpha', 0.25, 60, true);
 								}
 							};
-
-
-
-			
+							// make stage not interactive
+							stage.interactive = false;
 
 
 					 	}
-				 	});
+
+				 	}); // END card on pointer up
 
 
 
@@ -724,7 +812,6 @@ $(document).ready(function() {
 
 
 	//Stage interactivity
-
 
 	var first_x, first_y, next_x, next_y, x_difference, y_difference;
 
