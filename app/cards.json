@@ -13,7 +13,7 @@
               "pass_att": "119",
               "pass_cmp%": "36.1",
               "pass_yds": "798",
-              "pass_td": "6",
+              "Passing Touchdowns": "6",
               "int": "12",
               "punts": "81",
               "punt_yds": "3243",
@@ -36,7 +36,7 @@
       "position": "Center \nLinebacker",
       "year": "1950",
       "team": "Washington Redskins",
-      "team_logo": "redskins-logo-1952.gif",
+      "team_logo": "redskins-logo.gif",
       "image": "Al_Demao-1950.jpg"
     },
 
@@ -246,7 +246,330 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "image": "Frank_Spaniel-1950.jpg"
+    },
+
+    {
+      "name": "Frank Tripucka",
+      "position": "Quarterback",
+      "year": "1950",
+      "team": "Chicago Cardinals",
+      "team_logo": "chicago-cardinals-logo.gif",
+      "image": "Frank_Tripucka-1950.jpg"
+    },
+
+    {
+      "name": "Fred Morrison",
+      "position": "Fullback \nPunter",
+      "year": "1950",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Fred_Morrison-1950.jpg"
+    },
+
+    {
+      "name": "Fred Naumetz",
+      "position": "Fullback \nPunter",
+      "year": "1950",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1950.gif",
+      "image": "Fred_Naumetz-1950.jpg"
+    },
+
+    {
+      "name": "Gail Bruce",
+      "position": "Defensive End \nTight End",
+      "year": "1950",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "image": "Gail_Bruce-1950.jpg"
+    },
+
+    {
+      "name": "Gene Roberts",
+      "position": "Halfback",
+      "year": "1950",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "image": "Gene_Roberts-1950.jpg"
+    },
+
+    {
+      "name": "George Thomas",
+      "position": "Halfback",
+      "year": "1950",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "George_Thomas-1950.jpg"
+    },
+
+    {
+      "name": "Glenn Davis",
+      "position": "Halfback",
+      "year": "1950",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1950.gif",
+      "image": "Glenn_Davis-1950.jpg"
+    },
+
+    {
+      "name": "Harry Ulinski",
+      "position": "Center",
+      "year": "1950",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Harry_Ulinski-1950.jpg"
+    },
+
+    {
+      "name": "Howie Livingston",
+      "position": "Halfback",
+      "year": "1950",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Howie_Livingston-1950.jpg"
+    },
+
+    {
+      "name": "Jim Keane",
+      "position": "Tight End \nDefensive End",
+      "year": "1950",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Jim_Keane-1950.jpg"
+    },
+
+    {
+      "name": "Joe Watson",
+      "position": "Center \nLinebacker",
+      "year": "1950",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Joe_Watson-1950.jpg"
+    },
+
+    {
+      "name": "John Panelli",
+      "position": "Fullback \nLinebacker",
+      "year": "1950",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "John_Panelli-1950.jpg"
+    },
+
+    {
+      "name": "John Rauch",
+      "position": "Quarterback \nDefensive Back",
+      "year": "1950",
+      "team": "New York Yanks",
+      "team_logo": "yanks-logo.gif",
+      "image": "John_Rauch-1950.jpg"
+    },
+
+    {
+      "name": "Ken Kavanaugh",
+      "position": "Tight End",
+      "year": "1950",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Ken_Kavanaugh-1950.jpg"
+    },
+
+    {
+      "name": "Norm Standlee",
+      "position": "Fullback \nLinebacker",
+      "year": "1950",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "image": "Norm_Standlee-1950.jpg"
+    },
+
+    {
+      "name": "Paul Salata",
+      "position": "Tight End",
+      "year": "1950",
+      "team": "Baltimore Colts",
+      "team_logo": "colts-logo.gif",
+      "image": "Paul_Salata-1950.jpg"
+    },
+
+    {
+      "name": "Steve Van Buren",
+      "position": "Halfback",
+      "year": "1950",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "Steve_Van_Buren-1950.jpg"
+    },
+
+    {
+      "name": "Tom Kalmanir",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1950",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1950.gif",
+      "image": "Tom_Kalmanir-1950.jpg"
+    },
+
+    {
+      "name": "Tom Wham",
+      "position": "Defensive End",
+      "year": "1950",
+      "team": "Chicago Cardinals",
+      "team_logo": "chicago-cardinals-logo.gif",
+      "image": "Tom_Wham-1950.jpg"
+    },
+
+    {
+      "name": "Travis Tidwell",
+      "position": "Quarterback",
+      "year": "1950",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "image": "Travis_Tidwell-1950.jpg"
+    },
+
+    {
+      "name": "Val Jansante",
+      "position": "Tight End \nDefensive End",
+      "year": "1950",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Val_Jansante-1950.jpg"
+    },
+
+    {
+      "name": "Vinnie Yablonski",
+      "position": "Fullback \nLinebacker",
+      "year": "1950",
+      "team": "Chicago Cardinals",
+      "team_logo": "chicago-cardinals-logo.gif",
+      "image": "Ventan_Yablonski-1950.jpg"
+    },
+
+    {
+      "name": "Verl Lillywhite",
+      "position": "Halfback \nLinebacker",
+      "year": "1950",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "image": "Verl_Lillywhite-1950.jpg"
+    },
+
+    {
+      "name": "Wally Triplett",
+      "position": "Halfback \nDefensive Back",
+      "year": "1950",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Wallace_Triplett-1950.jpg"
+    },
+
+    {
+      "name": "Wash Serini",
+      "position": "Offensive Lineman \nDefensive Lineman",
+      "year": "1950",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Wash_Serini-1950.jpg"
+    },
+
+    {
+      "name": "Y.A. Tittle",
+      "position": "Quarterback",
+      "year": "1950",
+      "team": "Baltimore Colts",
+      "team_logo": "colts-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "YA_Tittle-1950.jpg"
+    },
+
+
+
+
+
+
+    {
+      "name": "Abner Wimberly",
+      "position": "Tight End \nDefensive End",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Abner_Wimberly-1951.jpg"
+    },
+
+    {
+      "name": "Al DeRogatis",
+      "position": "Defensive Tackle",
+      "year": "1951",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "image": "Al_DeRogatis-1951.jpg"
+    },
+
+    {
+      "name": "Alex Loyd",
+      "position": "Tight End",
+      "year": "1951",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "image": "Alex_Loyd-1951.jpg"
+    },
+
+    {
+      "name": "Bill Swiacki",
+      "position": "Tight End",
+      "year": "1951",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Bill_Swiacki-1951.jpg"
+    },
+
+    {
+      "name": "Bill Walsh",
+      "position": "Center",
+      "year": "1951",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Bill_Walsh-1951.jpg"
+    },
+
+    {
+      "name": "Billy Grimes",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Billy_Grimes-1951.jpg"
+    },
+
+    {
+      "name": "Bob Boyd",
+      "position": "Tight End \nDefensive Back",
+      "year": "1951",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "image": "Bob_Boyd-1951.jpg"
+    },
+
+    {
+      "name": "Bruce Alford",
+      "position": "Tight End \nDefensive Back",
+      "year": "1951",
+      "team": "New York Yanks",
+      "team_logo": "yanks-logo.gif",
+      "image": "Bruce_Alford-1951.jpg"
+    },
+
+    {
+      "name": "Chuck Drazenovich",
+      "position": "Linebacker \nFullback",
+      "year": "1951",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Chuck_Drazenovich-1951.jpg"
     }
+
     
   ]
 

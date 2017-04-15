@@ -100,6 +100,9 @@ $(document).ready(function() {
 
 	var loader = PIXI.loader;
 
+	loader.add('images/football-icon.png');
+	loader.add('images/exit-circle-white.png');
+
 
 	$.getJSON('cards.json', function(data){
 
@@ -127,7 +130,7 @@ $(document).ready(function() {
 		$.each(data.cards, function(i, result){
 
 			//Filter the cards loaded by the user's criteria, like the year of the card
-			if(result.year == "1950"){
+			if(result.year == "1951"){
 
 				//Add all images from JSON into loader
 				loader.add('images/' + result.image);
@@ -166,7 +169,7 @@ $(document).ready(function() {
 		$.each(data.cards, function(i,result){
 
 			//Filter the cards loaded by the user's criteria, like the year of the card
-			if(result.year == "1950"){
+			if(result.year == "1951"){
 			
 				loader.load(function(){
 
@@ -339,11 +342,11 @@ $(document).ready(function() {
 
 							}, 1000);
 
-						}
-
-
+						}//END if
+						
 
 				    }, i * 100);
+					//END Animate each card into place, one-by-one
 
 
 					
@@ -371,14 +374,14 @@ $(document).ready(function() {
 
 				 			card_selected = true;
 
-					 		var stats_string = '';
+					 		// var stats_string = '';
 
 					 		//Get each of player's stat names and values
-				 			$.each(result.stats, function(key, value) {
-							    console.log(key, value);
+				 		// 	$.each(result.stats, function(key, value) {
+							//     console.log(key, value);
 
-							    stats_string += key + ' - ' + value + '\n';
-							});	
+							//     stats_string += key + ' - ' + value + '\n';
+							// });	
 
 							//alert('This is: ' + result.name + '\n' + 'He played in: ' + result.year + '\n' + stats_string);	 		
 
@@ -423,14 +426,18 @@ $(document).ready(function() {
 
 
 								//Card exit button
-								var exit_icon = PIXI.Sprite.fromImage('images/exit-circle-white.png');
+								var exit_icon = new PIXI.Sprite(
+								  PIXI.loader.resources['images/exit-circle-white.png'].texture
+								);
 
-								exit_icon.scale.set(0.5, 0.5);
+								exit_icon.scale.set(0.45, 0.45);
 
 								exit_icon.anchor.set(0.5, 0.5);
 
-								exit_icon.x = position_adjustment_x + $(window).width() - card_padding;
-								exit_icon.y = position_adjustment_y + nav_height + card_padding;
+								//exit_icon.x = position_adjustment_x + $(window).width() - card_padding;
+								exit_icon.x = position_adjustment_x + $(window).width() - exit_icon.width;
+								//exit_icon.y = position_adjustment_y + nav_height + card_padding;
+								exit_icon.y = position_adjustment_y + nav_height + exit_icon.height;
 
 								stage.addChild(exit_icon);
 
@@ -439,8 +446,7 @@ $(document).ready(function() {
 								exit_icon.buttonMode = true;
 
 								//Exit button click
-								exit_icon.on('click', function(){
-
+								exit_icon.on('pointerup', function(){
 
 									//Return the card to its position
 									var card_return_to_position_x = new Tween(this_card.parent, 'position.x', original_position_x, 60, true);
@@ -472,6 +478,10 @@ $(document).ready(function() {
 										new Tween(card_sprites[i], 'alpha', 1, 60, true);
 									};
 
+									//Enable clicking the nav
+									$('nav').css('pointer-events', 'all');
+
+
 									card_selected = false;
 
 									clicked_on = false;
@@ -483,8 +493,30 @@ $(document).ready(function() {
 									player_container.removeChild(player_stats_container);
 
 
-								});//END click function to return card to its position
+								});
+								//END exit click
 
+
+								//Exit hover and normal texures
+								var exit_hollow = PIXI.Texture.fromImage('images/exit-circle-white.png');
+								var exit_fill = PIXI.Texture.fromImage('images/exit-circle-white-fill.png');
+
+
+								//mouse over exit
+								exit_icon.on('pointerover', function(){
+
+									this.texture = exit_fill;
+
+								});
+								//END mouse over exit
+
+								//mouse out exit
+								exit_icon.on('pointerout', function(){
+
+									this.texture = exit_hollow;
+
+								});
+								//END mouse out exit
 
 
 
@@ -504,7 +536,7 @@ $(document).ready(function() {
 								player_container.addChild(player_stats_container);
 
 
-								//Player team name
+								//Player team name and year
 								var player_team_style = new PIXI.TextStyle({
 								    fontFamily: 'Arial',
 								    fontSize: 18,
@@ -519,6 +551,95 @@ $(document).ready(function() {
 
 								player_team.x = 20;
 								player_team.y = 0;
+
+
+								//Player stats
+								var stats_string = '';
+
+								var stat_name_style = new PIXI.TextStyle({
+								    fontFamily: 'Arial',
+								    fontSize: 18,
+								    //fontWeight: 'normal',
+								    fontVariant: 'small-caps',
+								    fill: '#f7f7f7'
+								});
+
+
+								//Loop through each of the stats
+								$.each(result.stats, function(key, value) {
+								    console.log(key, value);
+
+								    stats_string += key + ' - ' + value + '\n';
+
+
+								    //If stat name contains "TD"
+								    if( key.includes("Touchdown") ){
+
+								    	//Name of the stat
+							    		var stat_name = new PIXI.Text(key, stat_name_style);
+
+							    		player_stats_container.addChild(stat_name);
+
+							    		stat_name.x = 20;
+							    		stat_name.y = player_team.height + 20;
+
+
+							    		//store each of the tweens for displaying the footballs
+							    		var football_tween_array = [];
+
+							    		//for each of the touchdowns
+								    	for(var i=0; i<value; i++){							    		
+
+							    			//make a football sprite
+								    		var football = new PIXI.Sprite(
+											  PIXI.loader.resources['images/football-icon.png'].texture
+											);
+
+								    		player_stats_container.addChild(football);
+
+								    		football.x = 20 + i*(football.width*0.5) + i*5;
+								    		football.y = player_team.height + stat_name.height + 20 + 5;
+
+								    		football.scale.set(0.5, 0.5);
+
+								    		football.alpha = 0;
+
+								    		//tweens for displaying the footballs
+								    		var football_fade = new Tween(football, "alpha", 1, 30, false);
+											football_fade.easing = Tween.outCubic;
+
+											football_tween_array.push(football_fade);
+		
+								    	}//END for
+
+								    	//chain all of the football tweens so they display one at a time
+								    	new ChainedTween(football_tween_array);
+
+
+
+
+								    }//END if "TD"
+								    
+
+								});	//END Loop through each of the stats
+
+
+								var player_stats_style = new PIXI.TextStyle({
+								    fontFamily: 'Arial',
+								    fontSize: 18,
+								    fontWeight: 'bold',
+								    fontVariant: 'small-caps',
+								    fill: '#f7f7f7'
+								});
+
+								var player_stats = new PIXI.Text(stats_string, player_stats_style);
+
+								//player_stats_container.addChild(player_stats);
+
+								player_stats.x = 20;
+								player_stats.y = player_team.height + 20;
+
+
 
 								
 
@@ -546,6 +667,13 @@ $(document).ready(function() {
 							};
 							// make stage not interactive
 							stage.interactive = false;
+
+							//Disable clicking the nav
+							$('nav').css('pointer-events', 'none');
+
+							// $('nav').animate({
+							// 	opacity: 0.25
+							// }, 1000);
 
 
 					 	}
@@ -681,7 +809,9 @@ $(document).ready(function() {
 
 
 									//add team logo
-									player_container.addChild(team_logo);
+									if(result.year != '1951'){
+										player_container.addChild(team_logo);
+									}
 
 									//add text
 									player_container.addChild(player_name);
