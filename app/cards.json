@@ -568,7 +568,886 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "image": "Chuck_Drazenovich-1951.jpg"
+    },
+
+    {
+      "name": "Don Doll",
+      "position": "Defensive Back",
+      "year": "1951",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Don_Doll-1951.jpg"
+    },
+
+    {
+      "name": "Ebert Van Buren",
+      "position": "Defensive Back",
+      "year": "1951",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "image": "Ebert_Van_Buren-1951.jpg"
+    },
+
+    {
+      "name": "Ed Neal",
+      "position": "Offensive Lineman",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Ed_Neal-1951.jpg"
+    },
+
+    {
+      "name": "Ed Quirk",
+      "position": "Linebacker \nOffensive Lineman",
+      "year": "1951",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Ed_Quirk-1951.jpg"
+    },
+
+    {
+      "name": "Eddie Saenz",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1951",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Eddie_Saenz-1951.jpg"
+    },
+
+    {
+      "name": "Elroy Hirsch",
+      "position": "Tight End \nDefensive End",
+      "year": "1951",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "awards": "Hall of Fame | Pro Bowl | First-Team All-Pro | Championship",
+      "image": "Elroy_Hirsch-1951.jpg"
+    },
+
+    {
+      "name": "Floyd Reid",
+      "position": "Halfback",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Floyd_Reid-1951.jpg"
+    },
+
+    {
+      "name": "Fran Polsfoot",
+      "position": "Tight End \nPunter",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Fran_Polsfoot-1951.jpg"
+    },
+
+    {
+      "name": "Fran Rogel",
+      "position": "Fullback",
+      "year": "1951",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Fran_Rogel-1951.jpg"
+    },
+
+    {
+      "name": "Fred Davis",
+      "position": "Tackle \nDefensive Tackle",
+      "year": "1951",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Fred_Davis-1951.jpg"
+    },
+
+    {
+      "name": "George Gulyanics",
+      "position": "Halfback",
+      "year": "1951",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "George_Gulyanics-1951.jpg"
+    },
+
+    {
+      "name": "Jack Cloud",
+      "position": "Linebacker \nFullback",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Jack_Cloud-1951.jpg"
+    },
+
+    {
+      "name": "Jack Zilly",
+      "position": "Defensive End \nTight End",
+      "year": "1951",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "image": "Jack_Zilly-1951.jpg"
+    },
+
+    {
+      "name": "Jerry Groom",
+      "position": "Linebacker \nOffensive Lineman",
+      "year": "1951",
+      "team": "Chicago Cardinals",
+      "team_logo": "chicago-cardinals-logo.gif",
+      "image": "Jerry_Groom-1951.jpg"
+    },
+
+    {
+      "name": "Joe Golding",
+      "position": "Defensive Back \nHalfback",
+      "year": "1951",
+      "team": "New York Yanks",
+      "team_logo": "yanks-logo.gif",
+      "image": "Joe_Golding-1951.jpg"
+    },
+
+    {
+      "name": "John Hoffman",
+      "position": "Tight End \nLinebacker",
+      "year": "1951",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "John_Hoffman-1951.jpg"
+    },
+
+    {
+      "name": "John Strzykalski",
+      "position": "Halfback",
+      "year": "1951",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "image": "John_Strzykalski-1951.jpg"
+    },
+
+    {
+      "name": "Jon Baker",
+      "position": "Defensive Lineman",
+      "year": "1951",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "awards": "First-Team All-Pro",
+      "image": "Jon_Baker-1951.jpg"
+    },
+
+    {
+      "name": "Jug Girard",
+      "position": "Defensive Back \nPunter \nTight End",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Jug_Girard-1951.jpg"
+    },
+
+    {
+      "name": "Julie Rykovich",
+      "position": "Halfback \nDefensive Back",
+      "year": "1951",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Julie_Rykovich-1951.jpg"
+    },
+
+    {
+      "name": "Norm Van Brocklin",
+      "position": "Quarterback \nPunter",
+      "year": "1951",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "awards": "Hall of Fame | Pro Bowl | Championship",
+      "image": "Norm_Van_Brocklin-1951.jpg"
+    },
+
+    {
+      "name": "Otto Schnellbacher",
+      "position": "Defensive Back \nTight End",
+      "year": "1951",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "awards": "First-Team All-Pro | Pro Bowl",
+      "image": "Otto_Schnellbacher-1951.jpg"
+    },
+
+    {
+      "name": "Paul Lipscomb",
+      "position": "Defensive Tackle \nTackle",
+      "year": "1951",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Paul_Lipscomb-1951.jpg"
+    },
+
+    {
+      "name": "Pete Stout",
+      "position": "Fullback \nLinebacker",
+      "year": "1951",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Pete_Stout-1951.jpg"
+    },
+
+    {
+      "name": "Ray Bray",
+      "position": "Defensive Tackle \nGuard",
+      "year": "1951",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Ray_Bray-1951.jpg"
+    },
+
+    {
+      "name": "Robert Smith",
+      "position": "Defensive Back \nPunter",
+      "year": "1951",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Robert_Smith-1951.jpg"
+    },
+
+    {
+      "name": "Roy Steiner",
+      "position": "Defensive Back",
+      "year": "1951",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Roy_Steiner-1951.jpg"
+    },
+
+    {
+      "name": "Russ Craft",
+      "position": "Defensive Back",
+      "year": "1951",
+      "team": "Philadelphia Eagles",
+      "team_logo": "packers-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Russ_Craft-1951.jpg"
+    },
+
+    {
+      "name": "Sherman Howard",
+      "position": "Halfback \nDefensive Back",
+      "year": "1951",
+      "team": "New York Yanks",
+      "team_logo": "yanks-logo.gif",
+      "image": "Sherman_Howard-1951.jpg"
+    },
+
+    {
+      "name": "Thurman McGraw",
+      "position": "Defensive Tackle \nTackle",
+      "year": "1951",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Thurman_McGraw-1951.jpg"
+    },
+
+    {
+      "name": "Tom McWilliams",
+      "position": "Defensive Back \nHalfback",
+      "year": "1951",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Tom_McWilliams-1951.jpg"
+    },
+
+    {
+      "name": "Visco Grgich",
+      "position": "Offensive Lineman \nLinebacker",
+      "year": "1951",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "image": "Visco_Grgich-1951.jpg"
+    },
+
+    {
+      "name": "Woodley Lewis",
+      "position": "Defensive Back \nReturn Specialist",
+      "year": "1951",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "image": "Woodley_Lewis-1951.jpg"
+    },
+
+    {
+      "name": "Y.A. Tittle",
+      "position": "Quarterback",
+      "year": "1951",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "YA_Tittle-1951.jpg"
+    },
+
+
+
+
+
+
+
+    {
+      "name": "Babe Parilli",
+      "position": "Quarterback \nPunter",
+      "year": "1952",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Babe_Parilli-1952.jpg"
+    },
+
+    {
+      "name": "Barney Poole",
+      "position": "Defensive End \nTight End",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "image": "Barney_Poole-1952.jpg"
+    },
+
+    {
+      "name": "Bert Rechichar",
+      "position": "Defensive Back \nTight End",
+      "year": "1952",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
+      "image": "Bert_Rechichar-1952.jpg"
+    },
+
+    {
+      "name": "Bill Fischer",
+      "position": "Offensive Lineman \nDefensive Tackle",
+      "year": "1952",
+      "team": "Chicago Cardinals",
+      "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Bill_Fischer-1952.jpg"
+    },
+
+    {
+      "name": "Bill Howton",
+      "position": "Tight End",
+      "year": "1952",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Bill_Howton-1952.jpg"
+    },
+
+    {
+      "name": "Bill McColl",
+      "position": "Tight End",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Bill_McColl-1952.jpg"
+    },
+
+    {
+      "name": "Bill Reichardt",
+      "position": "Fullback \nKicker",
+      "year": "1952",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Bill_Reichardt-1952.jpg"
+    },
+
+    {
+      "name": "Bill Wightkin",
+      "position": "Tight End \nDefensive End",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Bill_Wightkin-1952.jpg"
+    },
+
+    {
+      "name": "Billy Stone",
+      "position": "Halfback \nDefensive Back",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Billy_Stone-1952.jpg"
+    },
+
+    {
+      "name": "Bob Hoernschemeyer",
+      "position": "Halfback",
+      "year": "1952",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Bob_Hoernschemeyer-1952.jpg"
+    },
+
+    {
+      "name": "Bob Williams",
+      "position": "Quarterback",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Bob_Williams-1952.jpg"
+    },
+
+    {
+      "name": "Bobby Dillon",
+      "position": "Defensive Back",
+      "year": "1952",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Bobby_Dillon-1952.jpg"
+    },
+
+    {
+      "name": "Bobby Walston",
+      "position": "Tight End \nKicker",
+      "year": "1952",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "image": "Bobby_Walston-1952.jpg"
+    },
+
+    {
+      "name": "Buddy Parker",
+      "position": "Head Coach",
+      "year": "1952",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Buddy_Parker-1952.jpg"
+    },
+
+    {
+      "name": "Charlie Justice",
+      "position": "Halfback \nPunter",
+      "year": "1952",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Charlie_Justice-1952.jpg"
+    },
+
+    {
+      "name": "Chuck Bednarik",
+      "position": "Linebacker \nCenter",
+      "year": "1952",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "awards": "Hall of Fame | First-Team All-Pro | Pro Bowl",
+      "image": "Chuck_Bednarik-1952.jpg"
+    },
+
+    {
+      "name": "Chuck Hunsinger",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Chuck_Hunsinger-1952.jpg"
+    },
+
+    {
+      "name": "Claude Hipps",
+      "position": "Defensive Back",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Claude_Hipps-1952.jpg"
+    },
+
+    {
+      "name": "Dan Edwards",
+      "position": "Tight End",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "image": "Dan_Edwards-1952.jpg"
+    },
+
+    {
+      "name": "Darrell Hogan",
+      "position": "Linebacker \nGuard",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Darrell_Hogan-1952.jpg"
+    },
+
+    {
+      "name": "Don Paul",
+      "position": "Return Specialist \nHalfback",
+      "year": "1952",
+      "team": "Chicago Cardinals",
+      "team_logo": "chicago-cardinals-logo.gif",
+      "image": "Don_Paul-1952.jpg"
+    },
+
+    {
+      "name": "Eddie Price",
+      "position": "Fullback",
+      "year": "1952",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "awards": "First-Team All-Pro | Pro Bowl",
+      "image": "Eddie_Price-1952.jpg"
+    },
+
+    {
+      "name": "Frank Ziegler",
+      "position": "Halfback \nDefensive Back",
+      "year": "1952",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "image": "Frank_Ziegler-1952.jpg"
+    },
+
+    {
+      "name": "Fred Benners",
+      "position": "Quarterback",
+      "year": "1952",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "image": "Fred_Benners-1952.jpg"
+    },
+
+    {
+      "name": "Fred Cone",
+      "position": "Fullback \nKicker",
+      "year": "1952",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Fred_Cone-1952.jpg"
+    },
+
+    {
+      "name": "Fred Williams",
+      "position": "Defensive Tackle \nGuard",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Fred_Williams-1952.jpg"
+    },
+
+    {
+      "name": "Gene Ronzani",
+      "position": "Head Coach",
+      "year": "1952",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "image": "Gene_Ronzani-1952.jpg"
+    },
+
+    {
+      "name": "Gene Schroeder",
+      "position": "Tight End \nDefensive Back",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Gene_Schroeder-1952.jpg"
+    },
+
+    {
+      "name": "George Halas",
+      "position": "Head Coach",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "George_Halas-1952.jpg"
+    },
+
+    {
+      "name": "George Ratterman",
+      "position": "Quarterback",
+      "year": "1952",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
+      "image": "George_Ratterman-1952.jpg"
+    },
+
+    {
+      "name": "George Taliaferro",
+      "position": "Halfback \nDefensive Back",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "George_Taliaferro-1952.jpg"
+    },
+
+    {
+      "name": "George Tarasovic",
+      "position": "Defensive End \nCenter",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "George_Tarasovic-1952.jpg"
+    },
+
+    {
+      "name": "Gino Marchetti",
+      "position": "Defensive Lineman \nTackle",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "Gino_Marchetti-1952.jpg"
+    },
+
+    {
+      "name": "Howard Hartley",
+      "position": "Defensive Back",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Howard_Hartley-1952.jpg"
+    },
+
+    {
+      "name": "Jack Christiansen",
+      "position": "Defensive Back \nReturn Specialist",
+      "year": "1952",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "awards": "Hall of Fame | First-Team All-Pro",
+      "image": "Jack_Christiansen-1952.jpg"
+    },
+
+    {
+      "name": "Jim Dooley",
+      "position": "Defensive Back \nTight End",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Jim_Dooley-1952.jpg"
+    },
+
+    {
+      "name": "Joe Bach",
+      "position": "Head Coach",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "image": "Joe_Bach-1952.jpg"
+    },
+
+    {
+      "name": "Joe Campanella",
+      "position": "Linebacker \nTackle",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "image": "Joe_Campanella-1952.jpg"
+    },
+
+    {
+      "name": "John Papit",
+      "position": "Halfback",
+      "year": "1952",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "John_Papit-1952.jpg"
+    },
+
+    {
+      "name": "John Rapacz",
+      "position": "Center \nLinebacker",
+      "year": "1952",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "image": "John_Rapacz-1952.jpg"
+    },
+
+    {
+      "name": "John Sandusky",
+      "position": "Tackle \nDefensive Tackle",
+      "year": "1952",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
+      "image": "John_Sandusky-1952.jpg"
+    },
+
+    {
+      "name": "John Wozniak",
+      "position": "Guard \nLinebacker",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "John_Wozniak-1952.jpg"
+    },
+
+    {
+      "name": "Keever Jankovich",
+      "position": "Linebacker \nDefensive End",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "image": "Keever_Jankovich-1952.jpg"
+    },
+
+    {
+      "name": "Kyle Rote",
+      "position": "Tight End \nHalfback",
+      "year": "1952",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "image": "Kyle_Rote-1952.jpg"
+    },
+
+    {
+      "name": "Laurie Niemi",
+      "position": "Tackle \nDefensive Tackle",
+      "year": "1952",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Laurie_Niemi-1952.jpg"
+    },
+
+    {
+      "name": "Leon Heath",
+      "position": "Fullback \nHalfback",
+      "year": "1952",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
+      "image": "Leon_Heath-1952.jpg"
+    },
+
+    {
+      "name": "Lynn Chandnois",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Lynn_Chandnois-1952.jpg"
+    },
+
+    {
+      "name": "Paul Brown",
+      "position": "Head Coach",
+      "year": "1952",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
+      "image": "Paul_Brown-1952.jpg"
+    },
+
+    {
+      "name": "Ray Mathews",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1952",
+      "team": "Pittsburgh Steelers",
+      "team_logo": "steelers-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Ray_Mathews-1952.jpg"
+    },
+
+    {
+      "name": "Russ Craft",
+      "position": "Defensive Back",
+      "year": "1952",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "image": "Russ_Craft-1952.jpg"
+    },
+
+    {
+      "name": "Skeets Quinlan",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1952",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "image": "Skeets_Quinlan-1952.jpg"
+    },
+
+    {
+      "name": "Steve Romanik",
+      "position": "Quarterback",
+      "year": "1952",
+      "team": "Chicago Bears",
+      "team_logo": "chicago-bears-logo.gif",
+      "image": "Steve_Romanik-1952.jpg"
+    },
+
+    {
+      "name": "Steve Van Buren",
+      "position": "Halfback",
+      "year": "1952",
+      "team": "Philadelphia Eagles",
+      "team_logo": "eagles-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "Steve_Van_Buren-1952.jpg"
+    },
+
+    {
+      "name": "Tank Younger",
+      "position": "Tailback \nLinebacker",
+      "year": "1952",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "awards": "Pro Bowl",
+      "image": "Tank_Younger-1952.jpg"
+    },
+
+    {
+      "name": "Tobin Rote",
+      "position": "Offensive Lineman",
+      "year": "1952",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Tobin_Rote-1952.jpg"
+    },
+
+    {
+      "name": "Vitamin Smith",
+      "position": "Halfback",
+      "year": "1952",
+      "team": "Los Angeles Rams",
+      "team_logo": "rams-logo-1951.gif",
+      "image": "Vitamin_Smith-1952.jpg"
+    },
+
+    {
+      "name": "Walt Michaels",
+      "position": "Linebacker",
+      "year": "1952",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
+      "image": "Walt_Michaels-1952.jpg"
+    },
+
+    {
+      "name": "Y.A. Tittle",
+      "position": "Quarterback",
+      "year": "1952",
+      "team": "San Francisco 49ers",
+      "team_logo": "49ers-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "YA_Tittle-1952.jpg"
+    },
+
+    {
+      "name": "Yale Lary",
+      "position": "Defensive Back \nReturn Specialist",
+      "year": "1952",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "image": "Yale_Lary-1952.jpg"
+    },
+
+    {
+      "name": "Zollie Toth",
+      "position": "Fullback",
+      "year": "1952",
+      "team": "Dallas Texans",
+      "team_logo": "texans-logo.gif",
+      "image": "Zollie_Toth-1952.jpg"
     }
+
+
 
     
   ]
