@@ -168,7 +168,7 @@ $(document).ready(function() {
 				//Filter cards by position. Check for multiple positions, not just first one listed
 				var position_check = false;
 
-				var position_values = result.position.split(" \n");
+				var position_values = result.position.split(' \n');
 				
 				$.each(position_values, function(){
 
@@ -183,18 +183,18 @@ $(document).ready(function() {
 				//Filter cards by awards. Check for multiple positions, not just first one listed
 				var awards_check = false;
 
-				var awards_values = result.awards.split(" | ");
+				var awards_values = result.awards.split(' | ');
 				
 				$.each(awards_values, function(){
 
-					if( selected_awards.includes(this) && this != "" ){
+					if( selected_awards.includes(this) && this != '' ){
 
 						awards_check = true;
 					}
 					
 				});
 
-				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ""){
+				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ''){
 
 					awards_check = true;
 				}
@@ -243,7 +243,7 @@ $(document).ready(function() {
 				//Filter cards by position. Check for multiple positions, not just first one listed
 				var position_check = false;
 
-				var position_values = result.position.split(" \n");
+				var position_values = result.position.split(' \n');
 				
 				$.each(position_values, function(){
 
@@ -258,18 +258,18 @@ $(document).ready(function() {
 				//Filter cards by awards. Check for multiple awards, not just first one listed
 				var awards_check = false;
 
-				var awards_values = result.awards.split(" | ");
+				var awards_values = result.awards.split(' | ');
 				
 				$.each(awards_values, function(){
 
-					if( selected_awards.includes(this) && this != "" ){
+					if( selected_awards.includes(this) && this != '' ){
 
 						awards_check = true;
 					}
 					
 				});
 
-				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ""){
+				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ''){
 
 					awards_check = true;
 				}
