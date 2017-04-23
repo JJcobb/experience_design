@@ -50,6 +50,31 @@ $(document).ready(function() {
 	console.log(nav_height);
 
 
+	//Disable nav until cards have loaded
+	function disableNav(){
+		$('nav').css('pointer-events', 'none');
+	}
+
+	disableNav();
+
+
+	function enableNav(){
+		$('nav').css('pointer-events', 'all');
+	}
+
+
+	function navFadeIn(){
+		$('nav').animate({
+			'opacity': '1'
+		}, 1000);
+	}
+
+	function navFadeOut(){
+		$('nav').animate({
+			'opacity': '0.25'
+		}, 1000);
+	}
+
 
 	// var card = PIXI.Sprite.fromImage('images/Adrian_Burk-1950.jpg');
 	// card.y = 0;
@@ -109,7 +134,7 @@ $(document).ready(function() {
 	var loader = PIXI.loader;
 
 
-	function displayCards(selected_year, selected_position){
+	function displayCards(selected_year, selected_position, selected_team, selected_awards){
 
 
 		//Add misc images to loader
@@ -140,10 +165,7 @@ $(document).ready(function() {
 			$.each(data.cards, function(i, result){
 
 
-				selected_year.includes(result.year);
-
-
-
+				//Filter cards by position. Check for multiple positions, not just first one listed
 				var position_check = false;
 
 				var position_values = result.position.split(" \n");
@@ -156,11 +178,30 @@ $(document).ready(function() {
 					}
 					
 				});
+
+
+				//Filter cards by awards. Check for multiple positions, not just first one listed
+				var awards_check = false;
+
+				var awards_values = result.awards.split(" | ");
+				
+				$.each(awards_values, function(){
+
+					if( selected_awards.includes(this) && this != "" ){
+
+						awards_check = true;
+					}
+					
+				});
+
+				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ""){
+
+					awards_check = true;
+				}
 				
 
-				//Filter the cards loaded by the user's criteria, like the year of the card
-				//if(result.year == selected_year){
-				if( selected_year.includes(result.year) && position_check ){
+				//Filter the cards loaded by the user's criteria
+				if( selected_year.includes(result.year) && selected_team.includes(result.team) && position_check && awards_check){
 
 					//Add all images from JSON into loader
 					loader.add('images/' + result.image);
@@ -198,9 +239,46 @@ $(document).ready(function() {
 			//Loop through each loaded card and add to stage
 			$.each(data.cards, function(i,result){
 
+
+				//Filter cards by position. Check for multiple positions, not just first one listed
+				var position_check = false;
+
+				var position_values = result.position.split(" \n");
+				
+				$.each(position_values, function(){
+
+					if( selected_position.includes(this) ){
+
+						position_check = true;
+					}
+					
+				});
+
+
+				//Filter cards by awards. Check for multiple awards, not just first one listed
+				var awards_check = false;
+
+				var awards_values = result.awards.split(" | ");
+				
+				$.each(awards_values, function(){
+
+					if( selected_awards.includes(this) && this != "" ){
+
+						awards_check = true;
+					}
+					
+				});
+
+				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ""){
+
+					awards_check = true;
+				}
+
+
+
 				//Filter the cards loaded by the user's criteria, like the year of the card
 				//if(result.year == selected_year){
-				if( selected_year.includes(result.year) ){
+				if( selected_year.includes(result.year) && selected_team.includes(result.team) && position_check && awards_check){
 				
 					loader.load(function(){
 
@@ -373,6 +451,9 @@ $(document).ready(function() {
 										cards_displayed = true;
 
 										stage.interactive = true;
+
+										enableNav();
+
 									});
 
 								}, 1000);
@@ -475,7 +556,7 @@ $(document).ready(function() {
 
 										//reposition card if it goes below bottom of screen
 										if( player_bounds_bottom > $(window).height() ){
-											new_y_position -= ( player_bounds_bottom - $(window).height() );
+											new_y_position -= ( player_bounds_bottom - $(window).height() + 10 );
 
 											large_card_position_y = new Tween(this_card.parent, 'position.y', new_y_position, 30, true);
 											large_card_position_y.easing = Tween.outCubic;
@@ -539,7 +620,9 @@ $(document).ready(function() {
 										};
 
 										//Enable clicking the nav
-										$('nav').css('pointer-events', 'all');
+										enableNav();
+
+										navFadeIn();
 
 
 										card_selected = false;
@@ -624,6 +707,18 @@ $(document).ready(function() {
 									    fill: '#f7f7f7'
 									});
 
+									var stat_value_style = new PIXI.TextStyle({
+									    fontFamily: 'Arial',
+									    fontSize: 24,
+									    fontWeight: 'bold',
+									    fontVariant: 'small-caps',
+									    fill: '#061639'
+									});
+
+
+									//used for keeping track of row heights
+									    var height_correction = 0;
+
 
 									//Loop through each of the stats
 									$.each(result.stats, function(key, value) {
@@ -647,18 +742,52 @@ $(document).ready(function() {
 								    		//store each of the tweens for displaying the footballs
 								    		var football_tween_array = [];
 
+								    		var football;
+
+
+								    		var next_row = 0;
+								    		var multiple_rows = false;
+								    		var max_per_row;
+								    		var number_in_this_row = 0;
+
+
 								    		//for each of the touchdowns
 									    	for(var i=0; i<value; i++){							    		
 
 								    			//make a football sprite
-									    		var football = new PIXI.Sprite(
+									    		football = new PIXI.Sprite(
 												  PIXI.loader.resources['images/football-icon.png'].texture
 												);
 
 									    		player_stats_container.addChild(football);
 
+
 									    		football.x = 20 + i*(football.width*0.5) + i*5;
 									    		football.y = player_team.height + stat_name.height + 20 + 5;
+
+
+									    		//reposition footballs on next row once they get to the end of first row
+									    		if( football.getGlobalPosition().x + football.width*0.5 >= window.innerWidth ){
+
+									    			if(next_row == 0){
+										    			next_row = i;
+										    		}
+
+										    		if(!multiple_rows){
+										    			max_per_row = i;
+										    			multiple_rows = true;
+										    		}
+
+										    		number_in_this_row++;
+								    		/******* Needs to be fine tuned | Only allows for 2 rows of footballs ********/
+										    		if(number_in_this_row > max_per_row){
+										    			next_row = 0;
+										    		}
+
+
+									    			football.x = 20 + (i - next_row)*(football.width*0.5) + (i - next_row)*5;
+									    			football.y = (football.height*0.5) + player_team.height + stat_name.height + 20 + 5 + 10;
+									    		}
 
 									    		football.scale.set(0.5, 0.5);
 
@@ -675,10 +804,61 @@ $(document).ready(function() {
 									    	//chain all of the football tweens so they display one at a time
 									    	new ChainedTween(football_tween_array);
 
-
+									    	height_correction += football.y;
 
 
 									    }//END if "TD"
+
+									    
+									    //If stat name contains "Yards"
+									    if( key.includes('Yards') ){
+
+									    	//Name of the stat
+								    		var stat_name = new PIXI.Text(key, stat_name_style);
+
+								    		player_stats_container.addChild(stat_name);
+
+								    		stat_name.x = 20;
+								    		stat_name.y = player_team.height + 20 + height_correction;
+
+								    		var yards_bar = new PIXI.Graphics();
+											yards_bar.beginFill(0xffffff);
+
+											var yards_bar_width = value*0.5;
+
+											if(yards_bar_width > player_stats_container.width){
+												yards_bar_width = player_stats_container.width;
+											}
+
+											yards_bar.drawRect(20, player_team.height + 20 + height_correction + stat_name.height + 5, yards_bar_width, 30);
+
+
+											player_stats_container.addChild(yards_bar);
+
+
+											var stat_value = new PIXI.Text(value, stat_value_style);
+
+								    		player_stats_container.addChild(stat_value);
+
+								    		stat_value.x = 20 + yards_bar_width*0.5 - stat_value.width*0.5;
+								    		stat_value.y = player_team.height + 20 + height_correction + stat_name.height + 5;
+
+
+								    		var triangle = new PIXI.Graphics();
+								    		triangle.beginFill(0xffffff);
+  
+											triangle.lineStyle(5, 0xffffff, 1);
+											triangle.moveTo(20+yards_bar_width, stat_value.y-10);
+											triangle.lineTo(20+yards_bar_width+35, stat_value.y+15);
+											triangle.lineTo(20+yards_bar_width, stat_value.y+30+10);
+											triangle.lineTo(20+yards_bar_width, stat_value.y-10);
+											  
+											player_stats_container.addChild(triangle);
+
+											
+
+									    }//END if "yards"
+
 									    
 
 									});	//END Loop through each of the stats
@@ -714,7 +894,7 @@ $(document).ready(function() {
 						
 								
 
-								// make cards not interactive and transparent
+								// make cards not-interactive and transparent
 								for(var i=0; i<card_sprites.length; i++){
 
 									card_sprites[i].interactive = false;
@@ -722,18 +902,17 @@ $(document).ready(function() {
 									if(this != card_sprites[i]){
 
 										//card_sprites[i].alpha = 0.25;
-										new Tween(card_sprites[i], 'alpha', 0.25, 60, true);
+										new Tween(card_sprites[i], 'alpha', 0.1, 60, true);
 									}
 								};
+
 								// make stage not interactive
 								stage.interactive = false;
 
 								//Disable clicking the nav
 								$('nav').css('pointer-events', 'none');
 
-								// $('nav').animate({
-								// 	opacity: 0.25
-								// }, 1000);
+								navFadeOut();
 
 
 						 	}
@@ -949,18 +1128,41 @@ $(document).ready(function() {
 	//Show all positions by default
 	var selected_position = 'Quarterback, Running Back, Tailback, Halfback, Fullback, Tight End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
 
+	//Show all teams by default
+	var selected_team = 'Baltimore Colts, Green Bay Packers, Washington Redskins, Chicago Cardinals, San Francisco 49ers, Pittsburgh Steelers, Los Angeles Rams, Philadelphia Eagles, Detroit Lions, Cleveland Browns, Chicago Bears, New York Giants, New York Yanks, Dallas Texans';
+
+	//Show all awards by default
+	var selected_awards = 'Pro Bowl, First-Team All-Pro, Hall of Fame';
+
 
 	//Display cards from 1950 by default
-	displayCards('1950', selected_position);
+	displayCards('1950', selected_position, selected_team, selected_awards);
 
 
 	//Display cards corresponding to year selected by user
 	$('nav .dropdown-menu a').on('click', function(){
 
+		//Reset previously selected nav item
+		$('.dropdown-toggle.active').text( $('.dropdown-toggle.active').attr('data-title') );
+		$('.dropdown-toggle.active').removeClass('active');
+
+		$('.dropdown-item.active').removeClass('active');
+
+
+		//Change nav link to indicate selection
+		$(this).parent().prev().text( $(this).text() );
+
+		$(this).addClass('active');
+		$(this).parent().prev().addClass('active');
+
 
 		var selected_year = '1950, 1951, 1952';
 
-		selected_position = 'Quarterback, Running Back, Tailback, Halfback, Fullback, Tight End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
+		selected_position = 'Head Coach, Quarterback, Running Back, Tailback, Halfback, Fullback, End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
+
+		selected_team = 'Baltimore Colts, Green Bay Packers, Washington Redskins, Chicago Cardinals, San Francisco 49ers, Pittsburgh Steelers, Los Angeles Rams, Philadelphia Eagles, Detroit Lions, Cleveland Browns, Chicago Bears, New York Giants, New York Yanks, Dallas Texans';
+
+		selected_awards = 'Pro Bowl, First-Team All-Pro, Hall of Fame';
 
 
 		if( $(this).parent().is('#year-selection') ){
@@ -975,14 +1177,27 @@ $(document).ready(function() {
 		}
 
 
-		resetStage(selected_year, selected_position);
+		if( $(this).parent().is('#team-selection') ){
+
+			selected_team = $(this).attr('data-filter');
+		}
+
+
+		if( $(this).parent().is('#awards-selection') ){
+
+			selected_awards = $(this).attr('data-filter');
+		}
+
+
+
+		resetStage(selected_year, selected_position, selected_team, selected_awards);
 
 		
 		
 	});
 
 
-	function resetStage(selected_year, selected_position){
+	function resetStage(selected_year, selected_position, selected_team, selected_awards){
 
 		// make cards not interactive
 		$.each(card_sprites, function(){
@@ -992,6 +1207,8 @@ $(document).ready(function() {
 
 		// make stage not interactive
 		stage.interactive = false;
+
+		disableNav();
 
 		//zoom out stage
 		var zoom_stage_out_x = new Tween(stage, 'scale.x', 0.5, 60, true);
@@ -1040,7 +1257,7 @@ $(document).ready(function() {
 
 
 				//display new cards
-				displayCards(selected_year, selected_position);
+				displayCards(selected_year, selected_position, selected_team, selected_awards);
 
 			}); //END fade on complete
 
@@ -1079,6 +1296,11 @@ $(document).ready(function() {
 			//if the rows of cards do not go all the way to the bottom, set the bottom limit as the bottom of the window
 			if(bottom_limit < window.innerHeight){
 				bottom_limit = window.innerHeight;
+			}
+
+			//if the row of cards does not go all the way to the right, set the right limit as the right of the window
+			if(right_limit < window.innerWidth){
+				right_limit = window.innerWidth;
 			}
 
 			console.log('left limit: ' + left_limit + '\n right limit: ' + right_limit);

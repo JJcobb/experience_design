@@ -7,6 +7,28 @@
 }
 
 
+.dropdown-toggle {
+	font-size: 20px;
+    padding: 0.5em 1rem !important;
+    /*padding-top: 0.75em !important;*/
+    text-transform: uppercase;
+}
+
+.dropdown-toggle.active {
+    font-weight: 500;
+    /*font-size: 22px;*/
+}
+
+/*.dropdown-toggle.active:before {
+	content: attr(data-title);
+	display: block;
+    font-size: 12px;
+    position: absolute;
+    top: 0.5em;
+}*/
+
+
+
 @media screen and (min-width: 992px){
 
 	.navbar-brand {

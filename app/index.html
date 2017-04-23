@@ -35,19 +35,19 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-            <img src="images/nfl-logo.png" width="80" alt="NFL">
-        </a>
+        <span class="navbar-brand">
+            <img src="images/nfl-logo.png" width="93" alt="NFL">
+        </span>
         <div class="collapse navbar-collapse" id="navbarNav">
 
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      YEAR
+                    <a class="nav-link dropdown-toggle active" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-title="YEAR">
+                      1950
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="year-selection">
-                      <a class="dropdown-item" href="#!" data-filter="1950">1950</a>
+                      <a class="dropdown-item active" href="#!" data-filter="1950">1950</a>
                       <a class="dropdown-item" href="#!" data-filter="1951">1951</a>
                       <a class="dropdown-item" href="#!" data-filter="1952">1952</a>
                       <a class="dropdown-item" href="#!" data-filter="1953">1953</a>
@@ -57,45 +57,56 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      ALL
+                    <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-title="POSITION">
+                      POSITION
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="position-selection">
                       <a class="dropdown-item" href="#!" data-filter="Quarterback">QB</a>
                       <a class="dropdown-item" href="#!" data-filter="Halfback,Tailback,Running Back, Fullback">RB</a>
-                      <a class="dropdown-item" href="#!" data-filter="Tight End">WR/TE</a>
+                      <a class="dropdown-item" href="#!" data-filter="End">WR/TE</a>
                       <a class="dropdown-item" href="#!" data-filter="Offensive Lineman,Guard,Tackle,Center">OL</a>
                       <a class="dropdown-item" href="#!" data-filter="Defensive Lineman,Defensive Tackle, Defensive End">DL</a>
                       <a class="dropdown-item" href="#!" data-filter="Linebacker">LB</a>
                       <a class="dropdown-item" href="#!" data-filter="Defensive Back">DB</a>
                       <a class="dropdown-item" href="#!" data-filter="Kicker,Punter">K/P</a>
                       <a class="dropdown-item" href="#!" data-filter="Return Specialist">KR/PR</a>
+                      <a class="dropdown-item" href="#!" data-filter="Head Coach">COACH</a>
                     </div>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      ALL
+                    <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-title="TEAM">
+                      TEAM
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#!">Teams</a>
-                      <a class="dropdown-item" href="#!">From</a>
-                      <a class="dropdown-item" href="#!">This</a>
-                      <a class="dropdown-item" href="#!">Year</a>
-                      <a class="dropdown-item" href="#!">Go</a>
-                      <a class="dropdown-item" href="#!">Here</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="team-selection">
+                      <a class="dropdown-item" href="#!" data-filter="Baltimore Colts">Baltimore Colts</a>
+                      <a class="dropdown-item" href="#!" data-filter="Chicago Bears">Chicago Bears</a>
+                      <a class="dropdown-item" href="#!" data-filter="Chicago Cardinals">Chicago Cardinals</a>
+                      <a class="dropdown-item" href="#!" data-filter="Cleveland Browns">Cleveland Browns</a>
+                      <a class="dropdown-item" href="#!" data-filter="Dallas Texans">Dallas Texans</a>
+                      <a class="dropdown-item" href="#!" data-filter="Detroit Lions">Detroit Lions</a>
+                      <a class="dropdown-item" href="#!" data-filter="Green Bay Packers">Green Bay Packers</a>
+                      <a class="dropdown-item" href="#!" data-filter="Los Angeles Rams">Los Angeles Rams</a>
+                      <a class="dropdown-item" href="#!" data-filter="New York Giants">New York Giants</a>
+                      <a class="dropdown-item" href="#!" data-filter="New York Yanks">New York Yanks</a>
+                      <a class="dropdown-item" href="#!" data-filter="Philadelphia Eagles">Philadelphia Eagles</a>
+                      <a class="dropdown-item" href="#!" data-filter="Pittsburgh Steelers">Pittsburgh Steelers</a>
+                      <a class="dropdown-item" href="#!" data-filter="San Francisco 49ers">San Francisco 49ers</a>
+                      <a class="dropdown-item" href="#!" data-filter="Washington Redskins">Washington Redskins</a>
                     </div>
                 </li>
 
             </ul>
 
             <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      ALL
+              <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-title="AWARDS">
+                      AWARDS
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#!">Favorites</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="awards-selection">
+                      <a class="dropdown-item" href="#!" data-filter="Pro Bowl">Pro Bowl</a>
+                      <a class="dropdown-item" href="#!" data-filter="First-Team All-Pro">First-Team All-Pro</a>
+                      <a class="dropdown-item" href="#!" data-filter="Hall of Fame">Hall of Fame</a>
                     </div>
                 </li>
             </ul>

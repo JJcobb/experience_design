@@ -7,13 +7,11 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Adrian_Burk-1950.jpg",
       "stats": {
-              "pass_cmp": "43",
-              "pass_att": "119",
-              "pass_cmp%": "36.1",
-              "pass_yds": "798",
               "Passing Touchdowns": "6",
+              "Passing Yards": "798",
               "int": "12",
               "punts": "81",
               "punt_yds": "3243",
@@ -24,11 +22,17 @@
 
     {
       "name": "Al Baldwin",
-      "position": "Tight End \nDefensive Back",
+      "position": "End \nDefensive Back",
       "year": "1950",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
-      "image": "Al_Baldwin-1950.jpg"
+      "awards": "",
+      "image": "Al_Baldwin-1950.jpg",
+      "stats": {
+              "Receiving Touchdowns": "3",
+              "Receiving Yards": "555",
+              "Interceptions": "5"
+      }
     },
 
     {
@@ -37,6 +41,7 @@
       "year": "1950",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Al_Demao-1950.jpg"
     },
 
@@ -46,6 +51,7 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Barry_French-1950.jpg"
     },
 
@@ -55,6 +61,7 @@
       "year": "1950",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Bill_Blackburn-1950.jpg"
     },
 
@@ -64,6 +71,7 @@
       "year": "1950",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Bill_Johnson-1950.jpg"
     },
 
@@ -73,6 +81,7 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Bill_Leonard-1950.jpg"
     },
 
@@ -82,6 +91,7 @@
       "year": "1950",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Bob_Gage-1950.jpg"
     },
 
@@ -91,6 +101,7 @@
       "year": "1950",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Bob_Goode-1950.jpg"
     },
 
@@ -100,16 +111,8 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Bob_Kelly-1950.jpg"
-    },
-
-    {
-      "name": "Bob Nowaskey",
-      "position": "Tight End \nDefensive End",
-      "year": "1950",
-      "team": "Baltimore Colts",
-      "team_logo": "colts-logo.gif",
-      "image": "Bob_Nowaskey-1950.jpg"
     },
 
     {
@@ -118,6 +121,7 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Bob_Perina-1950.jpg"
     },
 
@@ -127,6 +131,7 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
+      "awards": "",
       "image": "Bob_Reinhard-1950.jpg"
     },
 
@@ -136,6 +141,7 @@
       "year": "1950",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Buster_Ramsey-1950.jpg"
     },
 
@@ -145,6 +151,7 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Chet_Mutryn-1950.jpg"
     },
 
@@ -154,15 +161,17 @@
       "year": "1950",
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
+      "awards": "",
       "image": "Cliff_Patton-1950.jpg"
     },
 
     {
       "name": "Cloyce Box",
-      "position": "Tight End",
+      "position": "End",
       "year": "1950",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Cloyce_Box-1950.jpg"
     },
 
@@ -172,12 +181,13 @@
       "year": "1950",
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
+      "awards": "",
       "image": "Clyde_Scott-1950.jpg"
     },
 
     {
       "name": "Dante Lavelli",
-      "position": "Tight End",
+      "position": "End",
       "year": "1950",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
@@ -191,6 +201,7 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
+      "awards": "",
       "image": "Dick_Hoerner-1950.jpg"
     },
 
@@ -200,6 +211,7 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
+      "awards": "",
       "image": "Dick_Huffman-1950.jpg"
     },
 
@@ -209,6 +221,7 @@
       "year": "1950",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Dick_Wildung-1950.jpg"
     },
 
@@ -218,6 +231,7 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Earl_Murray-1950.jpg"
     },
 
@@ -227,6 +241,7 @@
       "year": "1950",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Emil_Sitko-1950.jpg"
     },
 
@@ -236,6 +251,7 @@
       "year": "1950",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Frank_Sinkovitz-1950.jpg"
     },
 
@@ -245,6 +261,7 @@
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Frank_Spaniel-1950.jpg"
     },
 
@@ -254,6 +271,7 @@
       "year": "1950",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Frank_Tripucka-1950.jpg"
     },
 
@@ -263,6 +281,7 @@
       "year": "1950",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Fred_Morrison-1950.jpg"
     },
 
@@ -272,15 +291,17 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
+      "awards": "",
       "image": "Fred_Naumetz-1950.jpg"
     },
 
     {
       "name": "Gail Bruce",
-      "position": "Defensive End \nTight End",
+      "position": "Defensive End \nEnd",
       "year": "1950",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Gail_Bruce-1950.jpg"
     },
 
@@ -290,6 +311,7 @@
       "year": "1950",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
+      "awards": "",
       "image": "Gene_Roberts-1950.jpg"
     },
 
@@ -299,6 +321,7 @@
       "year": "1950",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "George_Thomas-1950.jpg"
     },
 
@@ -308,6 +331,7 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
+      "awards": "",
       "image": "Glenn_Davis-1950.jpg"
     },
 
@@ -317,6 +341,7 @@
       "year": "1950",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Harry_Ulinski-1950.jpg"
     },
 
@@ -326,15 +351,17 @@
       "year": "1950",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Howie_Livingston-1950.jpg"
     },
 
     {
       "name": "Jim Keane",
-      "position": "Tight End \nDefensive End",
+      "position": "End \nDefensive End",
       "year": "1950",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Jim_Keane-1950.jpg"
     },
 
@@ -344,6 +371,7 @@
       "year": "1950",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Joe_Watson-1950.jpg"
     },
 
@@ -353,6 +381,7 @@
       "year": "1950",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "John_Panelli-1950.jpg"
     },
 
@@ -362,15 +391,17 @@
       "year": "1950",
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
+      "awards": "",
       "image": "John_Rauch-1950.jpg"
     },
 
     {
       "name": "Ken Kavanaugh",
-      "position": "Tight End",
+      "position": "End",
       "year": "1950",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Ken_Kavanaugh-1950.jpg"
     },
 
@@ -380,15 +411,17 @@
       "year": "1950",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Norm_Standlee-1950.jpg"
     },
 
     {
       "name": "Paul Salata",
-      "position": "Tight End",
+      "position": "End",
       "year": "1950",
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
+      "awards": "",
       "image": "Paul_Salata-1950.jpg"
     },
 
@@ -408,6 +441,7 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
+      "awards": "",
       "image": "Tom_Kalmanir-1950.jpg"
     },
 
@@ -417,6 +451,7 @@
       "year": "1950",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Tom_Wham-1950.jpg"
     },
 
@@ -426,15 +461,17 @@
       "year": "1950",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
+      "awards": "",
       "image": "Travis_Tidwell-1950.jpg"
     },
 
     {
       "name": "Val Jansante",
-      "position": "Tight End \nDefensive End",
+      "position": "End \nDefensive End",
       "year": "1950",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Val_Jansante-1950.jpg"
     },
 
@@ -444,6 +481,7 @@
       "year": "1950",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Ventan_Yablonski-1950.jpg"
     },
 
@@ -453,6 +491,7 @@
       "year": "1950",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Verl_Lillywhite-1950.jpg"
     },
 
@@ -462,6 +501,7 @@
       "year": "1950",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Wallace_Triplett-1950.jpg"
     },
 
@@ -471,6 +511,7 @@
       "year": "1950",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Wash_Serini-1950.jpg"
     },
 
@@ -491,10 +532,11 @@
 
     {
       "name": "Abner Wimberly",
-      "position": "Tight End \nDefensive End",
+      "position": "End \nDefensive End",
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Abner_Wimberly-1951.jpg"
     },
 
@@ -504,24 +546,27 @@
       "year": "1951",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
+      "awards": "",
       "image": "Al_DeRogatis-1951.jpg"
     },
 
     {
       "name": "Alex Loyd",
-      "position": "Tight End",
+      "position": "End",
       "year": "1951",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Alex_Loyd-1951.jpg"
     },
 
     {
       "name": "Bill Swiacki",
-      "position": "Tight End",
+      "position": "End",
       "year": "1951",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Bill_Swiacki-1951.jpg"
     },
 
@@ -531,6 +576,7 @@
       "year": "1951",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Bill_Walsh-1951.jpg"
     },
 
@@ -540,24 +586,27 @@
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Billy_Grimes-1951.jpg"
     },
 
     {
       "name": "Bob Boyd",
-      "position": "Tight End \nDefensive Back",
+      "position": "End \nDefensive Back",
       "year": "1951",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
+      "awards": "",
       "image": "Bob_Boyd-1951.jpg"
     },
 
     {
       "name": "Bruce Alford",
-      "position": "Tight End \nDefensive Back",
+      "position": "End \nDefensive Back",
       "year": "1951",
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
+      "awards": "",
       "image": "Bruce_Alford-1951.jpg"
     },
 
@@ -567,6 +616,7 @@
       "year": "1951",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Chuck_Drazenovich-1951.jpg"
     },
 
@@ -576,6 +626,7 @@
       "year": "1951",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Don_Doll-1951.jpg"
     },
 
@@ -585,6 +636,7 @@
       "year": "1951",
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
+      "awards": "",
       "image": "Ebert_Van_Buren-1951.jpg"
     },
 
@@ -594,6 +646,7 @@
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Ed_Neal-1951.jpg"
     },
 
@@ -603,6 +656,7 @@
       "year": "1951",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Ed_Quirk-1951.jpg"
     },
 
@@ -612,12 +666,13 @@
       "year": "1951",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Eddie_Saenz-1951.jpg"
     },
 
     {
       "name": "Elroy Hirsch",
-      "position": "Tight End \nDefensive End",
+      "position": "End \nDefensive End",
       "year": "1951",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
@@ -631,12 +686,13 @@
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Floyd_Reid-1951.jpg"
     },
 
     {
       "name": "Fran Polsfoot",
-      "position": "Tight End \nPunter",
+      "position": "End \nPunter",
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
@@ -650,6 +706,7 @@
       "year": "1951",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Fran_Rogel-1951.jpg"
     },
 
@@ -659,6 +716,7 @@
       "year": "1951",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Fred_Davis-1951.jpg"
     },
 
@@ -668,6 +726,7 @@
       "year": "1951",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "George_Gulyanics-1951.jpg"
     },
 
@@ -677,15 +736,17 @@
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Jack_Cloud-1951.jpg"
     },
 
     {
       "name": "Jack Zilly",
-      "position": "Defensive End \nTight End",
+      "position": "Defensive End \nEnd",
       "year": "1951",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
+      "awards": "",
       "image": "Jack_Zilly-1951.jpg"
     },
 
@@ -695,6 +756,7 @@
       "year": "1951",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Jerry_Groom-1951.jpg"
     },
 
@@ -704,15 +766,17 @@
       "year": "1951",
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
+      "awards": "",
       "image": "Joe_Golding-1951.jpg"
     },
 
     {
       "name": "John Hoffman",
-      "position": "Tight End \nLinebacker",
+      "position": "End \nLinebacker",
       "year": "1951",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "John_Hoffman-1951.jpg"
     },
 
@@ -722,6 +786,7 @@
       "year": "1951",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "John_Strzykalski-1951.jpg"
     },
 
@@ -737,10 +802,11 @@
 
     {
       "name": "Jug Girard",
-      "position": "Defensive Back \nPunter \nTight End",
+      "position": "Defensive Back \nPunter \nEnd",
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Jug_Girard-1951.jpg"
     },
 
@@ -750,6 +816,7 @@
       "year": "1951",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Julie_Rykovich-1951.jpg"
     },
 
@@ -765,7 +832,7 @@
 
     {
       "name": "Otto Schnellbacher",
-      "position": "Defensive Back \nTight End",
+      "position": "Defensive Back \nEnd",
       "year": "1951",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
@@ -789,6 +856,7 @@
       "year": "1951",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Pete_Stout-1951.jpg"
     },
 
@@ -798,6 +866,7 @@
       "year": "1951",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Ray_Bray-1951.jpg"
     },
 
@@ -807,6 +876,7 @@
       "year": "1951",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Robert_Smith-1951.jpg"
     },
 
@@ -816,6 +886,7 @@
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Roy_Steiner-1951.jpg"
     },
 
@@ -835,6 +906,7 @@
       "year": "1951",
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
+      "awards": "",
       "image": "Sherman_Howard-1951.jpg"
     },
 
@@ -844,6 +916,7 @@
       "year": "1951",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Thurman_McGraw-1951.jpg"
     },
 
@@ -853,6 +926,7 @@
       "year": "1951",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Tom_McWilliams-1951.jpg"
     },
 
@@ -862,6 +936,7 @@
       "year": "1951",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
+      "awards": "",
       "image": "Visco_Grgich-1951.jpg"
     },
 
@@ -871,6 +946,7 @@
       "year": "1951",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
+      "awards": "",
       "image": "Woodley_Lewis-1951.jpg"
     },
 
@@ -896,24 +972,27 @@
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Babe_Parilli-1952.jpg"
     },
 
     {
       "name": "Barney Poole",
-      "position": "Defensive End \nTight End",
+      "position": "Defensive End \nEnd",
       "year": "1952",
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
+      "awards": "",
       "image": "Barney_Poole-1952.jpg"
     },
 
     {
       "name": "Bert Rechichar",
-      "position": "Defensive Back \nTight End",
+      "position": "Defensive Back \nEnd",
       "year": "1952",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
+      "awards": "",
       "image": "Bert_Rechichar-1952.jpg"
     },
 
@@ -929,7 +1008,7 @@
 
     {
       "name": "Bill Howton",
-      "position": "Tight End",
+      "position": "End",
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
@@ -939,10 +1018,11 @@
 
     {
       "name": "Bill McColl",
-      "position": "Tight End",
+      "position": "End",
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Bill_McColl-1952.jpg"
     },
 
@@ -952,15 +1032,17 @@
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Bill_Reichardt-1952.jpg"
     },
 
     {
       "name": "Bill Wightkin",
-      "position": "Tight End \nDefensive End",
+      "position": "End \nDefensive End",
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Bill_Wightkin-1952.jpg"
     },
 
@@ -970,6 +1052,7 @@
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Billy_Stone-1952.jpg"
     },
 
@@ -989,6 +1072,7 @@
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Bob_Williams-1952.jpg"
     },
 
@@ -998,15 +1082,17 @@
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Bobby_Dillon-1952.jpg"
     },
 
     {
       "name": "Bobby Walston",
-      "position": "Tight End \nKicker",
+      "position": "End \nKicker",
       "year": "1952",
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
+      "awards": "",
       "image": "Bobby_Walston-1952.jpg"
     },
 
@@ -1016,6 +1102,7 @@
       "year": "1952",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Buddy_Parker-1952.jpg"
     },
 
@@ -1025,6 +1112,7 @@
       "year": "1952",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Charlie_Justice-1952.jpg"
     },
 
@@ -1044,6 +1132,7 @@
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Chuck_Hunsinger-1952.jpg"
     },
 
@@ -1053,15 +1142,17 @@
       "year": "1952",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Claude_Hipps-1952.jpg"
     },
 
     {
       "name": "Dan Edwards",
-      "position": "Tight End",
+      "position": "End",
       "year": "1952",
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
+      "awards": "",
       "image": "Dan_Edwards-1952.jpg"
     },
 
@@ -1071,6 +1162,7 @@
       "year": "1952",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Darrell_Hogan-1952.jpg"
     },
 
@@ -1080,6 +1172,7 @@
       "year": "1952",
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
+      "awards": "",
       "image": "Don_Paul-1952.jpg"
     },
 
@@ -1099,6 +1192,7 @@
       "year": "1952",
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
+      "awards": "",
       "image": "Frank_Ziegler-1952.jpg"
     },
 
@@ -1108,6 +1202,7 @@
       "year": "1952",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
+      "awards": "",
       "image": "Fred_Benners-1952.jpg"
     },
 
@@ -1117,6 +1212,7 @@
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Fred_Cone-1952.jpg"
     },
 
@@ -1136,12 +1232,13 @@
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
+      "awards": "",
       "image": "Gene_Ronzani-1952.jpg"
     },
 
     {
       "name": "Gene Schroeder",
-      "position": "Tight End \nDefensive Back",
+      "position": "End \nDefensive Back",
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
@@ -1155,6 +1252,7 @@
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "George_Halas-1952.jpg"
     },
 
@@ -1164,6 +1262,7 @@
       "year": "1952",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
+      "awards": "",
       "image": "George_Ratterman-1952.jpg"
     },
 
@@ -1183,6 +1282,7 @@
       "year": "1952",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "George_Tarasovic-1952.jpg"
     },
 
@@ -1202,6 +1302,7 @@
       "year": "1952",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Howard_Hartley-1952.jpg"
     },
 
@@ -1217,10 +1318,11 @@
 
     {
       "name": "Jim Dooley",
-      "position": "Defensive Back \nTight End",
+      "position": "Defensive Back \nEnd",
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Jim_Dooley-1952.jpg"
     },
 
@@ -1230,6 +1332,7 @@
       "year": "1952",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
+      "awards": "",
       "image": "Joe_Bach-1952.jpg"
     },
 
@@ -1239,6 +1342,7 @@
       "year": "1952",
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
+      "awards": "",
       "image": "Joe_Campanella-1952.jpg"
     },
 
@@ -1248,6 +1352,7 @@
       "year": "1952",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "John_Papit-1952.jpg"
     },
 
@@ -1257,6 +1362,7 @@
       "year": "1952",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
+      "awards": "",
       "image": "John_Rapacz-1952.jpg"
     },
 
@@ -1266,6 +1372,7 @@
       "year": "1952",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
+      "awards": "",
       "image": "John_Sandusky-1952.jpg"
     },
 
@@ -1285,15 +1392,17 @@
       "year": "1952",
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
+      "awards": "",
       "image": "Keever_Jankovich-1952.jpg"
     },
 
     {
       "name": "Kyle Rote",
-      "position": "Tight End \nHalfback",
+      "position": "End \nHalfback",
       "year": "1952",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
+      "awards": "",
       "image": "Kyle_Rote-1952.jpg"
     },
 
@@ -1303,6 +1412,7 @@
       "year": "1952",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Laurie_Niemi-1952.jpg"
     },
 
@@ -1312,6 +1422,7 @@
       "year": "1952",
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
+      "awards": "",
       "image": "Leon_Heath-1952.jpg"
     },
 
@@ -1331,6 +1442,7 @@
       "year": "1952",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
+      "awards": "",
       "image": "Paul_Brown-1952.jpg"
     },
 
@@ -1350,6 +1462,7 @@
       "year": "1952",
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
+      "awards": "",
       "image": "Russ_Craft-1952.jpg"
     },
 
@@ -1359,6 +1472,7 @@
       "year": "1952",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
+      "awards": "",
       "image": "Skeets_Quinlan-1952.jpg"
     },
 
@@ -1368,6 +1482,7 @@
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
+      "awards": "",
       "image": "Steve_Romanik-1952.jpg"
     },
 
@@ -1395,8 +1510,8 @@
       "name": "Tobin Rote",
       "position": "Offensive Lineman",
       "year": "1952",
-      "team": "New York Giants",
-      "team_logo": "giants-logo.gif",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
       "awards": "Pro Bowl",
       "image": "Tobin_Rote-1952.jpg"
     },
@@ -1407,6 +1522,7 @@
       "year": "1952",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
+      "awards": "",
       "image": "Vitamin_Smith-1952.jpg"
     },
 
@@ -1416,6 +1532,7 @@
       "year": "1952",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
+      "awards": "",
       "image": "Walt_Michaels-1952.jpg"
     },
 
@@ -1435,6 +1552,7 @@
       "year": "1952",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
+      "awards": "",
       "image": "Yale_Lary-1952.jpg"
     },
 
@@ -1444,6 +1562,7 @@
       "year": "1952",
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
+      "awards": "",
       "image": "Zollie_Toth-1952.jpg"
     }
 
