@@ -1162,7 +1162,7 @@ $(document).ready(function() {
 
 		selected_team = 'Baltimore Colts, Green Bay Packers, Washington Redskins, Chicago Cardinals, San Francisco 49ers, Pittsburgh Steelers, Los Angeles Rams, Philadelphia Eagles, Detroit Lions, Cleveland Browns, Chicago Bears, New York Giants, New York Yanks, Dallas Texans';
 
-		selected_awards = 'Pro Bowl, First-Team All-Pro, Hall of Fame';
+		selected_awards = 'Pro Bowl, First-Team All-Pro, Championship, Hall of Fame';
 
 
 		if( $(this).parent().is('#year-selection') ){

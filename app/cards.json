@@ -1757,14 +1757,85 @@
     },
 
     {
-      "name": "Art DeCarlo",
+      "name": "Art Hunter",
+      "position": "Defensive Lineman \nCenter",
+      "year": "1954",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
+      "awards": "",
+      "image": "Art_Hunter-1954.jpg"
+    },
+
+    {
+      "name": "Bill Bowman",
+      "position": "Fullback",
+      "year": "1954",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "awards": "",
+      "image": "Bill_Bowman-1954.jpg"
+    },
+
+    {
+      "name": "Bill Stits",
       "position": "Defensive Back",
       "year": "1954",
-      "team": "Pittsburgh Steelers",
-      "team_logo": "steelers-logo.gif",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Bill_Stits-1954.jpg"
+    },
+
+    {
+      "name": "Bobby Garrett",
+      "position": "Quarterback",
+      "year": "1954",
+      "team": "Green Bay Packers",
+      "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Art_DeCarlo-1954.jpg"
-    }
+      "image": "Bobby_Garrett-1954.jpg"
+    },
+
+    {
+      "name": "Bobby Layne",
+      "position": "Quarterback",
+      "year": "1954",
+      "team": "Detroit Lions",
+      "team_logo": "lions-logo.gif",
+      "awards": "Hall of Fame",
+      "image": "Bobby_Layne-1954.jpg"
+    },
+
+    {
+      "name": "Buddy Young",
+      "position": "Halfback \nReturn Specialist",
+      "year": "1954",
+      "team": "Baltimore Colts",
+      "team_logo": "colts-logo.gif",
+      "awards": "Pro Bowl",
+      "image": "Buddy_Young-1954.jpg"
+    },
+
+    {
+      "name": "Buford Long",
+      "position": "Halfback \nDefensive Back",
+      "year": "1954",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "awards": "",
+      "image": "Buford_Long-1954.jpg"
+    },
+
+    {
+      "name": "Chet Hanulak",
+      "position": "Halfback",
+      "year": "1954",
+      "team": "New York Giants",
+      "team_logo": "giants-logo.gif",
+      "awards": "Championship",
+      "image": "Chet_Hanulak-1954.jpg"
+    },
+
 
 
 
