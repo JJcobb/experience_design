@@ -194,7 +194,7 @@ $(document).ready(function() {
 					
 				});
 
-				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ''){
+				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Championship, Hall of Fame' && result.awards == ''){
 
 					awards_check = true;
 				}
@@ -269,7 +269,7 @@ $(document).ready(function() {
 					
 				});
 
-				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Hall of Fame' && result.awards == ''){
+				if(selected_awards == 'Pro Bowl, First-Team All-Pro, Championship, Hall of Fame' && result.awards == ''){
 
 					awards_check = true;
 				}
@@ -1048,7 +1048,7 @@ $(document).ready(function() {
 
 
 										//add team logo
-										if(result.year != '1951' && result.year != '1952'){
+										if(result.year == '1950'){
 											player_container.addChild(team_logo);
 										}
 
@@ -1132,7 +1132,7 @@ $(document).ready(function() {
 	var selected_team = 'Baltimore Colts, Green Bay Packers, Washington Redskins, Chicago Cardinals, San Francisco 49ers, Pittsburgh Steelers, Los Angeles Rams, Philadelphia Eagles, Detroit Lions, Cleveland Browns, Chicago Bears, New York Giants, New York Yanks, Dallas Texans';
 
 	//Show all awards by default
-	var selected_awards = 'Pro Bowl, First-Team All-Pro, Hall of Fame';
+	var selected_awards = 'Pro Bowl, First-Team All-Pro, Championship, Hall of Fame';
 
 
 	//Display cards from 1950 by default
@@ -1158,7 +1158,7 @@ $(document).ready(function() {
 
 		var selected_year = '1950, 1951, 1952';
 
-		selected_position = 'Head Coach, Quarterback, Running Back, Tailback, Halfback, Fullback, End, Flanker, Tight End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
+		selected_position = 'Quarterback, Running Back, Tailback, Halfback, Fullback, Tight End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
 
 		selected_team = 'Baltimore Colts, Green Bay Packers, Washington Redskins, Chicago Cardinals, San Francisco 49ers, Pittsburgh Steelers, Los Angeles Rams, Philadelphia Eagles, Detroit Lions, Cleveland Browns, Chicago Bears, New York Giants, New York Yanks, Dallas Texans';
 

@@ -1573,8 +1573,6 @@
 
 
 
-
-
     {
       "name": "Billy Cross",
       "position": "Halfback \nReturn Specialist",
@@ -1629,8 +1627,8 @@
       "name": "Gern Nagler",
       "position": "End",
       "year": "1953",
-      "team": "Chicago Cardinals",
-      "team_logo": "chicago-cardinals-logo.gif",
+      "team": "Baltimore Colts",
+      "team_logo": "colts-logo.gif",
       "awards": "",
       "image": "Gern_Nagler-1953.jpg"
     },
@@ -1719,8 +1717,8 @@
       "name": "Tom Dublinski",
       "position": "Quarterback",
       "year": "1953",
-      "team": "Detroit Lions",
-      "team_logo": "lions-logo.gif",
+      "team": "Baltimore Colts",
+      "team_logo": "colts-logo.gif",
       "awards": "",
       "image": "Tom_Dublinski-1953.jpg"
     },
@@ -1734,10 +1732,6 @@
       "awards": "",
       "image": "Tom_OConnell-1953.jpg"
     },
-
-
-
-
 
 
 
@@ -1790,8 +1784,8 @@
       "name": "Bobby Garrett",
       "position": "Quarterback",
       "year": "1954",
-      "team": "Green Bay Packers",
-      "team_logo": "packers-logo.gif",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
       "awards": "",
       "image": "Bobby_Garrett-1954.jpg"
     },
@@ -1830,8 +1824,8 @@
       "name": "Chet Hanulak",
       "position": "Halfback",
       "year": "1954",
-      "team": "New York Giants",
-      "team_logo": "giants-logo.gif",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
       "awards": "Championship",
       "image": "Chet_Hanulak-1954.jpg"
     },
@@ -1920,8 +1914,8 @@
       "name": "Harry Jagade",
       "position": "Fullback",
       "year": "1954",
-      "team": "Chicago Bears",
-      "team_logo": "chicago-bears-logo.gif",
+      "team": "Cleveland Browns",
+      "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl",
       "image": "Harry_Jagade-1954.jpg"
     },
@@ -2010,8 +2004,8 @@
       "name": "Paul Barry",
       "position": "Running Back",
       "year": "1954",
-      "team": "Chicago Cardinals",
-      "team_logo": "chicago-cardinals-logo.gif",
+      "team": "Washington Redskins",
+      "team_logo": "redskins-logo.gif",
       "awards": "",
       "image": "Paul_Barry-1954.jpg"
     },
