@@ -1158,7 +1158,7 @@ $(document).ready(function() {
 
 		var selected_year = '1950, 1951, 1952';
 
-		selected_position = 'Head Coach, Quarterback, Running Back, Tailback, Halfback, Fullback, End, Flanker, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
+		selected_position = 'Head Coach, Quarterback, Running Back, Tailback, Halfback, Fullback, End, Flanker, Tight End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
 
 		selected_team = 'Baltimore Colts, Green Bay Packers, Washington Redskins, Chicago Cardinals, San Francisco 49ers, Pittsburgh Steelers, Los Angeles Rams, Philadelphia Eagles, Detroit Lions, Cleveland Browns, Chicago Bears, New York Giants, New York Yanks, Dallas Texans';
 
