@@ -480,7 +480,7 @@ $(document).ready(function() {
 					 	});
 
 					 	card.on('pointermove', function() {
-					 		console.log("pointermove");
+
 					 		clicked_on = false;
 					 	});
 
@@ -715,9 +715,26 @@ $(document).ready(function() {
 									    fill: '#061639'
 									});
 
+									var big_stat_value_style = new PIXI.TextStyle({
+									    fontFamily: 'Arial',
+									    fontSize: 34,
+									    fontWeight: 'bold',
+									    fontVariant: 'small-caps',
+									    fill: '#061639'
+									});
+
+									var stat_value_secondary_style = new PIXI.TextStyle({
+									    fontFamily: 'Arial',
+									    fontSize: 24,
+									    fontVariant: 'small-caps',
+									    stroke: '#f7f7f7',
+									    strokeThickness: '1',
+									    fill: '#061639'
+									});
+
 
 									//used for keeping track of row heights
-									    var height_correction = 0;
+									var height_correction = 0;
 
 
 									//Loop through each of the stats
@@ -727,8 +744,8 @@ $(document).ready(function() {
 									    stats_string += key + ' - ' + value + '\n';
 
 
-									    //If stat name contains "TD"
-									    if( key.includes('Touchdown') ){
+									    //If stat name contains "TD" or INT or FMB
+									    if( key.includes('Touchdown') || key.includes('Interception') || key.includes('Fumbles') || key.includes('Safeties') ){
 
 									    	//Name of the stat
 								    		var stat_name = new PIXI.Text(key, stat_name_style);
@@ -736,7 +753,7 @@ $(document).ready(function() {
 								    		player_stats_container.addChild(stat_name);
 
 								    		stat_name.x = 20;
-								    		stat_name.y = player_team.height + 20;
+								    		stat_name.y = player_team.height + 20 + height_correction;
 
 
 								    		//store each of the tweens for displaying the footballs
@@ -763,11 +780,12 @@ $(document).ready(function() {
 
 
 									    		football.x = 20 + i*(football.width*0.5) + i*5;
-									    		football.y = player_team.height + stat_name.height + 20 + 5;
+									    		football.y = player_team.height + stat_name.height + 20 + 5 + height_correction;
 
 
+									    		
 									    		//reposition footballs on next row once they get to the end of first row
-									    		if( football.getGlobalPosition().x + football.width*0.5 >= window.innerWidth ){
+									    		/*if( football.getGlobalPosition().x - Math.abs(stage.x) >= window.innerWidth ){
 
 									    			if(next_row == 0){
 										    			next_row = i;
@@ -779,15 +797,16 @@ $(document).ready(function() {
 										    		}
 
 										    		number_in_this_row++;
-								    		/******* Needs to be fine tuned | Only allows for 2 rows of footballs ********/
+							    				
 										    		if(number_in_this_row > max_per_row){
 										    			next_row = 0;
+										    			number_in_this_row = 0;
 										    		}
 
 
 									    			football.x = 20 + (i - next_row)*(football.width*0.5) + (i - next_row)*5;
-									    			football.y = (football.height*0.5) + player_team.height + stat_name.height + 20 + 5 + 10;
-									    		}
+									    			football.y = (football.height*0.5) + player_team.height + stat_name.height + 20 + 5 + 10 + height_correction;
+									    		}*/
 
 									    		football.scale.set(0.5, 0.5);
 
@@ -804,14 +823,19 @@ $(document).ready(function() {
 									    	//chain all of the football tweens so they display one at a time
 									    	new ChainedTween(football_tween_array);
 
-									    	height_correction += football.y;
+									    	if(height_correction == 0){
+										    	height_correction = football.y;
+										    }
+										    else {
+										    	height_correction *= 2;
+										    }
 
 
-									    }//END if "TD"
+									    }//END if "TD" or INT or FMB
 
 									    
-									    //If stat name contains "Yards"
-									    if( key.includes('Yards') ){
+									    //If stat name contains "Yards" or Longest
+									    if( key.includes('Yards') || key.includes('Longest') ){
 
 									    	//Name of the stat
 								    		var stat_name = new PIXI.Text(key, stat_name_style);
@@ -855,9 +879,174 @@ $(document).ready(function() {
 											  
 											player_stats_container.addChild(triangle);
 
+
+											if(height_correction == 0){
+										    	height_correction = stat_value.y;
+										    }
+										    else {
+										    	height_correction *= 2;
+										    }
 											
 
 									    }//END if "yards"
+
+
+									    //If stat name contains "Draft"
+									    if( key.includes('Draft') ){
+
+									    	//Name of the stat
+								    		var stat_name = new PIXI.Text(key, stat_name_style);
+
+								    		player_stats_container.addChild(stat_name);
+
+								    		stat_name.x = 20;
+								    		stat_name.y = player_team.height + 20 + height_correction;
+
+
+								    		var draft_circle = new PIXI.Graphics();
+
+								    		draft_circle.beginFill(0xffffff);
+
+								    		var circle_radius = 30;
+
+								    		draft_circle.drawCircle(20 + circle_radius, player_team.height + 20 + height_correction + stat_name.height + 5 + circle_radius, circle_radius);
+
+								    		player_stats_container.addChild(draft_circle);
+
+
+								    		var stat_value = new PIXI.Text(value, big_stat_value_style);
+
+								    		player_stats_container.addChild(stat_value);
+
+								    		stat_value.x = 20 + circle_radius - stat_value.width*0.5;
+								    		stat_value.y = circle_radius + player_team.height + height_correction + stat_name.height + 5;
+
+
+
+								    		var number_ending;
+
+								    		if( Number(value) % 10 == 1 && Number(value) != 11 ){
+								    			number_ending = "st";
+								    		}
+								    		else if( Number(value) % 10 == 2 && Number(value) != 12 ){
+								    			number_ending = "nd";
+								    		}
+								    		else if( Number(value) % 10 == 3 && Number(value) != 13 ){
+								    			number_ending = "rd";
+								    		}
+								    		else{
+								    			number_ending = "th";
+								    		}
+
+								    		number_ending += " round";
+
+
+								    		var draft_text = new PIXI.Text(number_ending, stat_name_style);
+
+								    		player_stats_container.addChild(draft_text);
+
+								    		draft_text.x = 20 + circle_radius*2 + 5;
+								    		draft_text.y = circle_radius + player_team.height + height_correction + stat_name.height + 5;
+
+
+								    		if(height_correction == 0){
+										    	height_correction = stat_name.y + circle_radius*2;
+										    }
+										    else {
+										    	height_correction *= 2;
+										    }
+
+
+									    }//END if draft
+
+
+									    //If stat name contains "wins" or losses
+									    if( key.includes('Wins') || key.includes('Losses') ){
+
+									    	//Name of the stat
+								    		var stat_name = new PIXI.Text(key, stat_name_style);
+
+								    		player_stats_container.addChild(stat_name);
+
+								    		stat_name.x = 20;
+								    		stat_name.y = player_team.height + 20 + height_correction;
+
+
+								    		var record_circle = new PIXI.Graphics();
+
+								    		record_circle.beginFill(0xffffff);
+
+								    		var circle_radius = 30;
+
+								    		// record_circle.drawCircle(20 + circle_radius, player_team.height + 20 + height_correction + stat_name.height + 5 + circle_radius, circle_radius);
+
+								    		//player_stats_container.addChild(record_circle);
+
+
+
+								    		//for each of the wins / losses
+									    	for(var i=0; i<value; i++){							    		
+
+									    		//make a circle
+								    			record_circle.drawCircle(20 + circle_radius + i*(circle_radius*2) + i*5, player_team.height + 20 + height_correction + stat_name.height + 5 + circle_radius, circle_radius);
+
+							    		
+									    		//reposition footballs on next row once they get to the end of first row
+									    		/*if( football.getGlobalPosition().x - Math.abs(stage.x) >= window.innerWidth ){
+
+									    			if(next_row == 0){
+										    			next_row = i;
+										    		}
+
+										    		if(!multiple_rows){
+										    			max_per_row = i;
+										    			multiple_rows = true;
+										    		}
+
+										    		number_in_this_row++;
+							    				
+										    		if(number_in_this_row > max_per_row){
+										    			next_row = 0;
+										    			number_in_this_row = 0;
+										    		}
+
+
+									    			football.x = 20 + (i - next_row)*(football.width*0.5) + (i - next_row)*5;
+									    			football.y = (football.height*0.5) + player_team.height + stat_name.height + 20 + 5 + 10 + height_correction;
+									    		}*/
+
+
+		
+									    	}//END for
+
+
+									    	player_stats_container.addChild(record_circle);
+
+
+									    	//for each of the wins / losses
+									    	for(var i=0; i<value; i++){		
+
+									    		var stat_value = new PIXI.Text(key.charAt(0), big_stat_value_style);
+
+									    		player_stats_container.addChild(stat_value);
+
+									    		stat_value.x = 20 + circle_radius - stat_value.width*0.5 + i*(circle_radius*2) + i*5;
+									    		stat_value.y = circle_radius + player_team.height + height_correction + stat_name.height + 5;
+
+									    	}//END for
+
+
+
+									    	if(height_correction == 0){
+										    	height_correction = stat_name.y + circle_radius*2;
+										    }
+										    else {
+										    	height_correction *= 2;
+										    }
+
+
+
+									    }//End if wins / losses
 
 									    
 

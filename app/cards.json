@@ -12,11 +12,7 @@
       "stats": {
               "Passing Touchdowns": "6",
               "Passing Yards": "798",
-              "Drafted": "1",
-              "punts": "81",
-              "punt_yds": "3243",
-              "punt_lng": "68",
-              "punt_y/p": "40.0"
+              "Punting Yards": "3243"
       }
     },
 
@@ -42,7 +38,10 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Al_Demao-1950.jpg"
+      "image": "Al_Demao-1950.jpg",
+      "stats": {
+              "Drafted": "11"
+      }
     },
 
     {
@@ -52,7 +51,10 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Barry_French-1950.jpg"
+      "image": "Barry_French-1950.jpg",
+      "stats": {
+              "Drafted": "19"
+      }
     },
 
     {
@@ -62,17 +64,11 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Bill_Blackburn-1950.jpg"
-    },
-
-    {
-      "name": "Bill Johnson",
-      "position": "Center \nLinebacker",
-      "year": "1950",
-      "team": "San Francisco 49ers",
-      "team_logo": "49ers-logo.gif",
-      "awards": "",
-      "image": "Bill_Johnson-1950.jpg"
+      "image": "Bill_Blackburn-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -82,7 +78,10 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Bill_Leonard-1950.jpg"
+      "image": "Bill_Leonard-1950.jpg",
+      "stats": {
+              "Interceptions": "1"
+      }
     },
 
     {
@@ -92,7 +91,13 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Bob_Gage-1950.jpg"
+      "image": "Bob_Gage-1950.jpg",
+      "stats": {
+              "Interceptions": "4",
+              "Passing Yards": "294",
+              "Rushing Touchdowns": "23"
+              
+      }
     },
 
     {
@@ -102,27 +107,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Bob_Goode-1950.jpg"
-    },
-
-    {
-      "name": "Bob Kelly",
-      "position": "Halfback \nDefensive Back",
-      "year": "1950",
-      "team": "Baltimore Colts",
-      "team_logo": "colts-logo.gif",
-      "awards": "",
-      "image": "Bob_Kelly-1950.jpg"
-    },
-
-    {
-      "name": "Bob Perina",
-      "position": "Defensive Back \nRunning Back",
-      "year": "1950",
-      "team": "Baltimore Colts",
-      "team_logo": "colts-logo.gif",
-      "awards": "",
-      "image": "Bob_Perina-1950.jpg"
+      "image": "Bob_Goode-1950.jpg",
+      "stats": {
+              "Rushing Touchdowns": "5",
+              "Rushing Yards": "560",
+              "Fumbles Forced": "8"
+      }
     },
 
     {
@@ -132,7 +122,11 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
       "awards": "",
-      "image": "Bob_Reinhard-1950.jpg"
+      "image": "Bob_Reinhard-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -142,7 +136,10 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Buster_Ramsey-1950.jpg"
+      "image": "Buster_Ramsey-1950.jpg",
+      "stats": {
+              "Drafted": "14"
+      }
     },
 
     {
@@ -152,7 +149,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Chet_Mutryn-1950.jpg"
+      "image": "Chet_Mutryn-1950.jpg",
+      "stats": {
+              "Rushing Yards": "335",
+              "Fumbles Forced": "5",
+              "Kick Return Yards": "408"
+      }
     },
 
     {
@@ -162,7 +164,10 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Cliff_Patton-1950.jpg"
+      "image": "Cliff_Patton-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "1"
+      }
     },
 
     {
@@ -171,8 +176,13 @@
       "year": "1950",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
-      "awards": "",
-      "image": "Cloyce_Box-1950.jpg"
+      "awards": "Pro Bowl",
+      "image": "Cloyce_Box-1950.jpg",
+      "stats": {
+              "Receiving Touchdowns": "11",
+              "Receiving Yards": "1009",
+              "Fumbles Recovered": "1"
+      }
     },
 
     {
@@ -182,7 +192,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Clyde_Scott-1950.jpg"
+      "image": "Clyde_Scott-1950.jpg",
+      "stats": {
+              "Fumbles Forced": "1",
+              "Rushing Yards": "46",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -191,8 +206,13 @@
       "year": "1950",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
-      "awards": "Hall of Fame",
-      "image": "Dante_Lavelli-1950.jpg"
+      "awards": "Championship | Hall of Fame",
+      "image": "Dante_Lavelli-1950.jpg",
+      "stats": {
+              "Receiving Yards": "565",
+              "Receiving Touchdowns": "5",
+              "Fumbles Forced": "2"
+      }
     },
 
     {
@@ -201,8 +221,13 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
-      "awards": "",
-      "image": "Dick_Hoerner-1950.jpg"
+      "awards": "Pro Bowl",
+      "image": "Dick_Hoerner-1950.jpg",
+      "stats": {
+              "Rushing Yards": "381",
+              "Rushing Touchdowns": "10",
+              "Receiving Yards": "446"
+      }
     },
 
     {
@@ -211,8 +236,12 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
-      "awards": "",
-      "image": "Dick_Huffman-1950.jpg"
+      "awards": "Pro Bowl",
+      "image": "Dick_Huffman-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "9"
+      }
     },
 
     {
@@ -222,7 +251,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Dick_Wildung-1950.jpg"
+      "image": "Dick_Wildung-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -232,7 +265,11 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Earl_Murray-1950.jpg"
+      "image": "Earl_Murray-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "4"
+      }
     },
 
     {
@@ -242,7 +279,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "Emil_Sitko-1950.jpg"
+      "image": "Emil_Sitko-1950.jpg",
+      "stats": {
+              "Rushing Touchdowns": "1",
+              "Rushing Yards": "105",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -252,17 +294,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Frank_Sinkovitz-1950.jpg"
-    },
-
-    {
-      "name": "Frank Spaniel",
-      "position": "Halfback",
-      "year": "1950",
-      "team": "Baltimore Colts",
-      "team_logo": "colts-logo.gif",
-      "awards": "",
-      "image": "Frank_Spaniel-1950.jpg"
+      "image": "Frank_Sinkovitz-1950.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Fumbles Recovered": "2"
+      }
     },
 
     {
@@ -272,7 +308,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Frank_Tripucka-1950.jpg"
+      "image": "Frank_Tripucka-1950.jpg",
+      "stats": {
+              "Passing Yards": "720",
+              "Passing Touchdowns": "4",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -282,17 +323,27 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Fred_Morrison-1950.jpg"
+      "image": "Fred_Morrison-1950.jpg",
+      "stats": {
+              "Rushing Yards": "252",
+              "Punting Yards": "2470",
+              "Drafted": "1"
+      }
     },
 
     {
       "name": "Fred Naumetz",
-      "position": "Fullback \nPunter",
+      "position": "Center",
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
       "awards": "",
-      "image": "Fred_Naumetz-1950.jpg"
+      "image": "Fred_Naumetz-1950.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -302,7 +353,11 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "Gail_Bruce-1950.jpg"
+      "image": "Gail_Bruce-1950.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Drafted": "30"
+      }
     },
 
     {
@@ -311,8 +366,13 @@
       "year": "1950",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
-      "awards": "",
-      "image": "Gene_Roberts-1950.jpg"
+      "awards": "Pro Bowl",
+      "image": "Gene_Roberts-1950.jpg",
+      "stats": {
+              "Rushing Yards": "483",
+              "Rushing Touchdowns": "4",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -322,7 +382,11 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "George_Thomas-1950.jpg"
+      "image": "George_Thomas-1950.jpg",
+      "stats": {
+              "Rushing Yards": "41",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -331,8 +395,13 @@
       "year": "1950",
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
-      "awards": "",
-      "image": "Glenn_Davis-1950.jpg"
+      "awards": "Pro Bowl",
+      "image": "Glenn_Davis-1950.jpg",
+      "stats": {
+              "Rushing Yards": "416",
+              "Rushing Touchdowns": "3",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -342,17 +411,10 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Harry_Ulinski-1950.jpg"
-    },
-
-    {
-      "name": "Howie Livingston",
-      "position": "Halfback",
-      "year": "1950",
-      "team": "Washington Redskins",
-      "team_logo": "redskins-logo.gif",
-      "awards": "",
-      "image": "Howie_Livingston-1950.jpg"
+      "image": "Harry_Ulinski-1950.jpg",
+      "stats": {
+              "Drafted": "4"
+      }
     },
 
     {
@@ -362,7 +424,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Jim_Keane-1950.jpg"
+      "image": "Jim_Keane-1950.jpg",
+      "stats": {
+              "Rushing Yards": "433",
+              "Fumbles Forced": "2",
+              "Drafted": "18"
+      }
     },
 
     {
@@ -372,7 +439,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Joe_Watson-1950.jpg"
+      "image": "Joe_Watson-1950.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -382,7 +454,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "John_Panelli-1950.jpg"
+      "image": "John_Panelli-1950.jpg",
+      "stats": {
+              "Rushinh Yards": "81",
+              "Fumbles Forced": "1",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -392,7 +469,12 @@
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
       "awards": "",
-      "image": "John_Rauch-1950.jpg"
+      "image": "John_Rauch-1950.jpg",
+      "stats": {
+              "Passing Yards": "502",
+              "Passing Touchdowns": "6",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -402,7 +484,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Ken_Kavanaugh-1950.jpg"
+      "image": "Ken_Kavanaugh-1950.jpg",
+      "stats": {
+              "Receiving Yards": "331",
+              "Receiving Touchdowns": "2",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -411,8 +498,13 @@
       "year": "1950",
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
-      "awards": "",
-      "image": "Norm_Standlee-1950.jpg"
+      "awards": "Pro Bowl",
+      "image": "Norm_Standlee-1950.jpg",
+      "stats": {
+              "Rushing Touchdowns": "1",
+              "Fumbles Forced": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -422,7 +514,11 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Paul_Salata-1950.jpg"
+      "image": "Paul_Salata-1950.jpg",
+      "stats": {
+              "Receiving Yards": "572",
+              "Receiving Touchdowns": "2"
+      }
     },
 
     {
@@ -432,7 +528,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Steve_Van_Buren-1950.jpg"
+      "image": "Steve_Van_Buren-1950.jpg",
+      "stats": {
+              "Rushing Yards": "629",
+              "Fumbles Forced": "3",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -442,7 +543,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1950.gif",
       "awards": "",
-      "image": "Tom_Kalmanir-1950.jpg"
+      "image": "Tom_Kalmanir-1950.jpg",
+      "stats": {
+              "Kick Return Yards": "358",
+              "Punt Return Yards": "116",
+              "Drafted": "25"
+      }
     },
 
     {
@@ -452,7 +558,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Tom_Wham-1950.jpg"
+      "image": "Tom_Wham-1950.jpg",
+      "stats": {
+              "Fumbles Recovered": "5",
+              "Fumble Return Touchdowns": "1",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -462,7 +573,12 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Travis_Tidwell-1950.jpg"
+      "image": "Travis_Tidwell-1950.jpg",
+      "stats": {
+              "Passing Yards": "338",
+              "Passing Touchdowns": "4",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -472,7 +588,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Val_Jansante-1950.jpg"
+      "image": "Val_Jansante-1950.jpg",
+      "stats": { 
+              "Receiving Yards": "353",
+              "Fumbles Recovered": "1",
+              "Drafted": "10"
+      }
     },
 
     {
@@ -482,7 +603,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Ventan_Yablonski-1950.jpg"
+      "image": "Ventan_Yablonski-1950.jpg",
+      "stats": {
+              "Rushing Yards": "110",
+              "Rushing Touchdowns": "1",
+              "Fumbles Forced": "1"
+      }
     },
 
     {
@@ -492,7 +618,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "Verl_Lillywhite-1950.jpg"
+      "image": "Verl_Lillywhite-1950.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Punting Yards": "1016",
+              "Forced Fumbles": "1"
+      }
     },
 
     {
@@ -502,7 +633,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Wallace_Triplett-1950.jpg"
+      "image": "Wallace_Triplett-1950.jpg",
+      "stats": {
+              "Rushing Yards": "92",
+              "Fumble Return Touchdowns": "1",
+              "Drafted": "19"
+      }
     },
 
     {
@@ -512,7 +648,10 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Wash_Serini-1950.jpg"
+      "image": "Wash_Serini-1950.jpg",
+      "stats": {
+              "Safeties": "1"
+      }
     },
 
     {
@@ -522,7 +661,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "Hall of Fame",
-      "image": "YA_Tittle-1950.jpg"
+      "image": "YA_Tittle-1950.jpg",
+      "stats": {
+              "Passing Yards": "1884",
+              "Passing Touchdowns": "8",
+              "Drafted": "1"
+      }
     },
 
 
@@ -537,7 +681,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Abner_Wimberly-1951.jpg"
+      "image": "Abner_Wimberly-1951.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "2",
+              "Drafted": "12"
+      }
     },
 
     {
@@ -546,8 +695,13 @@
       "year": "1951",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
-      "awards": "",
-      "image": "Al_DeRogatis-1951.jpg"
+      "awards": "Pro Bowl",
+      "image": "Al_DeRogatis-1951.jpg",
+      "stats": {
+              "Fumbles Recovered": "3",
+              "Fumble Return Touchdowns": "1",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -557,7 +711,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "Alex_Loyd-1951.jpg"
+      "image": "Alex_Loyd-1951.jpg",
+      "stats": {
+              "Receiving Yards": "402",
+              "Fumbles Forced": "2",
+              "Drafted": "15"
+      }
     },
 
     {
@@ -567,7 +726,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Bill_Swiacki-1951.jpg"
+      "image": "Bill_Swiacki-1951.jpg",
+      "stats": {
+              "Receiving Yards": "280",
+              "Receiving Touchdowns": "3",
+              "Drafted": "16"
+      }
     },
 
     {
@@ -576,8 +740,12 @@
       "year": "1951",
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
-      "awards": "",
-      "image": "Bill_Walsh-1951.jpg"
+      "awards": "Pro Bowl",
+      "image": "Bill_Walsh-1951.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -586,8 +754,13 @@
       "year": "1951",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
-      "awards": "",
-      "image": "Billy_Grimes-1951.jpg"
+      "awards": "Pro Bowl",
+      "image": "Billy_Grimes-1951.jpg",
+      "stats": {
+              "Punt Return Yards": "552",
+              "Punt Return Touchdowns": "2",
+              "Rushing Yards": "480"
+      }
     },
 
     {
@@ -597,7 +770,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "",
-      "image": "Bob_Boyd-1951.jpg"
+      "image": "Bob_Boyd-1951.jpg",
+      "stats": {
+              "Receiving Touchdowns": "4",
+              "Receiving Yards": "220",
+              "Fumbles Recovered": "1"
+      }
     },
 
     {
@@ -607,7 +785,10 @@
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
       "awards": "",
-      "image": "Bruce_Alford-1951.jpg"
+      "image": "Bruce_Alford-1951.jpg",
+      "stats": {
+              "Drafted": "8"
+      }
     },
 
     {
@@ -617,7 +798,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Chuck_Drazenovich-1951.jpg"
+      "image": "Chuck_Drazenovich-1951.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Fumbles Forced": "3",
+              "Rushing Yards": "155"
+      }
     },
 
     {
@@ -626,8 +812,13 @@
       "year": "1951",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
-      "awards": "",
-      "image": "Don_Doll-1951.jpg"
+      "awards": "Pro Bowl",
+      "image": "Don_Doll-1951.jpg",
+      "stats": {
+              "Interceptions": "12",
+              "Interception Return Touchdowns": "1",
+              "Drafted": "9"
+      }
     },
 
     {
@@ -637,27 +828,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Ebert_Van_Buren-1951.jpg"
-    },
-
-    {
-      "name": "Ed Neal",
-      "position": "Offensive Lineman",
-      "year": "1951",
-      "team": "Green Bay Packers",
-      "team_logo": "packers-logo.gif",
-      "awards": "",
-      "image": "Ed_Neal-1951.jpg"
-    },
-
-    {
-      "name": "Ed Quirk",
-      "position": "Linebacker \nOffensive Lineman",
-      "year": "1951",
-      "team": "Washington Redskins",
-      "team_logo": "redskins-logo.gif",
-      "awards": "",
-      "image": "Ed_Quirk-1951.jpg"
+      "image": "Ebert_Van_Buren-1951.jpg",
+      "stats": {
+              "Fumbles Forced": "2",
+              "Interceptions": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -667,7 +843,11 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Eddie_Saenz-1951.jpg"
+      "image": "Eddie_Saenz-1951.jpg",
+      "stats": {
+              "Kick Return Yards": "145",
+              "Drafted": "15"
+      }
     },
 
     {
@@ -677,7 +857,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "Hall of Fame | Pro Bowl | First-Team All-Pro | Championship",
-      "image": "Elroy_Hirsch-1951.jpg"
+      "image": "Elroy_Hirsch-1951.jpg",
+      "stats": {
+              "Receiving Yards": "1495",
+              "Receiving Touchdowns": "17",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -687,7 +872,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Floyd_Reid-1951.jpg"
+      "image": "Floyd_Reid-1951.jpg",
+      "stats": {
+              "Receiving Yards": "115",
+              "Fumbles Forced": "1",
+              "Drafted": "9"
+      }
     },
 
     {
@@ -697,7 +887,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Fran_Polsfoot-1951.jpg"
+      "image": "Fran_Polsfoot-1951.jpg",
+      "stats": {
+              "Receiving Yards": "796",
+              "Punting Yards": "1914",
+              "Receiving Touchdowns": "4"
+      }
     },
 
     {
@@ -707,7 +902,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Fran_Rogel-1951.jpg"
+      "image": "Fran_Rogel-1951.jpg",
+      "stats": {
+              "Rushing Yards": "385",
+              "Rushing Touchdowns": "3",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -717,7 +917,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Fred_Davis-1951.jpg"
+      "image": "Fred_Davis-1951.jpg",
+      "stats": {
+              "Fumbles Forced": "1",
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -727,7 +932,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "George_Gulyanics-1951.jpg"
+      "image": "George_Gulyanics-1951.jpg",
+      "stats": {
+              "Rushing Yards": "403",
+              "Rushing Touchdowns": "4",
+              "Forced Fumbles": "4"
+      }
     },
 
     {
@@ -737,17 +947,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Jack_Cloud-1951.jpg"
-    },
-
-    {
-      "name": "Jack Zilly",
-      "position": "Defensive End \nEnd",
-      "year": "1951",
-      "team": "Los Angeles Rams",
-      "team_logo": "rams-logo-1951.gif",
-      "awards": "",
-      "image": "Jack_Zilly-1951.jpg"
+      "image": "Jack_Cloud-1951.jpg",
+      "stats": {
+              "Forced Fumbles": "2",
+              "Rushing Touchdowns": "1",
+              "Drafted": "6"
+      }
     },
 
     {
@@ -757,7 +962,11 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Jerry_Groom-1951.jpg"
+      "image": "Jerry_Groom-1951.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -767,7 +976,12 @@
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
       "awards": "",
-      "image": "Joe_Golding-1951.jpg"
+      "image": "Joe_Golding-1951.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Fumbles Recovered": "2",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -777,7 +991,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "John_Hoffman-1951.jpg"
+      "image": "John_Hoffman-1951.jpg",
+      "stats": {
+              "Receiving Yards": "394",
+              "Receiving Touchdowns": "2",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -787,7 +1006,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "John_Strzykalski-1951.jpg"
+      "image": "John_Strzykalski-1951.jpg",
+      "stats": {
+              "Rushing Yards": "296",
+              "Rushing Touchdowns": "3",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -796,8 +1020,11 @@
       "year": "1951",
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
-      "awards": "First-Team All-Pro",
-      "image": "Jon_Baker-1951.jpg"
+      "awards": "Pro Bowl",
+      "image": "Jon_Baker-1951.jpg",
+      "stats": {
+              "Drafted": "7"
+      }
     },
 
     {
@@ -807,7 +1034,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Jug_Girard-1951.jpg"
+      "image": "Jug_Girard-1951.jpg",
+      "stats": {
+              "Interceptions": "5",
+              "Punting Yards": "2101",
+              "Receiving Yards": "220"
+      }
     },
 
     {
@@ -817,7 +1049,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Julie_Rykovich-1951.jpg"
+      "image": "Julie_Rykovich-1951.jpg",
+      "stats": {
+              "Rushing Yards": "399",
+              "Rushing Touchdowns": "4",
+              "Fumbles Forced": "3"
+      }
     },
 
     {
@@ -827,7 +1064,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "Hall of Fame | Pro Bowl | Championship",
-      "image": "Norm_Van_Brocklin-1951.jpg"
+      "image": "Norm_Van_Brocklin-1951.jpg",
+      "stats": {
+              "Passing Yards": "1725",
+              "Passing Touchdowns": "13",
+              "Punting Yards": "1992"
+      }
     },
 
     {
@@ -837,7 +1079,12 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "First-Team All-Pro | Pro Bowl",
-      "image": "Otto_Schnellbacher-1951.jpg"
+      "image": "Otto_Schnellbacher-1951.jpg",
+      "stats": {
+              "Interceptions": "11",
+              "Interception Return Touchdowns": "2",
+              "Drafted": "25"
+      }
     },
 
     {
@@ -847,17 +1094,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Paul_Lipscomb-1951.jpg"
-    },
-
-    {
-      "name": "Pete Stout",
-      "position": "Fullback \nLinebacker",
-      "year": "1951",
-      "team": "Washington Redskins",
-      "team_logo": "redskins-logo.gif",
-      "awards": "",
-      "image": "Pete_Stout-1951.jpg"
+      "image": "Paul_Lipscomb-1951.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Forced": "1",
+              "Fumbles Recovered": "1"
+      }
     },
 
     {
@@ -866,8 +1108,12 @@
       "year": "1951",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
-      "awards": "",
-      "image": "Ray_Bray-1951.jpg"
+      "awards": "Pro Bowl",
+      "image": "Ray_Bray-1951.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "9"
+      }
     },
 
     {
@@ -877,7 +1123,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Robert_Smith-1951.jpg"
+      "image": "Robert_Smith-1951.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Fumbles Recovered": "2",
+              "Punting Yards": "2082"
+      }
     },
 
     {
@@ -887,7 +1138,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Roy_Steiner-1951.jpg"
+      "image": "Roy_Steiner-1951.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Drafted": "12"
+      }
     },
 
     {
@@ -897,7 +1152,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "packers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Russ_Craft-1951.jpg"
+      "image": "Russ_Craft-1951.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Fumbles Recovered": "1",
+              "Drafted": "15"
+      }
     },
 
     {
@@ -907,7 +1167,12 @@
       "team": "New York Yanks",
       "team_logo": "yanks-logo.gif",
       "awards": "",
-      "image": "Sherman_Howard-1951.jpg"
+      "image": "Sherman_Howard-1951.jpg",
+      "stats": {
+              "Receiving Yards": "447",
+              "Rushing Touchdowns": "4",
+              "Fumbles Forced": "4"
+      }
     },
 
     {
@@ -917,17 +1182,11 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Thurman_McGraw-1951.jpg"
-    },
-
-    {
-      "name": "Tom McWilliams",
-      "position": "Defensive Back \nHalfback",
-      "year": "1951",
-      "team": "Pittsburgh Steelers",
-      "team_logo": "steelers-logo.gif",
-      "awards": "",
-      "image": "Tom_McWilliams-1951.jpg"
+      "image": "Thurman_McGraw-1951.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -937,7 +1196,11 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "Visco_Grgich-1951.jpg"
+      "image": "Visco_Grgich-1951.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "24"
+      }
     },
 
     {
@@ -947,7 +1210,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "",
-      "image": "Woodley_Lewis-1951.jpg"
+      "image": "Woodley_Lewis-1951.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Fumbles Recovered": "1",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -957,7 +1225,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "YA_Tittle-1951.jpg"
+      "image": "YA_Tittle-1951.jpg",
+      "stats": {
+              "Passing Yards": "808",
+              "Passing Touchdowns": "8",
+              "Drafted": "1"
+      }
     },
 
 
@@ -973,7 +1246,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Babe_Parilli-1952.jpg"
+      "image": "Babe_Parilli-1952.jpg",
+      "stats": {
+              "Passing Yards": "1416",
+              "Passing Touchdowns": "13",
+              "Punting Yards": "2645"
+      }
     },
 
     {
@@ -983,7 +1261,11 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "",
-      "image": "Barney_Poole-1952.jpg"
+      "image": "Barney_Poole-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "6",
+              "Drafted": "6"
+      }
     },
 
     {
@@ -993,7 +1275,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "Bert_Rechichar-1952.jpg"
+      "image": "Bert_Rechichar-1952.jpg",
+      "stats": {
+              "Interceptions": "6",
+              "Fumbles Recovered": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1003,7 +1290,11 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Bill_Fischer-1952.jpg"
+      "image": "Bill_Fischer-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1013,7 +1304,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Bill_Howton-1952.jpg"
+      "image": "Bill_Howton-1952.jpg",
+      "stats": {
+              "Receiving Yards": "1231",
+              "Receiving Touchdowns": "13",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -1023,7 +1319,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Bill_McColl-1952.jpg"
+      "image": "Bill_McColl-1952.jpg",
+      "stats": {
+              "Receiving Yards": "277",
+              "Receiving Touchdowns": "2",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1033,7 +1334,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Bill_Reichardt-1952.jpg"
+      "image": "Bill_Reichardt-1952.jpg",
+      "stats": {
+              "Rushing Yards": "121",
+              "Longest Field Goal": "37",
+              "Drafted": "7"
+      }
     },
 
     {
@@ -1043,7 +1349,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Bill_Wightkin-1952.jpg"
+      "image": "Bill_Wightkin-1952.jpg",
+      "stats": {
+              "Receiving Yards": "120",
+              "Receiving Touchdowns": "2",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -1053,7 +1364,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Billy_Stone-1952.jpg"
+      "image": "Billy_Stone-1952.jpg",
+      "stats": {
+              "Receiving Yards": "283",
+              "Fumbles Forced": "3",
+              "Drafted": "12"
+      }
     },
 
     {
@@ -1062,8 +1378,13 @@
       "year": "1952",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
-      "awards": "Pro Bowl",
-      "image": "Bob_Hoernschemeyer-1952.jpg"
+      "awards": "Pro Bowl | Championship",
+      "image": "Bob_Hoernschemeyer-1952.jpg",
+      "stats": {
+              "Rushing Yards": "457",
+              "Rushing Touchdowns": "4",
+              "Drafted": "11"
+      }
     },
 
     {
@@ -1073,7 +1394,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Bob_Williams-1952.jpg"
+      "image": "Bob_Williams-1952.jpg",
+      "stats": {
+              "Passing Yards": "579",
+              "Passing Touchdowns": "6",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1083,7 +1409,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Bobby_Dillon-1952.jpg"
+      "image": "Bobby_Dillon-1952.jpg",
+      "stats": {
+              "Interceptions": "4",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1093,7 +1423,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Bobby_Walston-1952.jpg"
+      "image": "Bobby_Walston-1952.jpg",
+      "stats": {
+              "Receiving Yards": "469",
+              "Receiving Touchdowns": "3",
+              "Longest Field Goal": "35"
+      }
     },
 
     {
@@ -1102,8 +1437,12 @@
       "year": "1952",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
-      "awards": "",
-      "image": "Buddy_Parker-1952.jpg"
+      "awards": "Championship",
+      "image": "Buddy_Parker-1952.jpg",
+      "stats": {
+              "Wins": "9",
+              "Losses": "3"
+      }
     },
 
     {
@@ -1113,7 +1452,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Charlie_Justice-1952.jpg"
+      "image": "Charlie_Justice-1952.jpg",
+      "stats": {
+              "Rushing Yards": "129",
+              "Punting Yards": "431",
+              "Drafted": "16"
+      }
     },
 
     {
@@ -1123,7 +1467,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "Hall of Fame | First-Team All-Pro | Pro Bowl",
-      "image": "Chuck_Bednarik-1952.jpg"
+      "image": "Chuck_Bednarik-1952.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Fumbles Recovered": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1133,7 +1482,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Chuck_Hunsinger-1952.jpg"
+      "image": "Chuck_Hunsinger-1952.jpg",
+      "stats": {
+              "Rushing Yards": "139",
+              "Kick Return Yards": "308",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1143,7 +1497,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Claude_Hipps-1952.jpg"
+      "image": "Claude_Hipps-1952.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Drafted": "7"
+      }
     },
 
     {
@@ -1153,7 +1511,11 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "",
-      "image": "Dan_Edwards-1952.jpg"
+      "image": "Dan_Edwards-1952.jpg",
+      "stats": {
+              "Receiving Yards": "22",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1163,7 +1525,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Darrell_Hogan-1952.jpg"
+      "image": "Darrell_Hogan-1952.jpg",
+      "stats": {
+              "Interceptions": "4",
+              "Fumbles Forced": "1"
+      }
     },
 
     {
@@ -1173,7 +1539,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Don_Paul-1952.jpg"
+      "image": "Don_Paul-1952.jpg",
+      "stats": {
+              "Punt Return Yards": "97",
+              "Kick Return Yards": "54",
+              "Drafted": "4"
+      }
     },
 
     {
@@ -1183,7 +1554,12 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "First-Team All-Pro | Pro Bowl",
-      "image": "Eddie_Price-1952.jpg"
+      "image": "Eddie_Price-1952.jpg",
+      "stats": {
+              "Rushing Yards": "748",
+              "Rushing Touchdowns": "5",
+              "Fumbles Forced": "3"
+      }
     },
 
     {
@@ -1193,7 +1569,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Frank_Ziegler-1952.jpg"
+      "image": "Frank_Ziegler-1952.jpg",
+      "stats": {
+              "Rushing Yards": "172",
+              "Rushing Touchdowns": "2",
+              "Fumbles Forced": "1"
+      }
     },
 
     {
@@ -1203,7 +1584,11 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Fred_Benners-1952.jpg"
+      "image": "Fred_Benners-1952.jpg",
+      "stats": {
+              "Passing Yards": "320",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -1213,7 +1598,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Fred_Cone-1952.jpg"
+      "image": "Fred_Cone-1952.jpg",
+      "stats": {
+              "Rushing Yards": "276",
+              "Rushing Touchdowns": "2",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1223,7 +1613,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Fred_Williams-1952.jpg"
+      "image": "Fred_Williams-1952.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "1",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -1233,7 +1628,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Gene_Ronzani-1952.jpg"
+      "image": "Gene_Ronzani-1952.jpg",
+      "stats": {
+              "Wins": "6",
+              "Losses": "6"
+      }
     },
 
     {
@@ -1243,7 +1642,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Gene_Schroeder-1952.jpg"
+      "image": "Gene_Schroeder-1952.jpg",
+      "stats": {
+              "Receiving Yards": "660",
+              "Receiving Touchdowns": "6",
+              "Fumbles Forced": "3"
+      }
     },
 
     {
@@ -1252,8 +1656,12 @@
       "year": "1952",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
-      "awards": "",
-      "image": "George_Halas-1952.jpg"
+      "awards": "Hall of Fame",
+      "image": "George_Halas-1952.jpg",
+      "stats": {
+              "Wins": "5",
+              "Losses": "7"
+      }
     },
 
     {
@@ -1263,7 +1671,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "George_Ratterman-1952.jpg"
+      "image": "George_Ratterman-1952.jpg",
+      "stats": {
+              "Passing Yards": "20",
+              "Passing Touchdowns": "1",
+              "Drafted": "16"
+      }
     },
 
     {
@@ -1273,7 +1686,12 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "Pro Bowl",
-      "image": "George_Taliaferro-1952.jpg"
+      "image": "George_Taliaferro-1952.jpg",
+      "stats": {
+              "Rushing Yards": "419",
+              "Fumbles Forced": "6",
+              "Drafted": "13"
+      }
     },
 
     {
@@ -1283,7 +1701,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "George_Tarasovic-1952.jpg"
+      "image": "George_Tarasovic-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "4",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -1293,7 +1715,11 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Gino_Marchetti-1952.jpg"
+      "image": "Gino_Marchetti-1952.jpg",
+      "stats": {
+              "Receiving Touchdowns": "1",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -1303,7 +1729,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Howard_Hartley-1952.jpg"
+      "image": "Howard_Hartley-1952.jpg",
+      "stats": {
+              "Interceptions": "4",
+              "Forced Fumbles": "1"
+      }
     },
 
     {
@@ -1313,7 +1743,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "Hall of Fame | First-Team All-Pro",
-      "image": "Jack_Christiansen-1952.jpg"
+      "image": "Jack_Christiansen-1952.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Forced Fumbles": "2",
+              "Punt Return Touchdowns": "2"
+      }
     },
 
     {
@@ -1323,7 +1758,11 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Jim_Dooley-1952.jpg"
+      "image": "Jim_Dooley-1952.jpg",
+      "stats": {
+              "Interceptions": "5",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1333,7 +1772,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Joe_Bach-1952.jpg"
+      "image": "Joe_Bach-1952.jpg",
+      "stats": {
+              "Wins": "5",
+              "Losses": "7"
+      }
     },
 
     {
@@ -1343,7 +1786,11 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "",
-      "image": "Joe_Campanella-1952.jpg"
+      "image": "Joe_Campanella-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1353,7 +1800,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "John_Papit-1952.jpg"
+      "image": "John_Papit-1952.jpg",
+      "stats": {
+              "Rushing Yards": "102",
+              "Receiving Touchdowns": "1",
+              "Drafted": "7"
+      }
     },
 
     {
@@ -1363,7 +1815,11 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "John_Rapacz-1952.jpg"
+      "image": "John_Rapacz-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1373,7 +1829,11 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "John_Sandusky-1952.jpg"
+      "image": "John_Sandusky-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -1383,7 +1843,11 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "Pro Bowl",
-      "image": "John_Wozniak-1952.jpg"
+      "image": "John_Wozniak-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -1393,7 +1857,11 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "",
-      "image": "Keever_Jankovich-1952.jpg"
+      "image": "Keever_Jankovich-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -1403,7 +1871,12 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Kyle_Rote-1952.jpg"
+      "image": "Kyle_Rote-1952.jpg",
+      "stats": {
+              "Rushing Yards": "421",
+              "Receiving Touchdowns": "2",
+              "Fumbles Forced": "3"
+      }
     },
 
     {
@@ -1413,7 +1886,11 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Laurie_Niemi-1952.jpg"
+      "image": "Laurie_Niemi-1952.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -1423,7 +1900,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Leon_Heath-1952.jpg"
+      "image": "Leon_Heath-1952.jpg",
+      "stats": {
+              "Rushing Yards": "388",
+              "Rushing Touchdowns": "2",
+              "Forced Fumbles": "5"
+      }
     },
 
     {
@@ -1433,7 +1915,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Lynn_Chandnois-1952.jpg"
+      "image": "Lynn_Chandnois-1952.jpg",
+      "stats": {
+              "Receiving Yards": "370",
+              "Rushing Yards": "298",
+              "Kick Return Touchdowns": "2"
+      }
     },
 
     {
@@ -1442,8 +1929,12 @@
       "year": "1952",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
-      "awards": "",
-      "image": "Paul_Brown-1952.jpg"
+      "awards": "Hall of Fame",
+      "image": "Paul_Brown-1952.jpg",
+      "stats": {
+              "Wins": "8",
+              "Losses": "4"
+      }
     },
 
     {
@@ -1453,7 +1944,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Ray_Mathews-1952.jpg"
+      "image": "Ray_Mathews-1952.jpg",
+      "stats": {
+              "Receiving Yards": "543",
+              "Rushing Yards": "315",
+              "Punt Return Touchdowns": "2"
+      }
     },
 
     {
@@ -1463,7 +1959,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Russ_Craft-1952.jpg"
+      "image": "Russ_Craft-1952.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "1",
+              "Drafted": "15"
+      }
     },
 
     {
@@ -1473,7 +1974,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "",
-      "image": "Skeets_Quinlan-1952.jpg"
+      "image": "Skeets_Quinlan-1952.jpg",
+      "stats": {
+              "Receiving Yards": "265",
+              "Rushing Yards": "224",
+              "Kick Return Yards": "455"
+      }
     },
 
     {
@@ -1483,7 +1989,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Steve_Romanik-1952.jpg"
+      "image": "Steve_Romanik-1952.jpg",
+      "stats": {
+              "Passing Yards": "772",
+              "Passing Touchdowns": "4",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1493,7 +2004,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Steve_Van_Buren-1952.jpg"
+      "image": "Steve_Van_Buren-1952.jpg",
+      "stats": {
+              "Rushing Yards": "327",
+              "Rushing Touchdowns": "6",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1503,17 +2019,27 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "Pro Bowl",
-      "image": "Tank_Younger-1952.jpg"
+      "image": "Tank_Younger-1952.jpg",
+      "stats": {
+              "Rushing Yards": "223",
+              "Rushing Touchdowns": "1",
+              "Interceptions": "1"
+      }
     },
 
     {
       "name": "Tobin Rote",
-      "position": "Offensive Lineman",
+      "position": "Quarterback",
       "year": "1952",
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
-      "awards": "Pro Bowl",
-      "image": "Tobin_Rote-1952.jpg"
+      "awards": "",
+      "image": "Tobin_Rote-1952.jpg",
+      "stats": {
+              "Passing Yards": "1268",
+              "Passing Touchdowns": "13",
+              "Fumbles Forced": "10"
+      }
     },
 
     {
@@ -1523,7 +2049,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "",
-      "image": "Vitamin_Smith-1952.jpg"
+      "image": "Vitamin_Smith-1952.jpg",
+      "stats": {
+              "Receiving Yards": "254",
+              "Rushing Touchdowns": "3",
+              "Fumbles Forced": "3"
+      }
     },
 
     {
@@ -1533,7 +2064,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "Walt_Michaels-1952.jpg"
+      "image": "Walt_Michaels-1952.jpg",
+      "stats": {
+              "Interceptions": "4",
+              "Fumbles Forced": "1",
+              "Drafted": "7"
+      }
     },
 
     {
@@ -1543,7 +2079,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "YA_Tittle-1952.jpg"
+      "image": "YA_Tittle-1952.jpg",
+      "stats": {
+              "Passing Yards": "1407",
+              "Passing Touchdowns": "11",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1552,8 +2093,13 @@
       "year": "1952",
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
-      "awards": "",
-      "image": "Yale_Lary-1952.jpg"
+      "awards": "Hall of Fame",
+      "image": "Yale_Lary-1952.jpg",
+      "stats": {
+              "Interceptions": "4",
+              "Kick Return Yards": "303",
+              "Punt Return Touchdowns": "1"
+      }
     },
 
     {
@@ -1563,7 +2109,12 @@
       "team": "Dallas Texans",
       "team_logo": "texans-logo.gif",
       "awards": "",
-      "image": "Zollie_Toth-1952.jpg"
+      "image": "Zollie_Toth-1952.jpg",
+      "stats": {
+              "Rushing Yards": "266",
+              "Rushing Touchdowns": "4",
+              "Drafted": "4"
+      }
     },
 
 
@@ -1580,17 +2131,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Billy_Cross-1953.jpg"
-    },
-
-    {
-      "name": "Bob McChesney",
-      "position": "End",
-      "year": "1953",
-      "team": "New York Giants",
-      "team_logo": "giants-logo.gif",
-      "awards": "",
-      "image": "Bob_McChesney-1953.jpg"
+      "image": "Billy_Cross-1953.jpg",
+      "stats": {
+              "Receiving Yards": "285",
+              "Rushing Yards": "196",
+              "Kick Return Yards": "297"
+      }
     },
 
     {
@@ -1600,7 +2146,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Bobby_Thomason-1953.jpg"
+      "image": "Bobby_Thomason-1953.jpg",
+      "stats": {
+              "Passing Yards": "2462",
+              "Passing Touchdowns": "21",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1610,7 +2161,12 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "First-Team All-Pro | Pro Bowl",
-      "image": "Don_Paul-1953.jpg"
+      "image": "Don_Paul-1953.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1620,7 +2176,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Eddie_LeBaron-1953.jpg"
+      "image": "Eddie_LeBaron-1953.jpg",
+      "stats": {
+              "Passing Yards": "874",
+              "Passing Touchdowns": "3",
+              "Drafted": "10"
+      }
     },
 
     {
@@ -1630,7 +2191,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Gern_Nagler-1953.jpg"
+      "image": "Gern_Nagler-1953.jpg",
+      "stats": {
+              "Receiving Yards": "610",
+              "Receiving Touchdowns": "6",
+              "Fumbles Recovered": "1"
+      }
     },
 
     {
@@ -1640,7 +2206,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Harley_Sewell-1953.jpg"
+      "image": "Harley_Sewell-1953.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "3",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1650,7 +2221,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "John_Dottley-1953.jpg"
+      "image": "John_Dottley-1953.jpg",
+      "stats": {
+              "Rushing Yards": "150",
+              "Rushing Touchdowns": "1",
+              "Fumbles Forced": "4"
+      }
     },
 
     {
@@ -1660,7 +2236,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "John_Williams-1953.jpg"
+      "image": "John_Williams-1953.jpg",
+      "stats": {
+              "Interceptions": "6",
+              "Fumbles Recovered": "2",
+              "Kick Return Yards": "224"
+      }
     },
 
     {
@@ -1670,7 +2251,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Leo_Sanford-1953.jpg"
+      "image": "Leo_Sanford-1953.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Interception Return Touchdowns": "1",
+              "Fumbles Recovered": "1"
+      }
     },
 
     {
@@ -1680,17 +2266,27 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Pat_Brady-1953.jpg"
+      "image": "Pat_Brady-1953.jpg",
+      "stats": {
+              "Punting Yards": "3752",
+              "Longest Punt": "64",
+              "Drafted": "13"
+      }
     },
 
     {
-      "name": "Ray_Renfro",
+      "name": "Ray Renfro",
       "position": "Halfback \nFlanker",
       "year": "1953",
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Ray_Renfro-1953.jpg"
+      "image": "Ray_Renfro-1953.jpg",
+      "stats": {
+              "Receiving Yards": "722",
+              "Receiving Touchdowns": "4",
+              "Rushing Touchdowns": "4"
+      }
     },
 
     {
@@ -1700,7 +2296,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Ted_Marchibroda-1953.jpg"
+      "image": "Ted_Marchibroda-1953.jpg",
+      "stats": {
+              "Passing Yards": "66",
+              "Passing Touchdowns": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1710,7 +2311,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "Tom_Catlin-1953.jpg"
+      "image": "Tom_Catlin-1953.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Fumbles Recovered": "1",
+              "Drafted": "4"
+      }
     },
 
     {
@@ -1720,7 +2326,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Tom_Dublinski-1953.jpg"
+      "image": "Tom_Dublinski-1953.jpg",
+      "stats": {
+              "Passing Yards": "174",
+              "Fumbles Forced": "2",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -1730,7 +2341,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Tom_OConnell-1953.jpg"
+      "image": "Tom_OConnell-1953.jpg",
+      "stats": {
+              "Passing Yards": "437",
+              "Passing Touchdowns": "1",
+              "Drafted": "18"
+      }
     },
 
 
@@ -1747,7 +2363,11 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Art_DeCarlo-1954.jpg"
+      "image": "Art_DeCarlo-1954.jpg",
+      "stats": {
+              "Interceptions": "5",
+              "Drafted": "6"
+      }
     },
 
     {
@@ -1757,7 +2377,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Art_Hunter-1954.jpg"
+      "image": "Art_Hunter-1954.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1767,7 +2391,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Bill_Bowman-1954.jpg"
+      "image": "Bill_Bowman-1954.jpg",
+      "stats": {
+              "Rushing Yards": "397",
+              "Rushing Touchdowns": "2",
+              "Receiving Yards": "288"
+      }
     },
 
     {
@@ -1777,7 +2406,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Bill_Stits-1954.jpg"
+      "image": "Bill_Stits-1954.jpg",
+      "stats": {
+              "Interceptions": "6",
+              "Fumbles Recovered": "1",
+              "Drafted": "4"
+      }
     },
 
     {
@@ -1787,7 +2421,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "Bobby_Garrett-1954.jpg"
+      "image": "Bobby_Garrett-1954.jpg",
+      "stats": {
+              "Passing Yards": "143",
+              "Forced Fumbles": "2",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1797,7 +2436,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Bobby_Layne-1954.jpg"
+      "image": "Bobby_Layne-1954.jpg",
+      "stats": {
+              "Passing Yards": "1818",
+              "Passing Touchdowns": "14",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1807,7 +2451,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Buddy_Young-1954.jpg"
+      "image": "Buddy_Young-1954.jpg",
+      "stats": {
+              "Rushing Yards": "311",
+              "Receiving Touchdowns": "3",
+              "Kick Return Yards": "308"
+      }
     },
 
     {
@@ -1817,7 +2466,12 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Buford_Long-1954.jpg"
+      "image": "Buford_Long-1954.jpg",
+      "stats": {
+              "Receiving Yards": "178",
+              "Fumbles Forced": "2",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -1827,7 +2481,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Championship",
-      "image": "Chet_Hanulak-1954.jpg"
+      "image": "Chet_Hanulak-1954.jpg",
+      "stats": {
+              "Rushing Yards": "296",
+              "Rushing Touchdowns": "4",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -1837,7 +2496,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro",
-      "image": "Dale_Dodrill-1954.jpg"
+      "image": "Dale_Dodrill-1954.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Fumbles Recovered": "2",
+              "Drafted": "6"
+      }
     },
 
     {
@@ -1847,7 +2511,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Dave_Hanner-1954.jpg"
+      "image": "Dave_Hanner-1954.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -1857,7 +2525,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Dick_Alban-1954.jpg"
+      "image": "Dick_Alban-1954.jpg",
+      "stats": {
+              "Interceptions": "9",
+              "Fumbles Forced": "1",
+              "Drafted": "9"
+      }
     },
 
     {
@@ -1867,7 +2540,11 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Don_Heinrich-1954.jpg"
+      "image": "Don_Heinrich-1954.jpg",
+      "stats": {
+              "Passing Yards": "56",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1877,7 +2554,10 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Doug_Atkins-1954.jpg"
+      "image": "Doug_Atkins-1954.jpg",
+      "stats": {
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1887,7 +2567,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "",
-      "image": "Elbie_Nickel-1954.jpg"
+      "image": "Elbie_Nickel-1954.jpg",
+      "stats": {
+              "Receiving Yards": "584",
+              "Receiving Touchdowns": "5",
+              "Fumbles Forced": "1"
+      }
     },
 
     {
@@ -1897,7 +2582,11 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Gerald_Weatherly-1954.jpg"
+      "image": "Gerald_Weatherly-1954.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -1907,7 +2596,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Harold_Giancanelli-1954.jpg"
+      "image": "Harold_Giancanelli-1954.jpg",
+      "stats": {
+              "Receiving Yards": "195",
+              "Receiving Touchdowns": "4",
+              "Kick Return Yards": "387"
+      }
     },
 
     {
@@ -1917,7 +2611,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Harry_Jagade-1954.jpg"
+      "image": "Harry_Jagade-1954.jpg",
+      "stats": {
+              "Fumbles Forced": "12",
+              "Rushing Yards": "498",
+              "Rushing Touchdowns": "3"
+      }
     },
 
     {
@@ -1927,7 +2626,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "",
-      "image": "Joe_Arenas-1954.jpg"
+      "image": "Joe_Arenas-1954.jpg",
+      "stats": {
+              "Interceptions": "3",
+              "Fumbles Forced": "3",
+              "Kick Return Yards": "362"
+      }
     },
 
     {
@@ -1937,7 +2641,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro | Hall of Fame",
-      "image": "Joe_Perry-1954.jpg"
+      "image": "Joe_Perry-1954.jpg",
+      "stats": {
+              "Rushing Yards": "1049",
+              "Rushing Touchdowns": "8",
+              "Fumbles Forced": "6"
+      }
     },
 
     {
@@ -1947,7 +2656,11 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "John_Martinkovic-1954.jpg"
+      "image": "John_Martinkovic-1954.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "6"
+      }
     },
 
     {
@@ -1957,7 +2670,11 @@
       "team": "Los Angeles Rams",
       "team_logo": "rams-logo-1951.gif",
       "awards": "Pro Bowl",
-      "image": "Leon_McLaughlin-1954.jpg"
+      "image": "Leon_McLaughlin-1954.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "21"
+      }
     },
 
     {
@@ -1967,7 +2684,11 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "First-Team All-Pro",
-      "image": "Les_Bingaman-1954.jpg"
+      "image": "Les_Bingaman-1954.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -1977,7 +2698,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Neil_Worden-1954.jpg"
+      "image": "Neil_Worden-1954.jpg",
+      "stats": {
+              "Rushing Yards": "128",
+              "Rushing Touchdowns": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -1987,7 +2713,11 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro",
-      "image": "Norm_Willey-1954.jpg"
+      "image": "Norm_Willey-1954.jpg",
+      "stats": {
+              "Fumble Return Touchdowns": "1",
+              "Drafted": "13"
+      }
     },
 
     {
@@ -1997,7 +2727,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro | Championship | Hall of Fame",
-      "image": "Otto_Graham-1954.jpg"
+      "image": "Otto_Graham-1954.jpg",
+      "stats": {
+              "Passing Yards": "2092",
+              "Passing Touchdowns": "11",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -2007,7 +2742,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Paul_Barry-1954.jpg"
+      "image": "Paul_Barry-1954.jpg",
+      "stats": {
+              "Rushing Yards": "156",
+              "Fumbles Forced": "4",
+              "Drafted": "13"
+      }
     },
 
     {
@@ -2017,7 +2757,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Tom_Keane-1954.jpg"
+      "image": "Tom_Keane-1954.jpg",
+      "stats": {
+              "Interceptions": "5",
+              "Fumbles Recovered": "1",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -2027,7 +2772,12 @@
       "team": "Green Bay Packers",
       "team_logo": "packers-logo.gif",
       "awards": "",
-      "image": "Veryl_Switzer-1954.jpg"
+      "image": "Veryl_Switzer-1954.jpg",
+      "stats": {
+              "Punt Return Yards": "306",
+              "Punt Return Touchdowns": "1",
+              "Fumble Return Touchdowns": "1"
+      }
     },
 
     {
@@ -2037,7 +2787,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Pro Bowl | Hall of Fame",
-      "image": "YA_Tittle-1954.jpg"
+      "image": "YA_Tittle-1954.jpg",
+      "stats": {
+              "Passing Yards": "2205",
+              "Passing Touchdowns": "9",
+              "Drafted": "1"
+      }
     },
 
 
@@ -2060,7 +2815,10 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Ben_Agajanian-1955.jpg"
+      "image": "Ben_Agajanian-1955.jpg",
+      "stats": {
+              "Longest Field Goal": "45"
+      }
     },
 
     {
@@ -2070,7 +2828,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Billy_Wilson-1955.jpg"
+      "image": "Billy_Wilson-1955.jpg",
+      "stats": {
+              "Receiving Yards": "831",
+              "Receiving Touchdowns": "7",
+              "Drafted": "22"
+      }
     },
 
     {
@@ -2080,17 +2843,26 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro",
-      "image": "Bob_Toneff-1955.jpg"
+      "image": "Bob_Toneff-1955.jpg",
+      "stats": {
+              "Fumbles Recovered": "1",
+              "Drafted": "2"
+      }
     },
 
     {
-      "name": "Bobby_Watkins",
+      "name": "Bobby Watkins",
       "position": "Halfback",
       "year": "1955",
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "",
-      "image": "Bobby_Watkins-1955.jpg"
+      "image": "Bobby_Watkins-1955.jpg",
+      "stats": {
+              "Rushing Yards": "553",
+              "Rushing Touchdowns": "8",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -2100,7 +2872,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Carl_Taseff-1955.jpg"
+      "image": "Carl_Taseff-1955.jpg",
+      "stats": {
+              "Kick Return Yards": "162",
+              "Interceptions": "1",
+              "Drafted": "22"
+      }
     },
 
     {
@@ -2110,7 +2887,11 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl | Championship",
-      "image": "Carlton_Massey-1955.jpg"
+      "image": "Carlton_Massey-1955.jpg",
+      "stats": {
+              "Interceptions": "1",
+              "Drafted": "8"
+      }
     },
 
     {
@@ -2120,7 +2901,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Dale_Atkeson-1955.jpg"
+      "image": "Dale_Atkeson-1955.jpg",
+      "stats": {
+              "Rushing Yards": "300",
+              "Rushing Touchdowns": "1",
+              "Fumbles Forced": "2"
+      }
     },
 
     {
@@ -2130,7 +2916,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Dick_Bielski-1955.jpg"
+      "image": "Dick_Bielski-1955.jpg",
+      "stats": {
+              "Longest Field Goal": "50",
+              "Rushing Yards": "67",
+              "Rushing Touchdowns": "1"
+      }
     },
 
     {
@@ -2140,7 +2931,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Dick_Moegle-1955.jpg"
+      "image": "Dick_Moegle-1955.jpg",
+      "stats": {
+              "Interceptions": "6",
+              "Rushing Yards": "235",
+              "Rushing Touchdowns": "5"
+      }
     },
 
     {
@@ -2150,7 +2946,11 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Don_Colo-1955.jpg"
+      "image": "Don_Colo-1955.jpg",
+      "stats": {
+              "Fumbles Recovered": "2",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -2160,7 +2960,12 @@
       "team": "Detroit Lions",
       "team_logo": "lions-logo.gif",
       "awards": "",
-      "image": "Dorne_Dibble-1955.jpg"
+      "image": "Dorne_Dibble-1955.jpg",
+      "stats": {
+              "Receiving Yards": "179",
+              "Receiving Touchdowns": "2",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -2170,7 +2975,10 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "Doug_Eggers-1955.jpg"
+      "image": "Doug_Eggers-1955.jpg",
+      "stats": {
+              "Fumbles Recovered": "3"
+      }
     },
 
     {
@@ -2180,7 +2988,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Ed_Brown-1955.jpg"
+      "image": "Ed_Brown-1955.jpg",
+      "stats": {
+              "Passing Yards": "1307",
+              "Passing Touchdowns": "9",
+              "Drafted": "6"
+      }
     },
 
     {
@@ -2190,7 +3003,11 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro",
-      "image": "Gene_Brito-1955.jpg"
+      "image": "Gene_Brito-1955.jpg",
+      "stats": {
+              "Fumbles Recovered": "6",
+              "Drafted": "17"
+      }
     },
 
     {
@@ -2200,7 +3017,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "Hall of Fame",
-      "image": "George_Blanda-1955.jpg"
+      "image": "George_Blanda-1955.jpg",
+      "stats": {
+              "Passing Yards": "459",
+              "Passing Touchdowns": "4",
+              "Longest Field Goal": "49"
+      }
     },
 
     {
@@ -2210,7 +3032,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Gern_Nagler-1955.jpg"
+      "image": "Gern_Nagler-1955.jpg",
+      "stats": {
+              "Receiving Yards": "218",
+              "Receiving Touchdowns": "3",
+              "Drafted": "14"
+      }
     },
 
     {
@@ -2220,7 +3047,12 @@
       "team": "Chicago Bears",
       "team_logo": "chicago-bears-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro",
-      "image": "Harlon_Hill-1955.jpg"
+      "image": "Harlon_Hill-1955.jpg",
+      "stats": {
+              "Receiving Yards": "789",
+              "Receiving Touchdowns": "9",
+              "Drafted": "15"
+      }
     },
 
     {
@@ -2230,7 +3062,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Hugh_McElhenny-1955.jpg"
+      "image": "Hugh_McElhenny-1955.jpg",
+      "stats": {
+              "Rushing Yards": "327",
+              "Rushing Touchdowns": "4",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -2240,7 +3077,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "James_Parmer-1955.jpg"
+      "image": "James_Parmer-1955.jpg",
+      "stats": {
+              "Rushing Yards": "129",
+              "Rushing Touchdowns": "1",
+              "Drafted": "25"
+      }
     },
 
     {
@@ -2250,7 +3092,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "eagles-logo.gif",
       "awards": "",
-      "image": "Jerry_Norton-1955.jpg"
+      "image": "Jerry_Norton-1955.jpg",
+      "stats": {
+              "Fumbles Forced": "6",
+              "Interceptions": "1",
+              "Drafted": "7"
+      }
     },
 
     {
@@ -2260,17 +3107,12 @@
       "team": "Pittsburgh Steelers",
       "team_logo": "steelers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Jim_Finks-1955.jpg"
-    },
-
-    {
-      "name": "Jim Finks",
-      "position": "Halfback \nReturn Specialist",
-      "year": "1955",
-      "team": "New York Giants",
-      "team_logo": "giants-logo.gif",
-      "awards": "",
-      "image": "Joe_Heap-1955.jpg"
+      "image": "Jim_Finks-1955.jpg",
+      "stats": {
+              "Passing Yards": "2270",
+              "Passing Touchdowns": "10",
+              "Drafted": "11"
+      }
     },
 
     {
@@ -2280,7 +3122,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Joe_Perry-1955.jpg"
+      "image": "Joe_Perry-1955.jpg",
+      "stats": {
+              "Rushing Yards": "701",
+              "Rushing Touchdowns": "2",
+              "Fumbles Forced": "6"
+      }
     },
 
     {
@@ -2290,7 +3137,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "John_Carson-1955.jpg"
+      "image": "John_Carson-1955.jpg",
+      "stats": {
+              "Receiving Yards": "443",
+              "Receiving Touchdowns": "3",
+              "Drafted": "15"
+      }
     },
 
     {
@@ -2300,7 +3152,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "John_H_Johnson-1955.jpg"
+      "image": "John_H_Johnson-1955.jpg",
+      "stats": {
+              "Rushing Yards": "69",
+              "Rushing Touchdowns": "1",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -2310,7 +3167,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Ken_Konz-1955.jpg"
+      "image": "Ken_Konz-1955.jpg",
+      "stats": {
+              "Interceptions": "5",
+              "Interception Return Touchdowns": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -2320,7 +3182,11 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "",
-      "image": "Ken_MacAfee-1955.jpg"
+      "image": "Ken_MacAfee-1955.jpg",
+      "stats": {
+              "Receiving Yards": "170",
+              "Receiving Touchdowns": "1"
+      }
     },
 
     {
@@ -2330,7 +3196,12 @@
       "team": "Baltimore Colts",
       "team_logo": "colts-logo.gif",
       "awards": "",
-      "image": "LG_Dupre-1955.jpg"
+      "image": "LG_Dupre-1955.jpg",
+      "stats": {
+              "Rushing Yards": "338",
+              "Rushing Touchdowns": "1",
+              "Fumbles Forced": "2"
+      }
     },
 
     {
@@ -2340,7 +3211,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "",
-      "image": "Maurice_Bassett-1955.jpg"
+      "image": "Maurice_Bassett-1955.jpg",
+      "stats": {
+              "Rushing Yards": "174",
+              "Rushing Touchdowns": "3",
+              "Drafted": "3"
+      }
     },
 
     {
@@ -2350,7 +3226,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Max_Boydston-1955.jpg"
+      "image": "Max_Boydston-1955.jpg",
+      "stats": {
+              "Receiving Yards": "79",
+              "Receiving Touchdowns": "1",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -2360,7 +3241,12 @@
       "team": "Chicago Cardinals",
       "team_logo": "chicago-cardinals-logo.gif",
       "awards": "",
-      "image": "Pat_Summerall-1955.jpg"
+      "image": "Pat_Summerall-1955.jpg",
+      "stats": {
+              "Interception Return Touchdowns": "1",
+              "Longest Field Goal": "43",
+              "Drafted": "4"
+      }
     },
 
     {
@@ -2370,7 +3256,12 @@
       "team": "Cleveland Browns",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl",
-      "image": "Pete_Brewster-1955.jpg"
+      "image": "Pete_Brewster-1955.jpg",
+      "stats": {
+              "Receiving Yards": "622",
+              "Receiving Touchdowns": "6",
+              "Drafted": "2"
+      }
     },
 
     {
@@ -2380,7 +3271,12 @@
       "team": "Philadelphia Eagles",
       "team_logo": "browns-logo.gif",
       "awards": "Pro Bowl | First-Team All-Pro | Hall of Fame",
-      "image": "Pete_Pihos-1955.jpg"
+      "image": "Pete_Pihos-1955.jpg",
+      "stats": {
+              "Receiving Yards": "864",
+              "Receiving Touchdowns": "7",
+              "Drafted": "5"
+      }
     },
 
     {
@@ -2390,17 +3286,12 @@
       "team": "Washington Redskins",
       "team_logo": "redskins-logo.gif",
       "awards": "",
-      "image": "Ralph_Guglielmi-1955.jpg"
-    },
-
-    {
-      "name": "Royce Womble",
-      "position": "Halfback \nFlanker",
-      "year": "1955",
-      "team": "Baltimore Colts",
-      "team_logo": "colts-logo.gif",
-      "awards": "",
-      "image": "Royce_Womble-1955.jpg"
+      "image": "Ralph_Guglielmi-1955.jpg",
+      "stats": {
+              "Passing Yards": "242",
+              "Passing Touchdowns": "2",
+              "Drafted": "1"
+      }
     },
 
     {
@@ -2410,7 +3301,12 @@
       "team": "New York Giants",
       "team_logo": "giants-logo.gif",
       "awards": "Hall of Fame",
-      "image": "Tom_Landry-1955.jpg"
+      "image": "Tom_Landry-1955.jpg",
+      "stats": {
+              "Interceptions": "2",
+              "Punting Yards": "3022",
+              "Drafted": "20"
+      }
     },
 
     {
@@ -2420,7 +3316,12 @@
       "team": "San Francisco 49ers",
       "team_logo": "49ers-logo.gif",
       "awards": "Hall of Fame",
-      "image": "YA_Tittle-1955.jpg"
+      "image": "YA_Tittle-1955.jpg",
+      "stats": {
+              "Passing Yards": "2185",
+              "Passing Touchdowns": "17",
+              "Drafted": "1"
+      }
     }
 
     
