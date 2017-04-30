@@ -6,7 +6,6 @@ $(document).ready(function() {
 	});
 
 
-
 	$('#intro').modal('show');
 
 	$('#intro').on('hidden.bs.modal', function (e) {
@@ -89,14 +88,21 @@ $(document).ready(function() {
 		}, 1000);
 	}
 
-	function navFadeOut(){
+	function navFadeOut(zindex){
 		$('nav').animate({
 			'opacity': '0.25'
-		}, 1000);
+		}, 1000, function(){
+
+			if(zindex){
+				$('nav').css('z-index', '-1');
+			}
+		});
+
 
 		$('#particles-js').animate({
 			'opacity': '0.25'
 		}, 1000);
+
 	}
 
 
@@ -164,6 +170,7 @@ $(document).ready(function() {
 		//Add misc images to loader
 		loader.add('images/football-icon.png');
 		loader.add('images/exit-circle-white.png');
+		loader.add('images/trophy-full.png');
 
 
 		$.getJSON('cards.json', function(data){
@@ -656,6 +663,8 @@ $(document).ready(function() {
 
 										navFadeIn();
 
+										$('nav').css('z-index', '1030');
+
 
 										card_selected = false;
 
@@ -732,6 +741,12 @@ $(document).ready(function() {
 									player_team.y = 0;
 
 
+
+									
+
+									
+
+
 									//Player stats
 									var stats_string = '';
 
@@ -768,12 +783,57 @@ $(document).ready(function() {
 									    fill: '#061639'
 									});
 
+									var award_name_style = new PIXI.TextStyle({
+									    fontFamily: 'Arial',
+									    fontSize: 14,
+									    //fontWeight: 'normal',
+									    fontVariant: 'small-caps',
+									    fill: '#f7f7f7'
+									});
+
+
+
+
+									//Player awards
+									var awards = result.awards.split(' | ');
+
+									var trophy;
+									//var number_of_trophies = 0;
+
+
+									trophy = new PIXI.Sprite(
+									  PIXI.loader.resources['images/trophy-full.png'].texture
+									);
+
+						    		player_stats_container.addChild(trophy);
+
+
+						    		trophy.x = 20 + player_team.width + 50 /*+ (trophy.width*number_of_trophies) + (5*number_of_trophies)*/;
+									trophy.y = 0;
+
+
+									if(result.awards != ''){
+										$.each(awards, function(i){
+
+											//number_of_trophies++;
+
+											//Name of the awward
+								    		var award_name = new PIXI.Text(this, award_name_style);
+
+								    		player_stats_container.addChild(award_name);
+
+								    		award_name.x = trophy.x + trophy.width + 5;
+								    		award_name.y = 0 + (i*award_name.height) + (i*3);
+
+										});
+									}
+
+
 
 									//used for keeping track of row heights
 									var height_correction = 0;
 
-
-							
+		
 
 									//track the right edge of the container to ensure stats dont't go offscreen
 									/*var stats_rect = new PIXI.Rectangle;
@@ -1179,7 +1239,7 @@ $(document).ready(function() {
 								//Disable clicking the nav
 								$('nav').css('pointer-events', 'none');
 
-								navFadeOut();
+								navFadeOut(true);
 
 
 						 	}

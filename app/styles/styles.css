@@ -54,6 +54,10 @@ nav {
 }
 
 
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #f7f7f7;
+}
+
 .dropdown-item.active, .dropdown-item:active {
     background-color: transparent;
     border-left: 5px solid #c8102e;
@@ -100,6 +104,16 @@ nav {
 }
 
 
+.close {
+	font-size: 2.25rem;
+	color: #061639;
+}
+
+.close:focus, .close:hover {
+	color: #061639;
+}
+
+
 @media screen and (min-width: 992px){
 
 	.navbar-brand {
@@ -113,7 +127,7 @@ nav {
 	}
 
 	.navbar-brand img {
-	    margin-top: 1.5em;
+	    margin-top: 1.75em;
 	}
 
 }

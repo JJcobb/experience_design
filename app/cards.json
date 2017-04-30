@@ -223,9 +223,9 @@
       "awards": "Pro Bowl",
       "image": "Dick_Hoerner-1950.jpg",
       "stats": {
+              "Receiving Yards": "446",
               "Rushing Yards": "381",
-              "Rushing Touchdowns": "10",
-              "Receiving Yards": "446"
+              "Rushing Touchdowns": "10"
       }
     },
 
