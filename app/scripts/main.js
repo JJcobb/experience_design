@@ -1,15 +1,31 @@
 $(document).ready(function() {
 
 
-	// particlesJS.load('particles-js', 'particlesjs-config.json', function() {
-	//   console.log('callback - particles.js config loaded');
-	// });
+	particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+	  console.log('callback - particles.js config loaded');
+	});
+
+
+
+	$('#intro').modal('show');
+
+	$('#intro').on('hidden.bs.modal', function (e) {
+		$('nav').animate({
+			'opacity': '1'
+		}, 1000, function(){
+
+			//Display cards from 1950 by default
+			displayCards('1950', selected_position, selected_team, selected_awards);
+		});
+
+		
+	})
 
 
 	var renderOptions = {
 		antialias: false,
-		transparent: false,
-		backgroundColor: 0x061639,
+		transparent: true,
+		// backgroundColor: 0x061639,
 		resolution: window.devicePixelRatio,
 		autoResize: true,
 		resolution: 2
@@ -67,10 +83,18 @@ $(document).ready(function() {
 		$('nav').animate({
 			'opacity': '1'
 		}, 1000);
+
+		$('#particles-js').animate({
+			'opacity': '1'
+		}, 1000);
 	}
 
 	function navFadeOut(){
 		$('nav').animate({
+			'opacity': '0.25'
+		}, 1000);
+
+		$('#particles-js').animate({
 			'opacity': '0.25'
 		}, 1000);
 	}
@@ -474,19 +498,27 @@ $(document).ready(function() {
 
 						var clicked_on = false;
 
+						//Don't fire pointer up event if user clicks and drags
+						var stage_x_check, stage_y_check;
+
 						card.on('pointerdown', function() {
 
-							clicked_on = true;			 		
+							clicked_on = true;
+
+							stage_x_check = stage.x;
+							stage_y_check = stage.y;			 		
 					 	});
 
-					 	card.on('pointermove', function() {
-
-					 		clicked_on = false;
-					 	});
+					 	/*card.on('pointermove', function() {
+					 		if(clicked_on){
+						 		clicked_on = false;
+						 	}
+					 	});*/
 
 					 	card.on('pointerup', function() {
 
-					 		if(clicked_on){
+					 		//Don't fire pointer up event if user clicks and drags
+					 		if(clicked_on && stage.x == stage_x_check && stage.y == stage_y_check){
 
 					 			card_selected = true;
 
@@ -663,6 +695,10 @@ $(document).ready(function() {
 
 
 
+									var this_card_width = this_card.parent.width;
+
+
+
 									//Get player card bounds
 									player_bounds_right = player_container.getBounds(player_bounds).right;
 									player_bounds_top = player_container.getBounds(player_bounds).top;
@@ -737,6 +773,15 @@ $(document).ready(function() {
 									var height_correction = 0;
 
 
+							
+
+									//track the right edge of the container to ensure stats dont't go offscreen
+									/*var stats_rect = new PIXI.Rectangle;
+									var stats_right_limit;
+									stats_right_limit = player_stats_container.getBounds(stats_rect).right;*/
+
+
+
 									//Loop through each of the stats
 									$.each(result.stats, function(key, value) {
 									    console.log(key, value);
@@ -766,6 +811,7 @@ $(document).ready(function() {
 								    		var multiple_rows = false;
 								    		var max_per_row;
 								    		var number_in_this_row = 0;
+								    		var number_of_rows = 1;
 
 
 								    		//for each of the touchdowns
@@ -779,13 +825,16 @@ $(document).ready(function() {
 									    		player_stats_container.addChild(football);
 
 
+
 									    		football.x = 20 + i*(football.width*0.5) + i*5;
 									    		football.y = player_team.height + stat_name.height + 20 + 5 + height_correction;
 
 
-									    		
+
 									    		//reposition footballs on next row once they get to the end of first row
-									    		/*if( football.getGlobalPosition().x - Math.abs(stage.x) >= window.innerWidth ){
+									    		if( player_container.width >= window.innerWidth ){
+
+
 
 									    			if(next_row == 0){
 										    			next_row = i;
@@ -801,12 +850,16 @@ $(document).ready(function() {
 										    		if(number_in_this_row > max_per_row){
 										    			next_row = 0;
 										    			number_in_this_row = 0;
+										    			number_of_rows++;
 										    		}
+
+										    		// console.log("max_per_row: " + max_per_row);
+										    		// console.log("number_in_this_row: " + number_in_this_row);
 
 
 									    			football.x = 20 + (i - next_row)*(football.width*0.5) + (i - next_row)*5;
-									    			football.y = (football.height*0.5) + player_team.height + stat_name.height + 20 + 5 + 10 + height_correction;
-									    		}*/
+									    			football.y = number_of_rows*(football.height*0.5) + player_team.height + stat_name.height + 20 + 5 + (10*number_of_rows) + height_correction;
+									    		}
 
 									    		football.scale.set(0.5, 0.5);
 
@@ -850,8 +903,33 @@ $(document).ready(function() {
 
 											var yards_bar_width = value*0.5;
 
-											if(yards_bar_width > player_stats_container.width){
-												yards_bar_width = player_stats_container.width;
+
+
+											var remaining_width = window.innerWidth - this_card_width;
+											// console.log("window.innerWidth: " + window.innerWidth);
+											// console.log("this card width: " + this_card_width);
+											// console.log("remaining_width: " + remaining_width);
+
+											// console.log("yards_bar_width: " + yards_bar_width);
+
+											if(yards_bar_width + 100 > remaining_width - 100){
+												
+												//yards_bar_width = player_stats_container.width;
+
+
+												yards_bar_width = remaining_width - 100 - 35 - 40 - this_card_width;
+												
+												//console.log("new yards_bar_width: " + yards_bar_width);
+												//yards_bar_width = 600;
+												//console.log("yards_bar_width: " + yards_bar_width);
+											}
+
+											if(yards_bar_width < stat_name.width){
+												yards_bar_width = stat_name.width + yards_bar_width*2;
+											}
+
+											if(value > window.innerWidth && yards_bar_width > window.innerWidth*0.5){
+												yards_bar_width = window.innerWidth*0.5 - 35;
 											}
 
 											yards_bar.drawRect(20, player_team.height + 20 + height_correction + stat_name.height + 5, yards_bar_width, 30);
@@ -1325,7 +1403,7 @@ $(document).ready(function() {
 
 
 	//Display cards from 1950 by default
-	displayCards('1950', selected_position, selected_team, selected_awards);
+	//displayCards('1950', selected_position, selected_team, selected_awards);
 
 
 	//Display cards corresponding to year selected by user
@@ -1345,7 +1423,7 @@ $(document).ready(function() {
 		$(this).parent().prev().addClass('active');
 
 
-		var selected_year = '1950, 1951, 1952';
+		var selected_year = '1950, 1951, 1952, 1953, 1954, 1955';
 
 		selected_position = 'Head Coach, Quarterback, Running Back, Tailback, Halfback, Fullback, End, Flanker, Tight End, Offensive Lineman, Guard, Tackle, Center, Defensive Lineman, Defensive Tackle, Defensive End, Linebacker, Defensive Back, Kicker, Punter, Return Specialist';
 

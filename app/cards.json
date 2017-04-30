@@ -95,7 +95,7 @@
       "stats": {
               "Interceptions": "4",
               "Passing Yards": "294",
-              "Rushing Touchdowns": "23"
+              "Rushing Touchdowns": "3"
               
       }
     },
@@ -180,8 +180,7 @@
       "image": "Cloyce_Box-1950.jpg",
       "stats": {
               "Receiving Touchdowns": "11",
-              "Receiving Yards": "1009",
-              "Fumbles Recovered": "1"
+              "Receiving Yards": "1009"
       }
     },
 
@@ -816,8 +815,7 @@
       "image": "Don_Doll-1951.jpg",
       "stats": {
               "Interceptions": "12",
-              "Interception Return Touchdowns": "1",
-              "Drafted": "9"
+              "Interception Return Touchdowns": "1"
       }
     },
 
@@ -859,9 +857,8 @@
       "awards": "Hall of Fame | Pro Bowl | First-Team All-Pro | Championship",
       "image": "Elroy_Hirsch-1951.jpg",
       "stats": {
-              "Receiving Yards": "1495",
               "Receiving Touchdowns": "17",
-              "Drafted": "1"
+              "Receiving Yards": "1295"
       }
     },
 
@@ -1066,9 +1063,8 @@
       "awards": "Hall of Fame | Pro Bowl | Championship",
       "image": "Norm_Van_Brocklin-1951.jpg",
       "stats": {
-              "Passing Yards": "1725",
               "Passing Touchdowns": "13",
-              "Punting Yards": "1992"
+              "Passing Yards": "1725"       
       }
     },
 
@@ -1248,9 +1244,9 @@
       "awards": "",
       "image": "Babe_Parilli-1952.jpg",
       "stats": {
-              "Passing Yards": "1416",
               "Passing Touchdowns": "13",
-              "Punting Yards": "2645"
+              "Passing Yards": "1216"
+              
       }
     },
 
@@ -1307,8 +1303,7 @@
       "image": "Bill_Howton-1952.jpg",
       "stats": {
               "Receiving Yards": "1231",
-              "Receiving Touchdowns": "13",
-              "Drafted": "2"
+              "Receiving Touchdowns": "13"
       }
     },
 
@@ -2036,9 +2031,9 @@
       "awards": "",
       "image": "Tobin_Rote-1952.jpg",
       "stats": {
+              "Fumbles Forced": "10",
               "Passing Yards": "1268",
-              "Passing Touchdowns": "13",
-              "Fumbles Forced": "10"
+              "Passing Touchdowns": "13"
       }
     },
 
@@ -2081,9 +2076,8 @@
       "awards": "Hall of Fame",
       "image": "YA_Tittle-1952.jpg",
       "stats": {
-              "Passing Yards": "1407",
               "Passing Touchdowns": "11",
-              "Drafted": "1"
+              "Passing Yards": "1407"
       }
     },
 
@@ -2149,8 +2143,7 @@
       "image": "Bobby_Thomason-1953.jpg",
       "stats": {
               "Passing Yards": "2462",
-              "Passing Touchdowns": "21",
-              "Drafted": "1"
+              "Passing Touchdowns": "21"
       }
     },
 
@@ -2439,8 +2432,7 @@
       "image": "Bobby_Layne-1954.jpg",
       "stats": {
               "Passing Yards": "1818",
-              "Passing Touchdowns": "14",
-              "Drafted": "1"
+              "Passing Touchdowns": "14"
       }
     },
 
@@ -2613,9 +2605,9 @@
       "awards": "Pro Bowl",
       "image": "Harry_Jagade-1954.jpg",
       "stats": {
-              "Fumbles Forced": "12",
+              "Rushing Touchdowns": "3",
               "Rushing Yards": "498",
-              "Rushing Touchdowns": "3"
+              "Fumbles Forced": "12"
       }
     },
 
@@ -2990,9 +2982,8 @@
       "awards": "Pro Bowl",
       "image": "Ed_Brown-1955.jpg",
       "stats": {
-              "Passing Yards": "1307",
               "Passing Touchdowns": "9",
-              "Drafted": "6"
+              "Passing Yards": "1307"
       }
     },
 
@@ -3110,8 +3101,7 @@
       "image": "Jim_Finks-1955.jpg",
       "stats": {
               "Passing Yards": "2270",
-              "Passing Touchdowns": "10",
-              "Drafted": "11"
+              "Passing Touchdowns": "10"
       }
     },
 
@@ -3319,8 +3309,7 @@
       "image": "YA_Tittle-1955.jpg",
       "stats": {
               "Passing Yards": "2185",
-              "Passing Touchdowns": "17",
-              "Drafted": "1"
+              "Passing Touchdowns": "17"
       }
     }
 

@@ -20,14 +20,14 @@
         "nb_sides": 5
       },
       "image": {
-        "src": "http://www.footballcardgallery.com/pics/1950-Bowman/91_Frank_Tripucka_football_card.jpg",
+        "src": "img/github.svg",
         "width": 100,
         "height": 100
       }
     },
     "opacity": {
-      "value": 0.15,
-      "random": true,
+      "value": 0.5,
+      "random": false,
       "anim": {
         "enable": false,
         "speed": 1,
@@ -36,7 +36,7 @@
       }
     },
     "size": {
-      "value": 3.5,
+      "value": 3,
       "random": true,
       "anim": {
         "enable": false,
@@ -47,16 +47,16 @@
     },
     "line_linked": {
       "enable": false,
-      "distance": 150,
+      "distance": 299.87610382026367,
       "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 3,
+      "speed": 5,
       "direction": "none",
-      "random": true,
+      "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -76,7 +76,7 @@
       },
       "onclick": {
         "enable": false,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -95,7 +95,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 100,
+        "distance": 200,
         "duration": 0.4
       },
       "push": {
