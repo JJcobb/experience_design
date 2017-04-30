@@ -5,7 +5,8 @@
     "bootstrap": "~4.0.0-alpha.6",
     "modernizr": "~2.8.1",
     "pixi.js": "^4.4.3",
-    "particles.js": "particles-js#^2.0.0"
+    "particles.js": "particles-js#^2.0.0",
+    "font-awesome": "Font-Awesome#^4.7.0"
   },
   "overrides": {
     "bootstrap": {

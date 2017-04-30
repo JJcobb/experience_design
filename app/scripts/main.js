@@ -1004,19 +1004,19 @@ $(document).ready(function() {
 								    		var number_ending;
 
 								    		if( Number(value) % 10 == 1 && Number(value) != 11 ){
-								    			number_ending = "st";
+								    			number_ending = 'st';
 								    		}
 								    		else if( Number(value) % 10 == 2 && Number(value) != 12 ){
-								    			number_ending = "nd";
+								    			number_ending = 'nd';
 								    		}
 								    		else if( Number(value) % 10 == 3 && Number(value) != 13 ){
-								    			number_ending = "rd";
+								    			number_ending = 'rd';
 								    		}
 								    		else{
-								    			number_ending = "th";
+								    			number_ending = 'th';
 								    		}
 
-								    		number_ending += " round";
+								    		number_ending += ' round';
 
 
 								    		var draft_text = new PIXI.Text(number_ending, stat_name_style);
