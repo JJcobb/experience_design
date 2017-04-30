@@ -801,18 +801,19 @@ $(document).ready(function() {
 									//var number_of_trophies = 0;
 
 
-									trophy = new PIXI.Sprite(
-									  PIXI.loader.resources['images/trophy-full.png'].texture
-									);
-
-						    		player_stats_container.addChild(trophy);
-
-
-						    		trophy.x = 20 + player_team.width + 50 /*+ (trophy.width*number_of_trophies) + (5*number_of_trophies)*/;
-									trophy.y = 0;
-
-
 									if(result.awards != ''){
+
+										trophy = new PIXI.Sprite(
+										  PIXI.loader.resources['images/trophy-full.png'].texture
+										);
+
+							    		player_stats_container.addChild(trophy);
+
+
+							    		trophy.x = 20 + player_team.width + 50 /*+ (trophy.width*number_of_trophies) + (5*number_of_trophies)*/;
+										trophy.y = 0;
+										
+
 										$.each(awards, function(i){
 
 											//number_of_trophies++;

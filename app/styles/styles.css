@@ -114,6 +114,30 @@ nav {
 }
 
 
+.modal-footer {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top: 0;
+}
+
+
+.btn-primary {
+    border-color: #061639;
+    background: transparent;
+    color: #061639;
+    padding: 0.75rem 1.75rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #061639;
+    border-color: #061639;
+}
+
+
 @media screen and (min-width: 992px){
 
 	.navbar-brand {
