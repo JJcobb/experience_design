@@ -6,6 +6,12 @@ $(document).ready(function() {
 	});
 
 
+	// Use Tink to track the cursor
+	var t;
+
+	var pointer;
+
+
 	$('#intro').modal('show');
 
 	$('#intro').on('hidden.bs.modal', function (e) {
@@ -17,6 +23,10 @@ $(document).ready(function() {
 			displayCards('1950', selected_position, selected_team, selected_awards);
 		});
 
+		// Use Tink to track the cursor
+		t = new Tink(PIXI, renderer.view);
+
+		pointer = t.makePointer();
 		
 	})
 
@@ -48,15 +58,16 @@ $(document).ready(function() {
 
 		
 	stage.interactive = false; //wll be set to true once cards have been animated onto stage
+
 	stage.containsPoint = () => true;
 
 	stage.buttonMode = true;
 
 
 	// Use Tink to track the cursor
-	let t = new Tink(PIXI, renderer.view);
+	// let t = new Tink(PIXI, renderer.view);
 
-	let pointer = t.makePointer();
+	// let pointer = t.makePointer();
 
 	//pointer.cursor = "pointer";
 
@@ -134,7 +145,9 @@ $(document).ready(function() {
 
 		requestAnimationFrame(animate);
 
-		t.update();
+		if(t){
+			t.update();
+		}
 
 		Tween.runTweens();
 
